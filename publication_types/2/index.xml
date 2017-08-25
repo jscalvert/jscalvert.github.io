@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2 on </title>
+    <link>https://jscalvert.github.io/publication_types/2/</link>
+    <description>Recent content in 2 on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 Jacob Calvert</copyright>
+    <lastBuildDate>Wed, 10 May 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/publication_types/2/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Using transfer learning for improved mortality prediction in a data-scarce hospital setting</title>
+      <link>https://jscalvert.github.io/publication/bii/</link>
+      <pubDate>Wed, 10 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://jscalvert.github.io/publication/bii/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cost and mortality impact of an algorithm-driven sepsis prediction system</title>
+      <link>https://jscalvert.github.io/publication/jme/</link>
+      <pubDate>Mon, 13 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://jscalvert.github.io/publication/jme/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Using electronic health record collected clinical variables to predict medical intensive care unit mortality</title>
+      <link>https://jscalvert.github.io/publication/ams2/</link>
+      <pubDate>Sun, 04 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://jscalvert.github.io/publication/ams2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Prediction of sepsis in the intensive care unit with minimal electronic health record data: a machine learning approach</title>
+      <link>https://jscalvert.github.io/publication/jmirmi/</link>
+      <pubDate>Mon, 29 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://jscalvert.github.io/publication/jmirmi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A computational approach to mortality prediction of alcohol use disorder inpatients</title>
+      <link>https://jscalvert.github.io/publication/cbm2/</link>
+      <pubDate>Sun, 22 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://jscalvert.github.io/publication/cbm2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A computational approach to early sepsis detection</title>
+      <link>https://jscalvert.github.io/publication/cbm1/</link>
+      <pubDate>Sun, 08 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://jscalvert.github.io/publication/cbm1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>High-performance detection and early prediction of septic shock for alcohol-use disorder patients</title>
+      <link>https://jscalvert.github.io/publication/ams1/</link>
+      <pubDate>Tue, 26 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://jscalvert.github.io/publication/ams1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Quantitative analysis and prediction of G-quadruplex forming sequences in double-stranded DNA</title>
+      <link>https://jscalvert.github.io/publication/nar2/</link>
+      <pubDate>Tue, 05 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://jscalvert.github.io/publication/nar2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Discharge recommendation based on a novel technique of homeostatic analysis</title>
+      <link>https://jscalvert.github.io/publication/jamia/</link>
+      <pubDate>Thu, 21 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://jscalvert.github.io/publication/jamia/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>G-quadruplex formation in double strand DNA probed by NMM and CV fluorescence</title>
+      <link>https://jscalvert.github.io/publication/nar1/</link>
+      <pubDate>Sat, 11 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://jscalvert.github.io/publication/nar1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Telomeric overhang length determines structural dynamics and accessibility to telomerase and ALT-associated proteins</title>
+      <link>https://jscalvert.github.io/publication/structure/</link>
+      <pubDate>Tue, 04 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://jscalvert.github.io/publication/structure/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
