@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>Numerosity-driven phase transitions | Jacob Calvert</title>
+
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">    
+<meta name="viewport" content="width=device-width,minimum-scale=1">
+<meta name="description" content="This post discusses the intersection of some of my recent and forthcoming work in probability theory with studies of programmable matter and ant colonies.">
+<meta name="generator" content="Hugo 0.97.3" />
+
+
+  <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+
+<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+
+
+
+
+  
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css" integrity="sha384-KiWOvVjnN8qwAZbuQyWDIbfCLFhLXNETzBQjA/92pIowpC0d2O3nppDGQVgwd2nB" crossorigin="anonymous">
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js" integrity="sha384-0fdwu/T/EQMsQlrHCCHoH10pkPLlKA1jL5dFyUOvB3lfeT2540/2g6YgSi2BL14p" crossorigin="anonymous"></script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "$", right: "$", display: false}
+            ]
+        });
+    });
+</script>
+
+
+
+
+
+
+  </head>
+
+  <body>
+    <nav class="navigation">
+	
+		<a href="/"> <span class="arrow">←</span>Home</a>
+	
+	
+	<a href="/about">About</a>
+	<a href="/papers">Papers</a>
+	<a href="/posts">Posts</a>
+	<a href="/tags">Tags</a>
+	
+
+	
+</nav>
+
+
+    <main class="main">
+      
+
+<section id="single">
+    <h1 class="title">Numerosity-driven phase transitions</h1>
+
+    <div class="tip">
+        <time datetime="2022-04-27 13:46:26 -0700 PDT">Apr 27, 2022</time>
+        <span class="split">
+          ·
+        </span>
+        <span>
+          1169 words
+        </span>
+        <span class="split">
+          ·
+        </span>
+        <span>
+          6 minute read
+        </span>
+    </div>
+
+    
+    
+        
+  
+    <aside class="toc">
+      <details>
+          <summary>Table of Contents
+          </summary>
+          <div>
+              <nav id="TableOfContents">
+  <ul>
+    <li><a href="#context">Context</a>
+      <ul>
+        <li><a href="#programmable-matter">Programmable matter</a></li>
+        <li><a href="#ant-colonies">Ant colonies</a></li>
+      </ul>
+    </li>
+    <li><a href="#a-lattice-model-which-exhibits-a-numerosity-driven-phase-transition">A lattice model which exhibits a numerosity-driven phase transition</a></li>
+  </ul>
+</nav>
+          </div>
+      </details>
+    </aside>
+  
+
+
+    
+
+
+    <div class="content">
+      <p>This post discusses the intersection of some of my recent and forthcoming work in probability theory with studies of programmable matter and ant colonies.</p>
+<hr>
+<h1 id="context">Context <a href="#context" class="anchor">🔗</a></h1><h2 id="programmable-matter">Programmable matter <a href="#programmable-matter" class="anchor">🔗</a></h2><p>The amoebot model is an abstract model of identical, programmable elements which have limited sensory and computational resources but which can nevertheless exhibit useful collective behaviors.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> For example, they can be programmed to form shapes, coat objects, compress, and form bridges.<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> The key idea is that desirable collective behavior can be encoded in the stationary distribution of a Markov chain, which the amoebot can reach by following the dynamics dictated by the Metropolis-Hastings algorithm.<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> Recently, Li <em>et al.</em> programmed a robot swarm to form an aggregate that can collectively transport objects, using an algorithm they designed with the amoebot model.<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup></p>
+<p>An important detail is that, by design, under the Li <em>et al.</em> algorithm, the amoebots transition from a dispersed phase to an aggregated phase in the same way that spins in the Ising model transition from a paramagnetic phase to a ferromagnetic one. This work demonstrates that a phase transition in a lattice model of interacting elements can be used to program a robot swarm. Hence, identifying new kinds of phase transitions in lattice models can lead to new functionality for programmable matter. The work I will discuss below concerns a model that exhibits a remarkable phase transition, which is qualitatively similar to one observed in ant colonies.<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup></p>
+<p><strong>Takeaway:</strong> <em>A phase transition in a lattice model can be translated into a function of programmable matter.</em></p>
+<h2 id="ant-colonies">Ant colonies <a href="#ant-colonies" class="anchor">🔗</a></h2><p>Colonies of social insects exhibit different collective behaviors as the number of their constituents&mdash;in other words, their numerosity&mdash;varies.<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup> As Franks observed: &ldquo;The solitary army ant is behaviorally one of the least sophisticated insects imaginable. Even in quite large numbers army ants may demonstrate behavior that is essentially aberrant. . . . In extremely high numbers, however, it is a different story.&rdquo;<sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup> A natural question is: For a behavior exhibited by sufficiently numerous colonies, how many ants are necessary?</p>
+<p>This question has been answered for collective behaviors in at least two species of ants. Beekman, Sumpter, and Ratnieks found that colonies of more than around 600 Pharaoh&rsquo;s ants exhibit organized foraging, in the sense of sustaining a pheromone trail to a food source, while smaller colonies do not.<sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup> <em>Acromyrmex versicolor</em> leafcutter ants cultivate a fungus which serves as their primary food source. Clark and Fewell found that colonies of around 89 or more such ants have a stable growth relationship with this fungus, while smaller colonies do not.<sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup></p>
+<p><strong>Takeaway:</strong> <em>Colonies of ants exhibit a numerosity-driven &ldquo;phase transition&rdquo; in their behavior which is mediated by the presence or absence of relatively few ants.</em></p>
+<h1 id="a-lattice-model-which-exhibits-a-numerosity-driven-phase-transition">A lattice model which exhibits a numerosity-driven phase transition <a href="#a-lattice-model-which-exhibits-a-numerosity-driven-phase-transition" class="anchor">🔗</a></h1><p>The preceding takeaways suggest that it may be possible to impart a function to programmable matter which is mediated exclusively by the number of elements.<sup id="fnref:10"><a href="#fn:10" class="footnote-ref" role="doc-noteref">10</a></sup> In other words, $n$ elements exhibit one collective behavior, while $n+1$ or more elements exhibit another. The first step is to identify a lattice model which has a numerosity-driven phase transition. Two of my recent papers describe such a model, called <em>harmonic activation and transport</em> (HAT).<sup id="fnref:11"><a href="#fn:11" class="footnote-ref" role="doc-noteref">11</a></sup></p>
+<p>In fact, if there were no further requirements, it would be easy to describe a lattice model with a numerosity-driven phase transition. For example, you could dictate that no elements move unless there are at least $n+1$ of them, in which case they do. The two collective behaviors are simply &ldquo;not moving&rdquo; and &ldquo;moving.&rdquo; However, this dynamics could not be directly implemented by amoebots, because it requires that each amoebot knows how many amoebots there are, but it can only sense its local environment.</p>
+<p>HAT is a random process which rearranges an $n$-element subset of the $d$-dimensional Euclidean lattice, $\mathbb{Z}^d$. The elements of this set are like the elements of programmable matter, and HAT describes their motion. Informally, the main result is that, above a certain dimension and up to a certain number of elements, HAT reaches a steady state in which the elements tend to remain in one large cluster. However, if even <em>one</em> element is added, the elements organize into small clusters which grow increasingly separated.</p>
+<p>For concreteness, this provably occurs in five or more dimensions, and the transition between the two behaviors occurs when the number of elements increases from three to four. In forthcoming work, I will show that, by generalizing the HAT dynamics, this transition can be made to occur at <em>any</em> odd number of elements greater than two.</p>
+<p>There are two limitations. First, the HAT phase transition does not occur in two dimensions, which is the dimension of the lattice underlying the amoebot model. However, I believe it should be possible to further tweak the HAT dynamics to produce the same transitions in two dimensions. Second, even if it is possible to implement the dynamics with the amoebot model, it may not be easily realized in an experimental robot swarm.</p>
+<p><strong>Takeaway:</strong> <em>There is a non-trivial lattice model which provably exhibits a numerosity-driven phase transition, and which has the potential to inspire related functionality in programmable matter.</em></p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>Zahra Derakhshandeh, Shlomi Dolev, Robert Gmyr, Andréa W. Richa, Christian
+Scheideler, and Thim Strothmann. Amoebot - a new model for programmable matter. In <em>Proceedings of the 26th ACM Symposium on Parallelism in
+Algorithms and Architectures</em>, SPAA &lsquo;14, pages 220&ndash;222, New York, NY, USA, 2014. Association for Computing Machinery.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>Joshua J. Daymude, Kristian Hinnenthal, Andréa W. Richa W. Richa, and Christian
+Scheideler. Computing by programmable particles. In <em>Distributed Computing by Mobile Entities: Current Research in
+Moving and Computing</em>, pages 615&ndash;681. Springer, Cham, January 2019.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p>Sarah Cannon, Joshua J. Daymude, Dana Randall, and Andréa W. Richa A Markov chain algorithm for compression in self-organizing
+particle systems. In <em>Proceedings of the 2016 ACM Symposium on Principles of
+Distributed Computing</em>, PODC &lsquo;16, pages 279&ndash;288, New York, NY, USA, 2016.
+Association for Computing Machinery.&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4" role="doc-endnote">
+<p>Shengkai Li, Bahnisikha Dutta, Sarah Cannon, Joshua J. Daymude, Ram Avinery,
+Enes Aydin, Andréa W. Richa, Daniel I. Goldman, and Dana Randall. Programming active cohesive granular matter with mechanically induced
+phase changes. <em>Science Advances</em>, 7(17):eabe8494, 2021.&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5" role="doc-endnote">
+<p>Here, &ldquo;phase transition&rdquo; is broadly construed.&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:6" role="doc-endnote">
+<p>Eric Bonabeau, Guy Theraulaz, Jean-Louls Deneubourg, Serge Aron, and Scott
+Camazine. Self-organization in social insects. <em>Trends in Ecology &amp; Evolution</em>, 12(5):188&ndash;193, 1997.&#160;<a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:7" role="doc-endnote">
+<p>Nigel R. Franks. Army ants: A collective intelligence. <em>American Scientist</em>, 77(2):138&ndash;145, 1989.&#160;<a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:8" role="doc-endnote">
+<p>Madeleine Beekman, David J. T. Sumpter, and Francis L. W. Ratnieks. Phase transition between disordered and ordered foraging in Pharaoh&rsquo;s ants. <em>Proceedings of the National Academy of Sciences</em>, 98(17):9703&ndash;9706, 2001.&#160;<a href="#fnref:8" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:9" role="doc-endnote">
+<p>Rebecca M. Clark and Jennifer H. Fewell. Transitioning from unstable to stable colony growth in the desert leafcutter ant <em>Acromyrmex versicolor</em>. <em>Behavioral Ecology and Sociobiology</em>, 68(1):163&ndash;171, 2014.&#160;<a href="#fnref:9" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:10" role="doc-endnote">
+<p>And not, say, by the strength of the interaction between the elements, which is the case in the Li <em>et al.</em> work.&#160;<a href="#fnref:10" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:11" role="doc-endnote">
+<p>The two papers are:</p>
+<ul>
+<li>
+<p>Jacob Calvert, Shirshendu Ganguly, and Alan Hammond. Collapse and diffusion in harmonic activation and transport. <em><a href="https://arxiv.org/pdf/2110.13895.pdf" target="_blank" rel="noopener">https://arxiv.org/pdf/2110.13895.pdf</a></em>, 10 2021.</p>
+</li>
+<li>
+<p>Jacob Calvert. Existence of a phase transition in harmonic activation and transport. <em><a href="https://arxiv.org/pdf/2110.13893.pdf" target="_blank" rel="noopener">https://arxiv.org/pdf/2110.13893.pdf</a></em>, 10 2021.</p>
+</li>
+</ul>
+&#160;<a href="#fnref:11" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></li>
+</ol>
+</section>
+    </div>
+
+    
+        <div class="tags">
+            
+                <a href="https://jscalvert.github.io/tags/probability">probability</a>
+            
+                <a href="https://jscalvert.github.io/tags/ant-colonies">ant colonies</a>
+            
+                <a href="https://jscalvert.github.io/tags/programmable-matter">programmable matter</a>
+            
+                <a href="https://jscalvert.github.io/tags/paper-highlights">paper highlights</a>
+            
+        </div>
+    
+    
+    
+
+</section>
+<script>
+      renderMathInElement(
+          document.getElementById("test"),
+          {
+              delimiters: [
+                  {left: "$$", right: "$$", display: true},
+                  {left: "$", right: "$", display: false},
+                  {left: "\\begin{equation}", right: "\\end{equation}", display: true},
+                  {left: "\\begin{align}", right: "\\end{align}", display: true},
+                  {left: "\\begin{alignat}", right: "\\end{alignat}", display: true},
+                  {left: "\\begin{gather}", right: "\\end{gather}", display: true},
+                  {left: "\\(", right: "\\)", display: false},
+                  {left: "\\[", right: "\\]", display: true}
+              ]
+          }
+      );
+    </script>
+
+    </main>
+    
+    <footer id="footer">
+    
+
+    <div class="copyright">
+    
+        © Copyright 2022 Jacob Calvert
+    
+    </div>
+
+    
+      <div class="powerby">
+        Powered by <a href='http://www.gohugo.io/'>Hugo</a> Theme By <a href='https://https://github.com/nodejh/hugo-theme-mini'>nodejh</a>
+      </div>
+    
+</footer>
+
+
+
+    
+  </body>
+</html>
