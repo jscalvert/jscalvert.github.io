@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Jacob Calvert</title>
-    <link>https://jscalvert.github.io/posts/</link>
-    <description>Recent content in Posts on Jacob Calvert</description>
+    <title>diffusion-limited aggregation on Jacob Calvert</title>
+    <link>https://jscalvert.github.io/tags/diffusion-limited-aggregation/</link>
+    <description>Recent content in diffusion-limited aggregation on Jacob Calvert</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 29 Apr 2022 12:32:46 -0700</lastBuildDate><atom:link href="https://jscalvert.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 29 Apr 2022 12:32:46 -0700</lastBuildDate><atom:link href="https://jscalvert.github.io/tags/diffusion-limited-aggregation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A conjecture about harmonic measure</title>
       <link>https://jscalvert.github.io/posts/a-conjecture-about-harmonic-measure/</link>
@@ -14,15 +14,6 @@
       
       <guid>https://jscalvert.github.io/posts/a-conjecture-about-harmonic-measure/</guid>
       <description>&lt;p&gt;Given finite $A \subset \mathbb{Z}^2$, the harmonic measure of $x \in A$ is the probability that a simple random walk &amp;ldquo;from infinity&amp;rdquo; first visits $A$ at $x$. If $A$ has $n$ elements, what is the smallest positive harmonic measure that you can get?&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Numerosity-driven phase transitions</title>
-      <link>https://jscalvert.github.io/posts/quorum-transitions/</link>
-      <pubDate>Wed, 27 Apr 2022 13:46:26 -0700</pubDate>
-      
-      <guid>https://jscalvert.github.io/posts/quorum-transitions/</guid>
-      <description>&lt;p&gt;This post discusses the intersection of some of my recent and forthcoming work in probability theory with studies of programmable matter and ant colonies.&lt;/p&gt;</description>
     </item>
     
   </channel>
