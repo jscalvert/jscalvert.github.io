@@ -19,7 +19,7 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">    
 <meta name="viewport" content="width=device-width,minimum-scale=1">
-<meta name="description" content="This post highlights recent work which, for the first time, rigorously rules-out a prediction made about diffusion-limited aggregation, a paradigmatic model of random, dendritic growth.">
+<meta name="description" content="This post highlights recent work which, for the first time, rigorously rules-out a prediction made about diffusion-limited aggregation (DLA), a paradigmatic model of random, dendritic growth.">
 <meta name="generator" content="Hugo 0.97.3" />
 
 
@@ -91,7 +91,7 @@
           ·
         </span>
         <span>
-          1357 words
+          1358 words
         </span>
         <span class="split">
           ·
@@ -133,7 +133,7 @@
 
 
     <div class="content">
-      <p>This post highlights recent work which, for the first time, rigorously rules-out a prediction made about diffusion-limited aggregation, a paradigmatic model of random, dendritic growth.</p>
+      <p>This post highlights recent work which, for the first time, rigorously rules-out a prediction made about diffusion-limited aggregation (DLA), a paradigmatic model of random, dendritic growth.</p>
 <h1 id="the-model">The model <a href="#the-model" class="anchor">🔗</a></h1><p>DLA is a random process which grows a connected subset, or cluster, of the two-dimensional Euclidean lattice $\mathbb{Z}^2$, one element at a time.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> It was introduced by Witten and Sander in 1981 and serves to model a variety of physical phenomena, such as electrodeposition and Hele-Shaw flow.<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> Start with a set $A_0 = \{o\}$ consisting of the origin $o$. One step of the dynamics is given by
 $$ A_{t+1} = A_t \cup \{X\},$$
 where $X$ is the first site in the boundary of $A_t$ visited by a simple random walk &ldquo;from infinity.&rdquo; In other words, DLA is a Markov chain with transition probabilities (known in this context as growth probabilities) given by
