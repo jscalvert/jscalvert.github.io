@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+ 
+    
+      
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M3NJZLRV9F"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-M3NJZLRV9F');
+</script>
+    
+
+    <title>The first disproof of a prediction about DLA | Jacob Calvert</title>
+
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">    
+<meta name="viewport" content="width=device-width,minimum-scale=1">
+<meta name="description" content="This post highlights recent work which, for the first time, rigorously rules-out a prediction made about diffusion-limited aggregation, a paradigmatic model of random, dendritic growth.">
+<meta name="generator" content="Hugo 0.97.3" />
+
+
+  <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+
+<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+
+
+
+
+  
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css" integrity="sha384-KiWOvVjnN8qwAZbuQyWDIbfCLFhLXNETzBQjA/92pIowpC0d2O3nppDGQVgwd2nB" crossorigin="anonymous">
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js" integrity="sha384-0fdwu/T/EQMsQlrHCCHoH10pkPLlKA1jL5dFyUOvB3lfeT2540/2g6YgSi2BL14p" crossorigin="anonymous"></script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "$", right: "$", display: false}
+            ]
+        });
+    });
+</script>
+
+
+
+
+
+
+  </head>
+
+  <body>
+    <nav class="navigation">
+	
+		<a href="/"> <span class="arrow">←</span>Home</a>
+	
+	
+	<a href="/about">About</a>
+	<a href="/papers">Papers</a>
+	<a href="/posts">Posts</a>
+	<a href="/tags">Tags</a>
+	
+
+	
+</nav>
+
+
+    <main class="main">
+      
+
+<section id="single">
+    <h1 class="title">The first disproof of a prediction about DLA</h1>
+
+    <div class="tip">
+        <time datetime="2022-05-24 00:00:00 &#43;0000 UTC">May 24, 2022</time>
+        <span class="split">
+          ·
+        </span>
+        <span>
+          1357 words
+        </span>
+        <span class="split">
+          ·
+        </span>
+        <span>
+          7 minute read
+        </span>
+    </div>
+
+    
+    
+        
+  
+    <aside class="toc">
+      <details>
+          <summary>Table of Contents
+          </summary>
+          <div>
+              <nav id="TableOfContents">
+  <ul>
+    <li><a href="#the-model">The model</a></li>
+    <li><a href="#dla-is-difficult-to-analyze">DLA is difficult to analyze</a></li>
+    <li><a href="#the-multifractal-conjecture">The multifractal conjecture</a>
+      <ul>
+        <li><a href="#what-it-means-for-the-smallest-growth-probability">What it means for the smallest growth probability</a></li>
+        <li><a href="#what-is-predicted-about-alpha-and-beta">What is predicted about $\alpha$ and $\beta$?</a></li>
+        <li><a href="#what-if-multifractality-fails">What if multifractality fails?</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+          </div>
+      </details>
+    </aside>
+  
+
+
+    
+
+
+    <div class="content">
+      <p>This post highlights recent work which, for the first time, rigorously rules-out a prediction made about diffusion-limited aggregation, a paradigmatic model of random, dendritic growth.</p>
+<h1 id="the-model">The model <a href="#the-model" class="anchor">🔗</a></h1><p>DLA is a random process which grows a connected subset, or cluster, of the two-dimensional Euclidean lattice $\mathbb{Z}^2$, one element at a time.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> It was introduced by Witten and Sander in 1981 and serves to model a variety of physical phenomena, such as electrodeposition and Hele-Shaw flow.<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> Start with a set $A_0 = \{o\}$ consisting of the origin $o$. One step of the dynamics is given by
+$$ A_{t+1} = A_t \cup \{X\},$$
+where $X$ is the first site in the boundary of $A_t$ visited by a simple random walk &ldquo;from infinity.&rdquo; In other words, DLA is a Markov chain with transition probabilities (known in this context as growth probabilities) given by
+$$ P (A_{t+1} = A_t \cup \{x\} \bigm\vert A_t) = H_{\partial A_t} (x), $$</p>
+<p>where $H_{\partial A_t}$ is the harmonic measure of $\partial A_t$,<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> and where $\partial A_t$ denotes the boundary of $A_t$, i.e., elements $y$ which do not belong to $A_t$, but are at distance $| y - x| = 1$ from some element $x$ which does.</p>
+<p>State-of-the-art simulations show that large DLA clusters have a cross-shaped backbone with many smaller scales of branching, the confluence of which forms narrow channels, called &ldquo;fjords&rdquo; (Figure 1).<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> Since the &ldquo;tips&rdquo; of the cluster are exposed, their boundaries have greater growth probabilities than those at the bottom of the fjords. The multifractal conjecture concerns the way these growth probabilities scale with the linear size (i.e., the diameter) of the cluster.</p>
+<figure><img src="/images/dla_cluster.png"
+         alt="Figure 1. A DLA cluster with roughly 145 million particles simulated by Denis Grebenkov and Dmitry Beliaev." width="600"/><figcaption>
+            <p><strong>Figure 1.</strong> A DLA cluster with roughly 145 million particles simulated by Denis Grebenkov and Dmitry Beliaev.</p>
+        </figcaption>
+</figure>
+
+<h1 id="dla-is-difficult-to-analyze">DLA is difficult to analyze <a href="#dla-is-difficult-to-analyze" class="anchor">🔗</a></h1><p>Before discussing the multifractal conjecture in greater detail, it is worth highlighting the extent to which DLA has evaded rigorous study. Despite being introduced more than 40 years ago, there are only <strong>two</strong> non-trivial, rigorous results about DLA on $\mathbb{Z}^2$. The first, due to Kesten,<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup> states that there is a positive number $C &lt; \infty$ such that, almost surely, for all sufficiently large $t$, the linear size $L(t)$ of the cluster at time $t$ satisfies
+$$ L(t) \leq C t^{\frac{2}{3}}. $$
+The second, due to Eberz-Wagner,<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup> states that, almost surely, the DLA cluster will have infinitely-many holes.</p>
+<h1 id="the-multifractal-conjecture">The multifractal conjecture <a href="#the-multifractal-conjecture" class="anchor">🔗</a></h1><h2 id="what-it-means-for-the-smallest-growth-probability">What it means for the smallest growth probability <a href="#what-it-means-for-the-smallest-growth-probability" class="anchor">🔗</a></h2><p>Informally, the assertion that DLA is multifractal means that the growth probabilities on the boundary of a typical cluster exhibit power-law scaling with the linear size of such a cluster.<sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup> In particular, concerning the least positive growth probability, $p_{min}$, we can make &ldquo;typical&rdquo; precise via expectation, by defining
+$$ \log p_{min} (t) = E \big[ \log \min \{ H_{\partial A_t} (x): H_{\partial A_t} (x) &gt; 0 \} \big]. $$
+Note that, in the absence of the expectation, $p_{min} (t)$ would simply be the random quantity
+$$ \min \{ H_{\partial A_t} (x): H_{\partial A_t} (x) &gt; 0 \}. $$</p>
+<p>In terms of the expected linear size $L(t)$ of a DLA cluster at time $t$, multifractality asserts that there is a positive number $\alpha &lt; \infty$ such that
+$$ p_{min} (t) \approx L(t)^{-\alpha}, $$
+where we write $f(t) \approx g(t)$
+to mean that there are positive real numbers $c$ and $C$ such that
+$$ c g(t) \leq f(t) \leq C g(t) $$
+for all sufficiently large $t$.
+For example, suppose there is a $\beta \in [\frac12,1]$ such that $L (t)$ almost surely scales as
+$L (t) \approx t^{\beta}$.<sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup> In this case, $p_{min} (t)$ must satisfy
+$$ p_{min} (t) \approx t^{- \beta \alpha}. $$</p>
+<h2 id="what-is-predicted-about-alpha-and-beta">What is predicted about $\alpha$ and $\beta$? <a href="#what-is-predicted-about-alpha-and-beta" class="anchor">🔗</a></h2><p>Concerning $\beta$, nearly every (non-rigorous) analytical study has predicted $\beta = \frac35$,<sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup> while nearly every simulation study has predicted a slightly smaller value of approximately $\beta = \frac{1}{1.71}$.<sup id="fnref:10"><a href="#fn:10" class="footnote-ref" role="doc-noteref">10</a></sup> The fact that these separate consensuses appear to be at odds is interesting but, for the purposes of our discussion, it suffices to note that it is widely believed that $\beta &gt; \frac12$. In other words, it is believed that the DLA cluster forms branches like those in Figure 1 and, in particular, the cluster is not a disk.</p>
+<p>Concerning $\alpha$, the controversy seems to be far greater&mdash;it is unclear if $\alpha$ exists at all! Indeed, while a pair of studies<sup id="fnref:11"><a href="#fn:11" class="footnote-ref" role="doc-noteref">11</a></sup> claimed to have definitively established a finite value of $\alpha$, they were based on simulations of DLA clusters over only tens of thousands of steps, whereas the later simulations of Grebenkov and Beliaev suggest that the cluster&rsquo;s shape changes dramatically over 100 times as many steps. Additionally, many (at least nine, by my count) earlier studies predicted that $p_{min} (t)$ decays faster than any inverse power of $L(t)$, and it is unclear how the concerns raised by these analytical studies are addressed by the simulations which claim a finite $\alpha$.<sup id="fnref:12"><a href="#fn:12" class="footnote-ref" role="doc-noteref">12</a></sup></p>
+<h2 id="what-if-multifractality-fails">What if multifractality fails? <a href="#what-if-multifractality-fails" class="anchor">🔗</a></h2><p>If multifractality fails for $p_{min} (t)$, meaning that no finite $\alpha$ satisfies
+$$ p_{min} (t) \approx L(t)^{-\alpha}, $$
+then we can ask: How rapidly does $p_{min} (t)$ decrease, as a function of $t$? My recent work with Shirshendu Ganguly and Alan Hammond partly addresses this question.<sup id="fnref:13"><a href="#fn:13" class="footnote-ref" role="doc-noteref">13</a></sup> Translated into this context, our result states that there is a constant $C$ such that, for all sufficiently large $t$,
+$$ \log p_{min} (t) \geq -C L(t). $$
+Hence, the least positive growth probability can be no smaller than exponential in the linear size of the cluster. For example, this rules-out the prediction made by Lee and Stanley<sup id="fnref:14"><a href="#fn:14" class="footnote-ref" role="doc-noteref">14</a></sup> that
+$$ \log p_{min} (t) \approx -L(t)^2, $$
+as well as the form predicted by Blumenfeld and Aharony,<sup id="fnref:15"><a href="#fn:15" class="footnote-ref" role="doc-noteref">15</a></sup>
+$$ \log p_{min} (t) \approx - \frac{L(t)^c}{\log L(t)}, $$
+when $c &gt; 1$.</p>
+<p>To my knowledge, this is the first instance of a rigorous result ruling-out predictions made about DLA in the physics literature.</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>It is also possible to define DLA on other graphs.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>Thomas A. Witten Jr and Leonard M. Sander. Diffusion-limited aggregation, a kinetic critical phenomenon. <em>Physical Review Letters</em>, 47(19):1400, 1981.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p><a href="/posts/a-conjecture-about-harmonic-measure">This post</a> defines harmonic measure.&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4" role="doc-endnote">
+<p>Denis S. Grebenkov and Dmitry Beliaev. How anisotropy beats fractality in two-dimensional on-lattice
+diffusion-limited-aggregation growth. <em>Phys. Rev. E</em>, 96:042159, Oct 2017.&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5" role="doc-endnote">
+<p>Harry Kesten. Upper bounds for the growth rate of DLA. <em>Physica A: Statistical Mechanics and its Applications</em>,
+168(1):529&ndash;535, 1990.&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:6" role="doc-endnote">
+<p>Dorothea M. Eberz-Wagner. <em>Discrete growth models</em>. PhD thesis, University of Washington, 1999.&#160;<a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:7" role="doc-endnote">
+<p>Paul Meakin. Scaling properties for the growth probability measure and harmonic
+measure of fractal structures. <em>Phys. Rev. A</em>, 35:2234&ndash;2245, Mar 1987.&#160;<a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:8" role="doc-endnote">
+<p>Note that $\beta$ must lie in this interval because the cluster has least linear size when it is a  disk, and greatest linear size when it is a line.&#160;<a href="#fnref:8" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:9" role="doc-endnote">
+<p>There are many; here are two.</p>
+<p>Thomas C. Halsey and Michael Leibig Theory of branched growth. <em>Phys. Rev. A</em>, 46:7793&ndash;7809, Dec 1992.</p>
+<p>Leonid A. Turkevich and Harvey Scher. Occupancy-probability scaling in diffusion-limited aggregation. <em>Phys. Rev. Lett.</em>, 55:1026&ndash;1029, Aug 1985.&#160;<a href="#fnref:9" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:10" role="doc-endnote">
+<p>Again, there are many; here are two.</p>
+<p>Benny Davidovitch, Anders Levermann, and Itamar Procaccia. Convergent calculation of the asymptotic dimension of diffusion
+limited aggregates: Scaling and renormalization of small clusters. <em>Phys. Rev. E</em>, 62:R5919&ndash;R5922, Nov 2000.</p>
+<p>Marek Wolf. Hitting probabilities of diffusion-limited-aggregation clusters. <em>Phys. Rev. A</em>, 43:5504&ndash;5517, May 1991.&#160;<a href="#fnref:10" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:11" role="doc-endnote">
+<p>These are the two papers.</p>
+<p>Benny Davidovitch, Mogens~H. Jensen, Anders Levermann, Joachim Mathiesen, and
+Itamar Procaccia. Thermodynamic formalism of the harmonic measure of diffusion limited
+aggregates: Phase transition. <em>Phys. Rev. Lett.</em>, 87:164101, Oct 2001.</p>
+<p>Mogens H. Jensen, Anders Levermann, Joachim Mathiesen, and Itamar Procaccia. Multifractal structure of the harmonic measure of diffusion-limited
+aggregates. <em>Phys. Rev. E</em>, 65:046109, Mar 2002.&#160;<a href="#fnref:11" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:12" role="doc-endnote">
+<p>There are many; here are two.</p>
+<p>C. J. G. Evertsz, P. W. Jones, and B. B. Mandelbrot. Behaviour of the harmonic measure at the bottom of fjords. <em>Journal of Physics A: Mathematical and General</em>, 24(8):1889, 1991.</p>
+<p>H. G. E. Hentschel. Wedge fjord model for dendritic growth. <em>Physical Review A</em>, 46(12):R7379&ndash;R7382, 12 1992.&#160;<a href="#fnref:12" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:13" role="doc-endnote">
+<p>Jacob Calvert, Shirshendu Ganguly, and Alan Hammond. Collapse and diffusion in harmonic activation and transport. <em>arXiv preprint arXiv:2110.13895</em>, 2021.&#160;<a href="#fnref:13" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:14" role="doc-endnote">
+<p>Jysoo Lee and H. Eugene Stanley. Phase transition in the multifractal spectrum of diffusion-limited
+aggregation. <em>Phys. Rev. Lett.</em>, 61:2945&ndash;2948, Dec 1988.&#160;<a href="#fnref:14" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:15" role="doc-endnote">
+<p>Raphael Blumenfeld and Amnon Aharony. Breakdown of multifractal behavior in diffusion-limited aggregates. <em>Phys. Rev. Lett.</em>, 62:2977&ndash;2980, Jun 1989.&#160;<a href="#fnref:15" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+    </div>
+
+    
+        <div class="tags">
+            
+                <a href="https://jscalvert.github.io/tags/probability">probability</a>
+            
+                <a href="https://jscalvert.github.io/tags/harmonic-measure">harmonic measure</a>
+            
+                <a href="https://jscalvert.github.io/tags/paper-highlights">paper highlights</a>
+            
+                <a href="https://jscalvert.github.io/tags/laplacian-growth">Laplacian growth</a>
+            
+                <a href="https://jscalvert.github.io/tags/diffusion-limited-aggregation">diffusion-limited aggregation</a>
+            
+        </div>
+    
+    
+    
+
+</section>
+<script>
+      renderMathInElement(
+          document.getElementById("test"),
+          {
+              delimiters: [
+                  {left: "$$", right: "$$", display: true},
+                  {left: "$", right: "$", display: false},
+                  {left: "\\begin{equation}", right: "\\end{equation}", display: true},
+                  {left: "\\begin{align}", right: "\\end{align}", display: true},
+                  {left: "\\begin{alignat}", right: "\\end{alignat}", display: true},
+                  {left: "\\begin{gather}", right: "\\end{gather}", display: true},
+                  {left: "\\(", right: "\\)", display: false},
+                  {left: "\\[", right: "\\]", display: true}
+              ]
+          }
+      );
+    </script>
+
+    </main>
+    
+    <footer id="footer">
+    
+
+    <div class="copyright">
+    
+        © Copyright 2022 Jacob Calvert
+    
+    </div>
+
+    
+      <div class="powerby">
+        Powered by <a href='http://www.gohugo.io/'>Hugo</a> Theme By <a href='https://https://github.com/nodejh/hugo-theme-mini'>nodejh</a>
+      </div>
+    
+</footer>
+
+
+
+    
+  </body>
+</html>

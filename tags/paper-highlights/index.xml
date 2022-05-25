@@ -6,7 +6,16 @@
     <description>Recent content in paper highlights on Jacob Calvert</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 29 Apr 2022 12:32:46 -0700</lastBuildDate><atom:link href="https://jscalvert.github.io/tags/paper-highlights/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 24 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jscalvert.github.io/tags/paper-highlights/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The first disproof of a prediction about DLA</title>
+      <link>https://jscalvert.github.io/posts/discrepancy-in-dla-research/</link>
+      <pubDate>Tue, 24 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jscalvert.github.io/posts/discrepancy-in-dla-research/</guid>
+      <description>&lt;p&gt;This post highlights recent work which, for the first time, rigorously rules-out a prediction made about diffusion-limited aggregation, a paradigmatic model of random, dendritic growth.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>A conjecture about harmonic measure</title>
       <link>https://jscalvert.github.io/posts/a-conjecture-about-harmonic-measure/</link>
