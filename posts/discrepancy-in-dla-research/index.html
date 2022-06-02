@@ -14,12 +14,12 @@
 </script>
     
 
-    <title>The first disproof of a prediction about DLA | Jacob Calvert</title>
+    <title>A third rigorous result about DLA | Jacob Calvert</title>
 
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">    
 <meta name="viewport" content="width=device-width,minimum-scale=1">
-<meta name="description" content="This post highlights recent work which, for the first time, rigorously disproves a prediction made about diffusion-limited aggregation (DLA), a paradigmatic model of random, dendritic growth.">
+<meta name="description" content="This post highlights recent work which constitutes only the third rigorous result about planar diffusion-limited aggregation (DLA), a paradigmatic model of random, dendritic growth.">
 <meta name="generator" content="Hugo 0.97.3" />
 
 
@@ -83,7 +83,7 @@
       
 
 <section id="single">
-    <h1 class="title">The first disproof of a prediction about DLA</h1>
+    <h1 class="title">A third rigorous result about DLA</h1>
 
     <div class="tip">
         <time datetime="2022-05-24 00:00:00 &#43;0000 UTC">May 24, 2022</time>
@@ -91,7 +91,7 @@
           ·
         </span>
         <span>
-          1245 words
+          1226 words
         </span>
         <span class="split">
           ·
@@ -128,7 +128,7 @@
 
 
     <div class="content">
-      <p>This post highlights recent work which, for the first time, rigorously disproves a prediction made about diffusion-limited aggregation (DLA), a paradigmatic model of random, dendritic growth.</p>
+      <p>This post highlights recent work which constitutes only the third rigorous result about planar diffusion-limited aggregation (DLA), a paradigmatic model of random, dendritic growth.</p>
 <h1 id="the-definition-of-dla">The definition of DLA <a href="#the-definition-of-dla" class="anchor">🔗</a></h1><p>DLA is a random process which grows a connected subset, or cluster, of the two-dimensional Euclidean lattice $\mathbb{Z}^2$, one element at a time.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> It was introduced by Witten and Sander in 1981 and serves to model a variety of physical phenomena, such as electrodeposition and Hele-Shaw flow.<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> Start with a set $A_0 = \{o\}$ consisting of the origin $o$. One step of the dynamics is given by
 $$ A_{t+1} = A_t \cup \{X\},$$
 where $X$ is the first site in the boundary of $A_t$ visited by a simple random walk &ldquo;from infinity.&rdquo; In other words, DLA is a Markov chain with transition probabilities (known in this context as growth probabilities) given by
@@ -143,8 +143,9 @@ $$ P (A_{t+1} = A_t \cup \{x\} \bigm\vert A_t) = H_{\partial A_t} (x), $$</p>
 
 <h1 id="there-are-few-rigorous-results-about-dla">There are few rigorous results about DLA <a href="#there-are-few-rigorous-results-about-dla" class="anchor">🔗</a></h1><p>Before discussing the multifractal conjecture in greater detail, it is worth highlighting the extent to which DLA has evaded rigorous study. Despite being introduced more than 40 years ago, there are only <em>two</em> non-trivial, rigorous results about DLA on $\mathbb{Z}^2$. The first, due to Kesten,<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup> states that there is a number $C &lt; \infty$ such that, almost surely, for all sufficiently large $t$, the diameter of the cluster at time $t$ satisfies
 $$ \mathrm{diam} (A_t) \leq C t^{\frac{2}{3}}. $$
+This result is a consequence of an upper bound on the harmonic measure of a connected set.
 The second, due to Eberz-Wagner,<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup> states that, almost surely, the DLA cluster will have infinitely-many holes.</p>
-<p>Neither of these results conflicts with a prediction made about DLA in the physics literature. In contrast, a bound on harmonic measure that I recently obtained with Shirshendu Ganguly and Alan Hammond does. To my knowledge, this is the first instance of a rigorous result disproving a prediction about DLA. The next section elaborates this point.</p>
+<p>The third rigorous result about DLA comes from a harmonic measure lower bound I recently proved with Shirshendu Ganguly and Alan Hammond. This result is related to the conjectural multifractality of DLA.</p>
 <h1 id="the-multifractal-conjecture">The multifractal conjecture <a href="#the-multifractal-conjecture" class="anchor">🔗</a></h1><!-- raw HTML omitted -->
 <p>Informally, the assertion that DLA is multifractal means that the growth probabilities on the boundary of a typical cluster exhibit power-law scaling with the linear size of such a cluster.<sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup>
 In particular, concerning the least positive growth probability, $p_{min}$, we can make &ldquo;typical&rdquo; precise via expectation, by defining
@@ -166,17 +167,17 @@ $$ p_{min} (t) \approx L(t)^{-\alpha}, $$
 then it is natural to wonder: How rapidly can $p_{min} (t)$ decrease, as a function of $L(t)$?</p>
 <p>My recent work with Shirshendu Ganguly and Alan Hammond includes a harmonic measure lower bound, which partly addresses this question.<sup id="fnref:10"><a href="#fn:10" class="footnote-ref" role="doc-noteref">10</a></sup> Specifically, our result states that there is a positive number $C_1$ such that, if $B$ is a connected, $n$-element subset of $\mathbb{Z}^2$, then
 $$ \log \min \{ H_B (x): H_B (x) &gt; 0 \} \geq -C_1 n. $$
-In the context of DLA, this implies that there is a positive number $C_2$ such that, for sufficiently large $t$,
-$$ \log p_{min} (t) \geq -C_2 t. $$
-Since Kesten&rsquo;s bound implies $L(t) \leq C_3 t^{\frac{2}{3}}$ for a positive number $C_3$ and sufficiently large $t$, we conclude that $p_{min} (t)$ must satisfy
-$$ \log p_{min} (t) \geq -C L(t)^{\frac{3}{2}}, $$
-again for a positive number $C$ and sufficiently large $t$.</p>
-<p>Hence, the smallest growth probability can be no smaller than exponential in $L(t)^\frac{3}{2}$. For example, this rules-out the prediction made by Lee and Stanley<sup id="fnref:11"><a href="#fn:11" class="footnote-ref" role="doc-noteref">11</a></sup> that
-$$ \log p_{min} (t) \approx -L(t)^2, $$
-as well as the form predicted by Blumenfeld and Aharony,<sup id="fnref:12"><a href="#fn:12" class="footnote-ref" role="doc-noteref">12</a></sup>
-$$ \log p_{min} (t) \approx - \frac{L(t)^\beta}{\log L(t)}, $$
-when $\beta &gt; \frac{3}{2}$.</p>
-<p><strong>Takeaway</strong>: <em>A bound on harmonic measure disproves predictions about the smallest growth probability in DLA, which is related to the conjecture that DLA is multifractal.</em></p>
+In the context of DLA, this implies that there is a positive number $C_2$ such that, for $t \geq 1$,
+$$ \log p_{min} (t) \geq -C_2 t. $$</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>Hence, the smallest growth probability can be no smaller than exponential in $t$.</p>
+<p>Compare this to the prediction made by Lee and Stanley<sup id="fnref:11"><a href="#fn:11" class="footnote-ref" role="doc-noteref">11</a></sup> that the smallest positive growth probability $\widetilde p$ among DLA clusters with linear size $\widetilde L$ satisfies
+$$ \log \widetilde p \approx - \widetilde L^2, $$
+which agrees with our result because the linear size at least scales as $t^{\frac{1}{2}}$. Additionally, consider the form assumed by Blumenfeld and Aharony,<sup id="fnref:12"><a href="#fn:12" class="footnote-ref" role="doc-noteref">12</a></sup>
+$$ \log p_{min} (t) \approx - t^\beta, $$
+which our result constrains to $\beta &lt; 1$.</p>
+<p><strong>Takeaway</strong>: <em>A result about harmonic measure leads to the third rigorous result about DLA, which is a lower bound on the smallest growth probability.</em></p>
 <section class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
