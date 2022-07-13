@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+ 
+    
+      
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M3NJZLRV9F"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-M3NJZLRV9F');
+</script>
+    
+
+    <title>Markov chain dichotomy and collective motion | Jacob Calvert</title>
+
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">    
+<meta name="viewport" content="width=device-width,minimum-scale=1">
+<meta name="description" content="This post explains how the Markov chain dichotomy of transience and recurrence implies dichotomous behavior of diameter for certain models of collective motion.">
+<meta name="generator" content="Hugo 0.97.3" />
+
+
+  <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+
+<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+
+
+
+
+  
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css" integrity="sha384-KiWOvVjnN8qwAZbuQyWDIbfCLFhLXNETzBQjA/92pIowpC0d2O3nppDGQVgwd2nB" crossorigin="anonymous">
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js" integrity="sha384-0fdwu/T/EQMsQlrHCCHoH10pkPLlKA1jL5dFyUOvB3lfeT2540/2g6YgSi2BL14p" crossorigin="anonymous"></script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "$", right: "$", display: false}
+            ]
+        });
+    });
+</script>
+
+
+
+
+
+
+  </head>
+
+  <body>
+    <nav class="navigation">
+	
+		<a href="/"> <span class="arrow">←</span>Home</a>
+	
+	
+	<a href="/about">About</a>
+	<a href="/papers">Papers</a>
+	<a href="/posts">Posts</a>
+	<a href="/tags">Tags</a>
+	
+
+	
+</nav>
+
+
+    <main class="main">
+      
+
+<section id="single">
+    <h1 class="title">Markov chain dichotomy and collective motion</h1>
+
+    <div class="tip">
+        <time datetime="2022-07-13 13:52:11 -0400 EDT">Jul 13, 2022</time>
+        <span class="split">
+          ·
+        </span>
+        <span>
+          536 words
+        </span>
+        <span class="split">
+          ·
+        </span>
+        <span>
+          3 minute read
+        </span>
+    </div>
+
+    
+    
+        
+  
+
+
+    
+
+
+    <div class="content">
+      <p>This post explains how the Markov chain dichotomy of transience and recurrence implies dichotomous behavior of diameter for certain models of collective motion.</p>
+<p>One way to model the motion of a collective with $n$ individuals is as a Markov chain on $n$-element subsets of the vertex set of a graph.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> For example, consider the state space
+$$
+\Omega := \{ A \subset \mathbb{Z}^d: |A| = n\}
+$$
+for positive integers $d$ and $n$.</p>
+<p>If only the relative positions of the individuals matter, then it is natural to view the elements of $\Omega$ up to translation. Specifically, define the equivalence relation $\sim$ on $\Omega$ according to $A \sim B$ if $A$ is a translate of $B$, i.e.,
+$$
+A \sim B \quad \text{if} \quad \exists \, z \in \mathbb{Z}^d: B = \{a+z: a \in A\}.
+$$
+Denote by $\widehat{A}$ the class of elements of $\Omega$ which are translates of $A$ and define $\mathrm{diam} (\widehat{A})$ to be the diameter of any representative of the class $\widehat{A}$.</p>
+<p>A standard result in Markov chain theory states that an irreducible Markov chain
+$$
+(X(0), X(1), \dots)
+$$
+on a countable state space $\Sigma$ is either transient or recurrent. Define the number of visits it makes to $\sigma \in \Sigma$ by
+$$
+V (\sigma) := \sum_{t=0}^\infty \mathbf{1}_{\{ X(t) = \sigma\}}.
+$$
+Transience means that
+$$
+\forall \, \sigma \in \Sigma, \quad \mathbb{P} \big( V(\sigma) = \infty \bigm\vert X(0) = \sigma \big) = 0,
+$$
+while recurrence means
+$$
+\forall \, \sigma \in \Sigma, \quad \mathbb{P} \big( V(\sigma) = \infty \bigm\vert Y(0) = \sigma \big) = 1.
+$$</p>
+<p>Assume that
+$$
+(U(0), U(1), \dots)
+$$
+is an irreducible Markov chain on $\Omega$, in which case
+$$
+(\widehat{U}(0), \widehat{U}(1), \dots)
+$$
+is an irreducible Markov chain on $\widehat{\Omega}$.</p>
+<p>Suppose that $(\widehat{U}(t))_{t\geq 0}$ is transient. For any real number $r$, there are only finitely many classes in $\widehat{\Omega}$ with diameter of $r$ or less, i.e., in
+$$
+\{ \widehat{\omega} \in \widehat{\Omega}: \mathrm{diam} (\widehat{\omega}) \leq r \}.
+$$
+By the transience condition, these finitely many states are each visited only finitely many times almost surely, hence
+$$
+\forall \, \widehat{\omega} \in \widehat{\Omega}, \quad \mathbb{P} \big( \liminf_t \mathrm{diam} (\widehat{U} (t)) &gt; r \bigm\vert \widehat{U} (0) = \widehat{\omega} \big) = 1.
+$$
+Since the event in question is decreasing in $r$, this implies
+$${\color{blue}
+\forall \, \widehat{\omega} \in \widehat{\Omega}, \quad \mathbb{P} \big( \liminf_t \mathrm{diam} (\widehat{U} (t)) = \infty \bigm\vert \widehat{U} (0) = \widehat{\omega} \big) = 1.}
+$$</p>
+<p>Suppose instead that $(\widehat{U}(t))_{t\geq 0}$ is recurrent. While the diameter of $\widehat{U} (t)$ may become arbitrarily large, it nevertheless visits states with finite diameter infinitely often. Hence
+$${\color{blue}
+\forall \, \widehat{\omega} \in \widehat{\Omega}, \quad \mathbb{P} \big( \liminf_t \mathrm{diam} ( \widehat{U} (t) ) &lt; \infty \bigm\vert \widehat{U} (0) = \widehat{\omega} \big) = 1.}
+$$</p>
+<p>The two blue displays show how the dichotomy of transience and recurrence implies a dichotomy in the behavior of diameter for Markov chains which naturally arise in the study of collective motion.</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>Sarah Cannon, Joshua J. Daymude, Dana Randall, and Andréa W. Richa A Markov chain algorithm for compression in self-organizing
+particle systems. In <em>Proceedings of the 2016 ACM Symposium on Principles of
+Distributed Computing</em>, PODC &lsquo;16, pages 279&ndash;288, New York, NY, USA, 2016.
+Association for Computing Machinery.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+    </div>
+
+    
+        <div class="tags">
+            
+                <a href="https://jscalvert.github.io/tags/probability">probability</a>
+            
+                <a href="https://jscalvert.github.io/tags/markov-chains">Markov chains</a>
+            
+                <a href="https://jscalvert.github.io/tags/collective-motion">collective motion</a>
+            
+        </div>
+    
+    
+    
+
+</section>
+<script>
+      renderMathInElement(
+          document.getElementById("test"),
+          {
+              delimiters: [
+                  {left: "$$", right: "$$", display: true},
+                  {left: "$", right: "$", display: false},
+                  {left: "\\begin{equation}", right: "\\end{equation}", display: true},
+                  {left: "\\begin{align}", right: "\\end{align}", display: true},
+                  {left: "\\begin{alignat}", right: "\\end{alignat}", display: true},
+                  {left: "\\begin{gather}", right: "\\end{gather}", display: true},
+                  {left: "\\(", right: "\\)", display: false},
+                  {left: "\\[", right: "\\]", display: true}
+              ]
+          }
+      );
+    </script>
+
+    </main>
+    
+    <footer id="footer">
+    
+
+    <div class="copyright">
+    
+        © Copyright 2022 Jacob Calvert
+    
+    </div>
+
+    
+      <div class="powerby">
+        Powered by <a href='http://www.gohugo.io/'>Hugo</a> Theme By <a href='https://https://github.com/nodejh/hugo-theme-mini'>nodejh</a>
+      </div>
+    
+</footer>
+
+
+
+    
+  </body>
+</html>

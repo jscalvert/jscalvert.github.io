@@ -6,7 +6,16 @@
     <description>Recent content in Posts on Jacob Calvert</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jscalvert.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 13 Jul 2022 13:52:11 -0400</lastBuildDate><atom:link href="https://jscalvert.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Markov chain dichotomy and collective motion</title>
+      <link>https://jscalvert.github.io/posts/markov-chain-dichotomy/</link>
+      <pubDate>Wed, 13 Jul 2022 13:52:11 -0400</pubDate>
+      
+      <guid>https://jscalvert.github.io/posts/markov-chain-dichotomy/</guid>
+      <description>&lt;p&gt;This post explains how the Markov chain dichotomy of transience and recurrence implies dichotomous behavior of diameter for certain models of collective motion.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>A third rigorous result about DLA</title>
       <link>https://jscalvert.github.io/posts/discrepancy-in-dla-research/</link>
