@@ -8,12 +8,12 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 24 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jscalvert.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Markov chain dichotomy and collective motion</title>
+      <title>A dichotomy in models of collective motion</title>
       <link>https://jscalvert.github.io/posts/markov-chain-dichotomy/</link>
       <pubDate>Wed, 13 Jul 2022 13:52:11 -0400</pubDate>
       
       <guid>https://jscalvert.github.io/posts/markov-chain-dichotomy/</guid>
-      <description>&lt;p&gt;This post explains how the Markov chain dichotomy of transience and recurrence implies dichotomous behavior of diameter for certain models of collective motion.&lt;/p&gt;</description>
+      <description>&lt;p&gt;This post explains how the Markov chain dichotomy of transience and recurrence implies dichotomous behavior for certain models of collective motion.&lt;/p&gt;</description>
     </item>
     
     <item>
