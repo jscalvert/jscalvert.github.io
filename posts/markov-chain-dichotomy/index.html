@@ -20,7 +20,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">    
 <meta name="viewport" content="width=device-width,minimum-scale=1">
 <meta name="description" content="This post explains how the Markov chain dichotomy of transience and recurrence implies dichotomous behavior for certain models of collective motion.">
-<meta name="generator" content="Hugo 0.97.3" />
+<meta name="generator" content="Hugo 0.104.2" />
 
 
   <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -185,43 +185,43 @@ $${\color{blue}
 \forall \, \widehat{\omega} \in \widehat{\Omega}, \quad \mathbb{P} \big( \liminf_t \mathrm{diam} ( \widehat{U} (t) ) &lt; \infty \bigm\vert \widehat{U} (0) = \widehat{\omega} \big) = 1.}
 $$</p>
 <h1 id="discussion">Discussion <a href="#discussion" class="anchor">🔗</a></h1><p><strong>Some collectives can exhibit both behaviors of diameter as $n$ varies</strong></p>
-<p>The pairs of red and blue statements show how the dichotomy of transience and recurrence implies a dichotomy in the behavior of diameter for Markov chain models of collective motion. For some models, like those which require the state to be a connected set, this dichotomy is irrelevant because the diameter is bounded in terms of the number of elements.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> However, other models can realize both behaviors of diameter as $d$ and $n$ vary.</p>
-<p>Indeed, for some values of $d$ and $n$, if HAT starts in a state with sufficiently large diameter, $r$, it tends to reach a state with a diameter of roughly $\log r$ over roughly $\log r$ steps.<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> For other values of $d$ and $n$, HAT reaches a state consisting of well separated &ldquo;clusters&rdquo; of elements, which then grow increasingly separated, leading to unchecked diameter growth.<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup> The remarkable fact that the number of individuals mediates the different collective behaviors of HAT is the subject of an older <a href="/posts/quorum-transitions">post</a>.</p>
+<p>The pairs of red and blue statements show how the dichotomy of transience and recurrence implies a dichotomy in the behavior of diameter for Markov chain models of collective motion. For some models, like those which require the state to be a connected set, this dichotomy is irrelevant because the diameter is bounded in terms of the number of elements.<sup id="fnref1:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> However, other models can realize both behaviors of diameter as $d$ and $n$ vary.</p>
+<p>Indeed, for some values of $d$ and $n$, if HAT starts in a state with sufficiently large diameter, $r$, it tends to reach a state with a diameter of roughly $\log r$ over roughly $\log r$ steps.<sup id="fnref1:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> For other values of $d$ and $n$, HAT reaches a state consisting of well separated &ldquo;clusters&rdquo; of elements, which then grow increasingly separated, leading to unchecked diameter growth.<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup> The remarkable fact that the number of individuals mediates the different collective behaviors of HAT is the subject of an older <a href="/posts/quorum-transitions">post</a>.</p>
 <p><strong>This change in behavior differs from familiar phase transitions</strong></p>
 <p>When a family of Markov chains indexed by $d$ and $n$ exhibits the two behaviors of diameter, the transition between them is an abrupt change in collective behavior akin to a phase transition. However, it differs in key ways from phase transitions in equilibrium statistical mechanics. For example, instead of being mediated by an inverse temperature parameter taking continuous values, the phase transition in HAT is mediated by discrete parameters, $d$ and $n$. Moreover, instead of occurring in a limit as $n \to \infty$, the phase transition in diameter occurs for finite $n$.</p>
-<p>Li et al. used an Ising model&ndash;like phase transition to program a robot swarm to assume dispersed or aggregated phases, depending on the value of an inverse temperature parameter.<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> To do so, they encoded a bias toward aggregated states in the stationary distribution of a Markov chain, the dynamics of which the robot swarm implemented. In other words, the phase transition is reflected in two, stationary&mdash;hence recurrent&mdash;behaviors of the Markov chain.<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup> This contrasts the diameter dichotomy, which is associated with a recurrent behavior and a transient behavior. In this sense, the phase transition in HAT is occurring <em>between classes</em> whereas the one used by Li et al. is occurring <em>within one class</em>.</p>
+<p>Li et al. used an Ising model&ndash;like phase transition to program a robot swarm to assume dispersed or aggregated phases, depending on the value of an inverse temperature parameter.<sup id="fnref1:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> To do so, they encoded a bias toward aggregated states in the stationary distribution of a Markov chain, the dynamics of which the robot swarm implemented. In other words, the phase transition is reflected in two, stationary&mdash;hence recurrent&mdash;behaviors of the Markov chain.<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup> This contrasts the diameter dichotomy, which is associated with a recurrent behavior and a transient behavior. In this sense, the phase transition in HAT is occurring <em>between classes</em> whereas the one used by Li et al. is occurring <em>within one class</em>.</p>
 <p><strong>Takeaway:</strong> <em>Some models of collective motion, depending on $n$, the number of individuals in the collective, must exhibit exactly one of two behaviors of the collective&rsquo;s diameter. As $n$ varies, it is possible for the collective motion to switch between these behaviors. This is like a phase transition, but it differs in key ways from those of equilibrium statistical mechanics and those recently used to program robot swarms.</em></p>
-<section class="footnotes" role="doc-endnotes">
+<div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
-<li id="fn:1" role="doc-endnote">
+<li id="fn:1">
 <p>Sarah Cannon, Joshua J. Daymude, Dana Randall, and Andréa W. Richa A Markov chain algorithm for compression in self-organizing
 particle systems. In <em>Proceedings of the 2016 ACM Symposium on Principles of
 Distributed Computing</em>, PODC &lsquo;16, pages 279&ndash;288, New York, NY, USA, 2016.
-Association for Computing Machinery.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+Association for Computing Machinery.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref1:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:2" role="doc-endnote">
+<li id="fn:2">
 <p>Shengkai Li, Bahnisikha Dutta, Sarah Cannon, Joshua J. Daymude, Ram Avinery,
 Enes Aydin, Andréa W. Richa, Daniel I. Goldman, and Dana Randall. Programming active cohesive granular matter with mechanically induced
-phase changes. <em>Science Advances</em>, 7(17):eabe8494, 2021.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+phase changes. <em>Science Advances</em>, 7(17):eabe8494, 2021.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref1:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:3" role="doc-endnote">
-<p>Jacob Calvert, Shirshendu Ganguly, and Alan Hammond. Collapse and diffusion in harmonic activation and transport. Preprint available at <a href="https://arxiv.org/abs/2110.13895" target="_blank" rel="noopener">arXiv:2110.13895</a>.&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<li id="fn:3">
+<p>Jacob Calvert, Shirshendu Ganguly, and Alan Hammond. Collapse and diffusion in harmonic activation and transport. Preprint available at <a href="https://arxiv.org/abs/2110.13895" target="_blank" rel="noopener">arXiv:2110.13895</a>.&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref1:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:4" role="doc-endnote">
+<li id="fn:4">
 <p>Zahra Derakhshandeh, Robert Gmyr, Thim Strothmann, Rida Bazzi, Andréa W. Richa, and Christian Scheideler. Leader election and shape formation with self-organizing programmable
 matter. In Andrew Phillips and Peng Yin, editors, <em>DNA Computing and
 Molecular Programming</em>, pages 117&ndash;132, Cham, 2015. Springer International
 Publishing.&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:5" role="doc-endnote">
+<li id="fn:5">
 <p>Jacob Calvert. Existence of a phase transition in harmonic activation and transport. Preprint available at <a href="https://arxiv.org/abs/2110.13893" target="_blank" rel="noopener">arXiv:2110.13893</a>.&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:6" role="doc-endnote">
+<li id="fn:6">
 <p>Of course, the phase transition only occurs in the $n \to \infty$ limit. The Li et al. paper describes experiments with a swarm of dozens of robots, and simulations with hundreds.&#160;<a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
-</section>
+</div>
     </div>
 
     
