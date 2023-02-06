@@ -6,7 +6,16 @@
     <description>Recent content in programmable matter on Jacob Calvert</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 27 Apr 2022 13:46:26 -0700</lastBuildDate><atom:link href="https://jscalvert.github.io/tags/programmable-matter/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 05 Feb 2023 09:21:46 -0800</lastBuildDate><atom:link href="https://jscalvert.github.io/tags/programmable-matter/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>New paper on critical numerosity</title>
+      <link>https://jscalvert.github.io/posts/critical-numerosity-paper/</link>
+      <pubDate>Sun, 05 Feb 2023 09:21:46 -0800</pubDate>
+      
+      <guid>https://jscalvert.github.io/posts/critical-numerosity-paper/</guid>
+      <description>&lt;p&gt;My latest &lt;a href=&#34;https://jscalvert.github.io/pdfs/cat.pdf&#34;&gt;paper&lt;/a&gt; introduces the concept of critical numerosity: A number of individuals above and below which the behavior of a collective qualitatively differs.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Numerosity-driven phase transitions</title>
       <link>https://jscalvert.github.io/posts/quorum-transitions/</link>

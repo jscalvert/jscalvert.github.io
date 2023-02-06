@@ -8,6 +8,51 @@
     <language>en-us</language>
     <lastBuildDate>Mon, 25 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jscalvert.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>collective behavior</title>
+      <link>https://jscalvert.github.io/tags/collective-behavior/</link>
+      <pubDate>Sun, 05 Feb 2023 09:21:46 -0800</pubDate>
+      
+      <guid>https://jscalvert.github.io/tags/collective-behavior/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>critical numerosity</title>
+      <link>https://jscalvert.github.io/tags/critical-numerosity/</link>
+      <pubDate>Sun, 05 Feb 2023 09:21:46 -0800</pubDate>
+      
+      <guid>https://jscalvert.github.io/tags/critical-numerosity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>paper highlights</title>
+      <link>https://jscalvert.github.io/tags/paper-highlights/</link>
+      <pubDate>Sun, 05 Feb 2023 09:21:46 -0800</pubDate>
+      
+      <guid>https://jscalvert.github.io/tags/paper-highlights/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>probability</title>
+      <link>https://jscalvert.github.io/tags/probability/</link>
+      <pubDate>Sun, 05 Feb 2023 09:21:46 -0800</pubDate>
+      
+      <guid>https://jscalvert.github.io/tags/probability/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>programmable matter</title>
+      <link>https://jscalvert.github.io/tags/programmable-matter/</link>
+      <pubDate>Sun, 05 Feb 2023 09:21:46 -0800</pubDate>
+      
+      <guid>https://jscalvert.github.io/tags/programmable-matter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>collective motion</title>
       <link>https://jscalvert.github.io/tags/collective-motion/</link>
       <pubDate>Wed, 13 Jul 2022 13:52:11 -0400</pubDate>
@@ -22,24 +67,6 @@
       <pubDate>Wed, 13 Jul 2022 13:52:11 -0400</pubDate>
       
       <guid>https://jscalvert.github.io/tags/markov-chains/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>paper highlights</title>
-      <link>https://jscalvert.github.io/tags/paper-highlights/</link>
-      <pubDate>Wed, 13 Jul 2022 13:52:11 -0400</pubDate>
-      
-      <guid>https://jscalvert.github.io/tags/paper-highlights/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>probability</title>
-      <link>https://jscalvert.github.io/tags/probability/</link>
-      <pubDate>Wed, 13 Jul 2022 13:52:11 -0400</pubDate>
-      
-      <guid>https://jscalvert.github.io/tags/probability/</guid>
       <description></description>
     </item>
     
@@ -89,11 +116,11 @@
     </item>
     
     <item>
-      <title>programmable matter</title>
-      <link>https://jscalvert.github.io/tags/programmable-matter/</link>
+      <title>numerosity</title>
+      <link>https://jscalvert.github.io/tags/numerosity/</link>
       <pubDate>Wed, 27 Apr 2022 13:46:26 -0700</pubDate>
       
-      <guid>https://jscalvert.github.io/tags/programmable-matter/</guid>
+      <guid>https://jscalvert.github.io/tags/numerosity/</guid>
       <description></description>
     </item>
     
