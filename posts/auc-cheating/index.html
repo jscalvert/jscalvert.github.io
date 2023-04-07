@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+ 
+    
+      
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M3NJZLRV9F"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-M3NJZLRV9F');
+</script>
+    
+
+    <title>Dynamic clinical risk scores can cheat the AUC | Jacob Calvert</title>
+
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">    
+<meta name="viewport" content="width=device-width,minimum-scale=1">
+<meta name="description" content="Clinical risk scores can cheat the AUC when the time that an adverse event occurs in a positive-class stay tends to exceed the duration of a negative-class stay. Risk scores should be compared to uniformly random scores that match their timing.">
+<meta name="generator" content="Hugo 0.104.2" />
+
+
+  <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+
+<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+
+
+
+
+  
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css" integrity="sha384-KiWOvVjnN8qwAZbuQyWDIbfCLFhLXNETzBQjA/92pIowpC0d2O3nppDGQVgwd2nB" crossorigin="anonymous">
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js" integrity="sha384-0fdwu/T/EQMsQlrHCCHoH10pkPLlKA1jL5dFyUOvB3lfeT2540/2g6YgSi2BL14p" crossorigin="anonymous"></script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "$", right: "$", display: false}
+            ]
+        });
+    });
+</script>
+
+
+
+
+
+
+  </head>
+
+  <body>
+    <nav class="navigation">
+	
+		<a href="/"> <span class="arrow">←</span>Home</a>
+	
+	
+	<a href="/about">About</a>
+	<a href="/papers">Papers</a>
+	<a href="/posts">Posts</a>
+	<a href="/tags">Tags</a>
+	
+
+	
+</nav>
+
+
+    <main class="main">
+      
+
+<section id="single">
+    <h1 class="title">Dynamic clinical risk scores can cheat the AUC</h1>
+
+    <div class="tip">
+        <time datetime="2023-04-07 11:45:26 -0700 PDT">Apr 7, 2023</time>
+        <span class="split">
+          ·
+        </span>
+        <span>
+          625 words
+        </span>
+        <span class="split">
+          ·
+        </span>
+        <span>
+          3 minute read
+        </span>
+    </div>
+
+    
+    
+        
+  
+    <aside class="toc">
+      <details>
+          <summary>Table of Contents
+          </summary>
+          <div>
+              <nav id="TableOfContents">
+  <ul>
+    <li><a href="#auc-cheating">AUC cheating</a></li>
+    <li><a href="#practical-implications">Practical implications</a></li>
+  </ul>
+</nav>
+          </div>
+      </details>
+    </aside>
+  
+
+
+    
+
+
+    <div class="content">
+      <p>Clinical risk scores can cheat the AUC when the time that an adverse event occurs in a positive-class stay tends to exceed the duration of a negative-class stay. Risk scores should be compared to uniformly random scores that match their timing.</p>
+<p>Informally, area under the (receiver operating characteristic) curve (AUC) cheating occurs when risk scores that are i.i.d. standard uniform random variables result in an AUC greater than $0.5$.</p>
+<h1 id="auc-cheating">AUC cheating <a href="#auc-cheating" class="anchor">🔗</a></h1><p>Imagine that, at the beginning of every hour of each patient&rsquo;s hospital stay, you estimate the probability that they experience sepsis onset during their stay (a positive-class stay). At the first time that this estimate exceeds a predetermined threshold $t \in [0,1]$, you produce an alert. If this estimate never exceeds $t$ before the end of their stay, then you never produce an alert.</p>
+<p>Define $\tau_{onset}$ to be the time of sepsis onset, which is $\infty$ if the patient does not get sepsis during their stay (a negative-class stay), and $\tau_{end}$ to be the time that the stay ends. If you estimate the probability of sepsis onset by generating an i.i.d. sequence of standard uniform random variables, then the true and false positive rates are</p>
+<p>$$ TPR (t) = 1 - E_+ (t^{\tau_{onset}}) \quad \text{and} \quad FPR (t) = 1 - E_- (t^{\tau_{end}}),$$</p>
+<p>where $E_+$ and $E_-$ denote expectation with respect to $P_+$ and $P_-$, the conditional distributions of positive- and negative-class stays. A straightforward calculation shows that</p>
+<p>$$ AUC = E_{\tau_{onset} \sim P_+, \tau_{end} \sim P_-} \left( \frac{\tau_{onset}}{\tau_{onset} + \tau_{end}} \right).$$</p>
+<p>In other words, the AUC is the expected ratio of $\tau_{onset}$ to $\tau_{onset} + \tau_{end}$, where $\tau_{onset}$ is the sepsis onset time of a random positive-class stay and $\tau_{end}$ is the stay length of a random negative-class stay.</p>
+<p><strong>Example.</strong> If sepsis onset always occurs at the beginning of the $n$th hour of a positive-class stay and every negative-class stay lasts $m$ hours, then hourly, i.i.d., standard uniform risk scores result in an AUC of $\frac{n}{n+m},$ which exceeds $0.5$ when $n&gt;m$.</p>
+<p><strong>Some observations:</strong></p>
+<ul>
+<li>
+<p>The AUC can be cheated when the number of scores generated before the time of an adverse event (in a positive-class stay) tends to be greater than the number of scores generated before the end of a negative-class stay.</p>
+</li>
+<li>
+<p>When the opposite is true, uniformly random risk scores result in an alert system with an AUC below $0.5$. (Note that, in this case, the curve cannot be &ldquo;flipped&rdquo; along the diagonal to give an alert system with AUC above 0.5.)</p>
+</li>
+<li>
+<p>AUC cheating is not possible when at most one score is generated for each stay.</p>
+</li>
+</ul>
+<h1 id="practical-implications">Practical implications <a href="#practical-implications" class="anchor">🔗</a></h1><p>There are several practical implications for the development and evaluation of risk scores.</p>
+<ol>
+<li>The evaluation of a dynamic risk score should include a comparison with i.i.d. standard uniform risk scores generated at the same times.</li>
+<li>Alert systems that can generate more than one score per stay may have a structural advantage or disadvantage relative to those that generate at most one score per stay, in terms of AUC.
+<ul>
+<li>For example, it may be better to generate a score at most once, at a carefully chosen time, than it is to generate the score hourly.</li>
+<li>There are situations in which a &ldquo;smart&rdquo; score, generated at most once, performs worse than a &ldquo;dumb&rdquo; score, generated many times.</li>
+</ul>
+</li>
+<li>Since inclusion criteria affect the distributions of onset times and stay lengths, they can affect the potential for AUC cheating.
+<ul>
+<li>For example, suppose that you go from excluding stays shorter than 24 hours, to excluding stays shorter than 12 hours. This could disproportionately affect negative-class stays, making them relatively shorter, thereby increasing the potential for AUC cheating.</li>
+</ul>
+</li>
+<li>Differences between internal and external validation performance may be attributable to differences in the distributions of onset times and stay lengths.</li>
+</ol>
+    </div>
+
+    
+        <div class="tags">
+            
+                <a href="https://jscalvert.github.io/tags/probability">probability</a>
+            
+                <a href="https://jscalvert.github.io/tags/clinical-informatics">clinical informatics</a>
+            
+        </div>
+    
+    
+    
+
+</section>
+<script>
+      renderMathInElement(
+          document.getElementById("test"),
+          {
+              delimiters: [
+                  {left: "$$", right: "$$", display: true},
+                  {left: "$", right: "$", display: false},
+                  {left: "\\begin{equation}", right: "\\end{equation}", display: true},
+                  {left: "\\begin{align}", right: "\\end{align}", display: true},
+                  {left: "\\begin{alignat}", right: "\\end{alignat}", display: true},
+                  {left: "\\begin{gather}", right: "\\end{gather}", display: true},
+                  {left: "\\(", right: "\\)", display: false},
+                  {left: "\\[", right: "\\]", display: true}
+              ]
+          }
+      );
+    </script>
+
+    </main>
+    
+    <footer id="footer">
+    
+
+    <div class="copyright">
+    
+        © Copyright 2022 Jacob Calvert
+    
+    </div>
+
+    
+      <div class="powerby">
+        Powered by <a href='http://www.gohugo.io/'>Hugo</a> Theme By <a href='https://https://github.com/nodejh/hugo-theme-mini'>nodejh</a>
+      </div>
+    
+</footer>
+
+
+
+    
+  </body>
+</html>
