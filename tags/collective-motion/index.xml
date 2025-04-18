@@ -1,29 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>collective motion on Jacob Calvert</title>
+    <title>Collective Motion on Jacob Calvert</title>
     <link>https://jscalvert.github.io/tags/collective-motion/</link>
-    <description>Recent content in collective motion on Jacob Calvert</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Collective Motion on Jacob Calvert</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 26 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://jscalvert.github.io/tags/collective-motion/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 26 Jun 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://jscalvert.github.io/tags/collective-motion/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>New preprint on rattling theory</title>
       <link>https://jscalvert.github.io/posts/rattling/</link>
       <pubDate>Wed, 26 Jun 2024 00:00:00 +0000</pubDate>
-      
       <guid>https://jscalvert.github.io/posts/rattling/</guid>
       <description>&lt;p&gt;Dana Randall and I generalize and prove the main claims of an emerging physical theory of nonequilibrium self-organization, called rattling theory, by interpreting its main claims in terms of Markov processes. The result is a principle that relates a local aspect of the dynamics to the global steady state. We apply it to random walks on random graphs, spin-glass dynamics, and models of ant colonies.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>A dichotomy in models of collective motion</title>
       <link>https://jscalvert.github.io/posts/markov-chain-dichotomy/</link>
       <pubDate>Wed, 13 Jul 2022 13:52:11 -0400</pubDate>
-      
       <guid>https://jscalvert.github.io/posts/markov-chain-dichotomy/</guid>
       <description>&lt;p&gt;This post explains how the Markov chain dichotomy of transience and recurrence implies dichotomous behavior for certain models of collective motion.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

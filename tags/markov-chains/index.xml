@@ -1,38 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Markov chains on Jacob Calvert</title>
+    <title>Markov Chains on Jacob Calvert</title>
     <link>https://jscalvert.github.io/tags/markov-chains/</link>
-    <description>Recent content in Markov chains on Jacob Calvert</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Markov Chains on Jacob Calvert</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 07 Nov 2024 18:59:16 -0600</lastBuildDate><atom:link href="https://jscalvert.github.io/tags/markov-chains/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 07 Nov 2024 18:59:16 -0600</lastBuildDate>
+    <atom:link href="https://jscalvert.github.io/tags/markov-chains/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Programming hierarchical self-organization</title>
       <link>https://jscalvert.github.io/posts/programming-hierarchical-self-organization/</link>
       <pubDate>Thu, 07 Nov 2024 18:59:16 -0600</pubDate>
-      
       <guid>https://jscalvert.github.io/posts/programming-hierarchical-self-organization/</guid>
       <description>&lt;p&gt;A new preprint with Shunhao Oh and Dana Randall explains how to program simple computational &amp;ldquo;particles&amp;rdquo; of different types to self-organize into corresponding spatial regions that have a given hierarchical structure. The size, shape, and hierarchy of the regions are determined by the particles&amp;rsquo; densities and affinities for particles of different types. Proving that the algorithm works requires new techniques for analyzing the Gibbs distributions of fixed-magnetization models from equilibrium statistical mechanics.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>New preprint on rattling theory</title>
       <link>https://jscalvert.github.io/posts/rattling/</link>
       <pubDate>Wed, 26 Jun 2024 00:00:00 +0000</pubDate>
-      
       <guid>https://jscalvert.github.io/posts/rattling/</guid>
       <description>&lt;p&gt;Dana Randall and I generalize and prove the main claims of an emerging physical theory of nonequilibrium self-organization, called rattling theory, by interpreting its main claims in terms of Markov processes. The result is a principle that relates a local aspect of the dynamics to the global steady state. We apply it to random walks on random graphs, spin-glass dynamics, and models of ant colonies.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>A dichotomy in models of collective motion</title>
       <link>https://jscalvert.github.io/posts/markov-chain-dichotomy/</link>
       <pubDate>Wed, 13 Jul 2022 13:52:11 -0400</pubDate>
-      
       <guid>https://jscalvert.github.io/posts/markov-chain-dichotomy/</guid>
       <description>&lt;p&gt;This post explains how the Markov chain dichotomy of transience and recurrence implies dichotomous behavior for certain models of collective motion.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>
