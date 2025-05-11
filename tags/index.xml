@@ -2,115 +2,115 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Jacob Calvert</title>
-    <link>https://jscalvert.github.io/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on Jacob Calvert</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 11 May 2025 12:05:05 -0700</lastBuildDate>
-    <atom:link href="https://jscalvert.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Markov Chains</title>
-      <link>https://jscalvert.github.io/tags/markov-chains/</link>
+      <link>http://localhost:1313/tags/markov-chains/</link>
       <pubDate>Sun, 11 May 2025 12:05:05 -0700</pubDate>
-      <guid>https://jscalvert.github.io/tags/markov-chains/</guid>
+      <guid>http://localhost:1313/tags/markov-chains/</guid>
       <description></description>
     </item>
     <item>
       <title>Paper Highlights</title>
-      <link>https://jscalvert.github.io/tags/paper-highlights/</link>
+      <link>http://localhost:1313/tags/paper-highlights/</link>
       <pubDate>Sun, 11 May 2025 12:05:05 -0700</pubDate>
-      <guid>https://jscalvert.github.io/tags/paper-highlights/</guid>
+      <guid>http://localhost:1313/tags/paper-highlights/</guid>
       <description></description>
     </item>
     <item>
       <title>Probability</title>
-      <link>https://jscalvert.github.io/tags/probability/</link>
+      <link>http://localhost:1313/tags/probability/</link>
       <pubDate>Sun, 11 May 2025 12:05:05 -0700</pubDate>
-      <guid>https://jscalvert.github.io/tags/probability/</guid>
+      <guid>http://localhost:1313/tags/probability/</guid>
       <description></description>
     </item>
     <item>
       <title>Statistical Physics</title>
-      <link>https://jscalvert.github.io/tags/statistical-physics/</link>
+      <link>http://localhost:1313/tags/statistical-physics/</link>
       <pubDate>Sun, 11 May 2025 12:05:05 -0700</pubDate>
-      <guid>https://jscalvert.github.io/tags/statistical-physics/</guid>
+      <guid>http://localhost:1313/tags/statistical-physics/</guid>
       <description></description>
     </item>
     <item>
       <title>Programmable Matter</title>
-      <link>https://jscalvert.github.io/tags/programmable-matter/</link>
+      <link>http://localhost:1313/tags/programmable-matter/</link>
       <pubDate>Thu, 07 Nov 2024 18:59:16 -0600</pubDate>
-      <guid>https://jscalvert.github.io/tags/programmable-matter/</guid>
+      <guid>http://localhost:1313/tags/programmable-matter/</guid>
       <description></description>
     </item>
     <item>
       <title>Collective Motion</title>
-      <link>https://jscalvert.github.io/tags/collective-motion/</link>
+      <link>http://localhost:1313/tags/collective-motion/</link>
       <pubDate>Wed, 26 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://jscalvert.github.io/tags/collective-motion/</guid>
+      <guid>http://localhost:1313/tags/collective-motion/</guid>
       <description></description>
     </item>
     <item>
       <title>Clinical Informatics</title>
-      <link>https://jscalvert.github.io/tags/clinical-informatics/</link>
+      <link>http://localhost:1313/tags/clinical-informatics/</link>
       <pubDate>Fri, 07 Apr 2023 11:45:26 -0700</pubDate>
-      <guid>https://jscalvert.github.io/tags/clinical-informatics/</guid>
+      <guid>http://localhost:1313/tags/clinical-informatics/</guid>
       <description></description>
     </item>
     <item>
       <title>Collective Behavior</title>
-      <link>https://jscalvert.github.io/tags/collective-behavior/</link>
+      <link>http://localhost:1313/tags/collective-behavior/</link>
       <pubDate>Sun, 05 Feb 2023 09:21:46 -0800</pubDate>
-      <guid>https://jscalvert.github.io/tags/collective-behavior/</guid>
+      <guid>http://localhost:1313/tags/collective-behavior/</guid>
       <description></description>
     </item>
     <item>
       <title>Critical Numerosity</title>
-      <link>https://jscalvert.github.io/tags/critical-numerosity/</link>
+      <link>http://localhost:1313/tags/critical-numerosity/</link>
       <pubDate>Sun, 05 Feb 2023 09:21:46 -0800</pubDate>
-      <guid>https://jscalvert.github.io/tags/critical-numerosity/</guid>
+      <guid>http://localhost:1313/tags/critical-numerosity/</guid>
       <description></description>
     </item>
     <item>
       <title>Diffusion-Limited Aggregation</title>
-      <link>https://jscalvert.github.io/tags/diffusion-limited-aggregation/</link>
+      <link>http://localhost:1313/tags/diffusion-limited-aggregation/</link>
       <pubDate>Tue, 24 May 2022 00:00:00 +0000</pubDate>
-      <guid>https://jscalvert.github.io/tags/diffusion-limited-aggregation/</guid>
+      <guid>http://localhost:1313/tags/diffusion-limited-aggregation/</guid>
       <description></description>
     </item>
     <item>
       <title>Harmonic Measure</title>
-      <link>https://jscalvert.github.io/tags/harmonic-measure/</link>
+      <link>http://localhost:1313/tags/harmonic-measure/</link>
       <pubDate>Tue, 24 May 2022 00:00:00 +0000</pubDate>
-      <guid>https://jscalvert.github.io/tags/harmonic-measure/</guid>
+      <guid>http://localhost:1313/tags/harmonic-measure/</guid>
       <description></description>
     </item>
     <item>
       <title>Laplacian Growth</title>
-      <link>https://jscalvert.github.io/tags/laplacian-growth/</link>
+      <link>http://localhost:1313/tags/laplacian-growth/</link>
       <pubDate>Tue, 24 May 2022 00:00:00 +0000</pubDate>
-      <guid>https://jscalvert.github.io/tags/laplacian-growth/</guid>
+      <guid>http://localhost:1313/tags/laplacian-growth/</guid>
       <description></description>
     </item>
     <item>
       <title>Random Walk</title>
-      <link>https://jscalvert.github.io/tags/random-walk/</link>
+      <link>http://localhost:1313/tags/random-walk/</link>
       <pubDate>Fri, 29 Apr 2022 12:32:46 -0700</pubDate>
-      <guid>https://jscalvert.github.io/tags/random-walk/</guid>
+      <guid>http://localhost:1313/tags/random-walk/</guid>
       <description></description>
     </item>
     <item>
       <title>Ant Colonies</title>
-      <link>https://jscalvert.github.io/tags/ant-colonies/</link>
+      <link>http://localhost:1313/tags/ant-colonies/</link>
       <pubDate>Wed, 27 Apr 2022 13:46:26 -0700</pubDate>
-      <guid>https://jscalvert.github.io/tags/ant-colonies/</guid>
+      <guid>http://localhost:1313/tags/ant-colonies/</guid>
       <description></description>
     </item>
     <item>
       <title>Numerosity</title>
-      <link>https://jscalvert.github.io/tags/numerosity/</link>
+      <link>http://localhost:1313/tags/numerosity/</link>
       <pubDate>Wed, 27 Apr 2022 13:46:26 -0700</pubDate>
-      <guid>https://jscalvert.github.io/tags/numerosity/</guid>
+      <guid>http://localhost:1313/tags/numerosity/</guid>
       <description></description>
     </item>
   </channel>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Collective Behavior on Jacob Calvert</title>
-    <link>https://jscalvert.github.io/tags/collective-behavior/</link>
+    <link>http://localhost:1313/tags/collective-behavior/</link>
     <description>Recent content in Collective Behavior on Jacob Calvert</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 05 Feb 2023 09:21:46 -0800</lastBuildDate>
-    <atom:link href="https://jscalvert.github.io/tags/collective-behavior/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/collective-behavior/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>New paper on critical numerosity</title>
-      <link>https://jscalvert.github.io/posts/critical-numerosity-paper/</link>
+      <link>http://localhost:1313/posts/critical-numerosity-paper/</link>
       <pubDate>Sun, 05 Feb 2023 09:21:46 -0800</pubDate>
-      <guid>https://jscalvert.github.io/posts/critical-numerosity-paper/</guid>
+      <guid>http://localhost:1313/posts/critical-numerosity-paper/</guid>
       <description>&lt;p&gt;My latest &lt;a href=&#34;https://arxiv.org/abs/2302.01919&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;paper&lt;/a&gt; introduces the concept of critical numerosity: A number of individuals above and below which the behavior of a collective qualitatively differs.&lt;/p&gt;</description>
     </item>
   </channel>
