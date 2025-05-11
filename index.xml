@@ -6,8 +6,15 @@
     <description>Recent content in Home on Jacob Calvert</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 07 Nov 2024 18:59:16 -0600</lastBuildDate>
+    <lastBuildDate>Sun, 11 May 2025 12:05:05 -0700</lastBuildDate>
     <atom:link href="https://jscalvert.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Random Markov chains have simple stationary distributions</title>
+      <link>https://jscalvert.github.io/posts/asymptotic-uniformity/</link>
+      <pubDate>Sun, 11 May 2025 12:05:05 -0700</pubDate>
+      <guid>https://jscalvert.github.io/posts/asymptotic-uniformity/</guid>
+      <description>&lt;p&gt;The stationary distribution of a continuous-time Markov chain is generally a complicated function of its transition rates. However, if the rates are i.i.d. random variables whose common distribution satisfies certain tail conditions, then the stationary distribution is essentially a simple function of the exit rates out of each state.  This is the main result of a new preprint with Frank den Hollander and Dana Randall, which generalizes and makes a precise prediction by Chvykov et al. (2021) and settles a question raised by Bordenave, Caputo and Chafaï (2012) under certain assumptions.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Programming hierarchical self-organization</title>
       <link>https://jscalvert.github.io/posts/programming-hierarchical-self-organization/</link>
