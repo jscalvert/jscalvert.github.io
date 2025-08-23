@@ -2,99 +2,99 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://jscalvert.github.io/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2022-04-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jscalvert.github.io/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
     <lastmod>2022-04-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jscalvert.github.io/papers/</loc>
+    <loc>http://localhost:1313/papers/</loc>
     <lastmod>2022-04-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jscalvert.github.io/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2022-04-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jscalvert.github.io/posts/correlation-thresholds/</loc>
+    <loc>http://localhost:1313/posts/correlation-thresholds/</loc>
     <lastmod>2025-08-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jscalvert.github.io/tags/markov-chains/</loc>
+    <loc>http://localhost:1313/tags/markov-chains/</loc>
     <lastmod>2025-08-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jscalvert.github.io/tags/paper-highlights/</loc>
+    <loc>http://localhost:1313/tags/paper-highlights/</loc>
     <lastmod>2025-08-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jscalvert.github.io/posts/</loc>
+    <loc>http://localhost:1313/posts/</loc>
     <lastmod>2025-08-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jscalvert.github.io/tags/probability/</loc>
+    <loc>http://localhost:1313/tags/probability/</loc>
     <lastmod>2025-08-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jscalvert.github.io/tags/statistical-physics/</loc>
+    <loc>http://localhost:1313/tags/statistical-physics/</loc>
     <lastmod>2025-08-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jscalvert.github.io/posts/local-global-correlations-in-reaction-kinetics/</loc>
+    <loc>http://localhost:1313/posts/local-global-correlations-in-reaction-kinetics/</loc>
     <lastmod>2025-08-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jscalvert.github.io/posts/asymptotic-uniformity/</loc>
+    <loc>http://localhost:1313/posts/asymptotic-uniformity/</loc>
     <lastmod>2025-05-11T12:05:05-07:00</lastmod>
   </url><url>
-    <loc>https://jscalvert.github.io/tags/programmable-matter/</loc>
+    <loc>http://localhost:1313/tags/programmable-matter/</loc>
     <lastmod>2024-11-07T18:59:16-06:00</lastmod>
   </url><url>
-    <loc>https://jscalvert.github.io/posts/programming-hierarchical-self-organization/</loc>
+    <loc>http://localhost:1313/posts/programming-hierarchical-self-organization/</loc>
     <lastmod>2024-11-07T18:59:16-06:00</lastmod>
   </url><url>
-    <loc>https://jscalvert.github.io/tags/collective-motion/</loc>
+    <loc>http://localhost:1313/tags/collective-motion/</loc>
     <lastmod>2024-06-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jscalvert.github.io/posts/rattling/</loc>
+    <loc>http://localhost:1313/posts/rattling/</loc>
     <lastmod>2024-06-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jscalvert.github.io/tags/clinical-informatics/</loc>
+    <loc>http://localhost:1313/tags/clinical-informatics/</loc>
     <lastmod>2023-04-07T11:45:26-07:00</lastmod>
   </url><url>
-    <loc>https://jscalvert.github.io/posts/auc-cheating/</loc>
+    <loc>http://localhost:1313/posts/auc-cheating/</loc>
     <lastmod>2023-04-07T11:45:26-07:00</lastmod>
   </url><url>
-    <loc>https://jscalvert.github.io/tags/collective-behavior/</loc>
+    <loc>http://localhost:1313/tags/collective-behavior/</loc>
     <lastmod>2023-02-05T09:21:46-08:00</lastmod>
   </url><url>
-    <loc>https://jscalvert.github.io/tags/critical-numerosity/</loc>
+    <loc>http://localhost:1313/tags/critical-numerosity/</loc>
     <lastmod>2023-02-05T09:21:46-08:00</lastmod>
   </url><url>
-    <loc>https://jscalvert.github.io/posts/critical-numerosity-paper/</loc>
+    <loc>http://localhost:1313/posts/critical-numerosity-paper/</loc>
     <lastmod>2023-02-05T09:21:46-08:00</lastmod>
   </url><url>
-    <loc>https://jscalvert.github.io/posts/markov-chain-dichotomy/</loc>
+    <loc>http://localhost:1313/posts/markov-chain-dichotomy/</loc>
     <lastmod>2022-07-13T13:52:11-04:00</lastmod>
   </url><url>
-    <loc>https://jscalvert.github.io/posts/discrepancy-in-dla-research/</loc>
+    <loc>http://localhost:1313/posts/discrepancy-in-dla-research/</loc>
     <lastmod>2022-05-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jscalvert.github.io/tags/diffusion-limited-aggregation/</loc>
+    <loc>http://localhost:1313/tags/diffusion-limited-aggregation/</loc>
     <lastmod>2022-05-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jscalvert.github.io/tags/harmonic-measure/</loc>
+    <loc>http://localhost:1313/tags/harmonic-measure/</loc>
     <lastmod>2022-05-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jscalvert.github.io/tags/laplacian-growth/</loc>
+    <loc>http://localhost:1313/tags/laplacian-growth/</loc>
     <lastmod>2022-05-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jscalvert.github.io/posts/a-conjecture-about-harmonic-measure/</loc>
+    <loc>http://localhost:1313/posts/a-conjecture-about-harmonic-measure/</loc>
     <lastmod>2022-04-29T12:32:46-07:00</lastmod>
   </url><url>
-    <loc>https://jscalvert.github.io/tags/random-walk/</loc>
+    <loc>http://localhost:1313/tags/random-walk/</loc>
     <lastmod>2022-04-29T12:32:46-07:00</lastmod>
   </url><url>
-    <loc>https://jscalvert.github.io/tags/ant-colonies/</loc>
+    <loc>http://localhost:1313/tags/ant-colonies/</loc>
     <lastmod>2022-04-27T13:46:26-07:00</lastmod>
   </url><url>
-    <loc>https://jscalvert.github.io/tags/numerosity/</loc>
+    <loc>http://localhost:1313/tags/numerosity/</loc>
     <lastmod>2022-04-27T13:46:26-07:00</lastmod>
   </url><url>
-    <loc>https://jscalvert.github.io/posts/quorum-transitions/</loc>
+    <loc>http://localhost:1313/posts/quorum-transitions/</loc>
     <lastmod>2022-04-27T13:46:26-07:00</lastmod>
   </url><url>
-    <loc>https://jscalvert.github.io/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url>
 </urlset>
