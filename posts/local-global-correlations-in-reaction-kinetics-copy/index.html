@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
 
     <title>Local–global correlations in reaction kinetics | Jacob Calvert</title>
 
@@ -79,13 +79,13 @@
           ·
         </span>
         <span>
-          429 words
+          420 words
         </span>
         <span class="split">
           ·
         </span>
         <span>
-          3 minute read
+          2 minute read
         </span>
     </div>
 
@@ -107,7 +107,7 @@
 <p>This parameterization is valuable in part because it provides a natural way to put a distribution on reversible Markov chains—sample $W_x$ and $B_{xy}$ at random, subject to the symmetry and anti-symmetry conditions. We consider the case when the well depths are i.i.d. Gaussian random variables with mean $0$ and variance $\sigma_W^2$, and the barrier heights are (not necessarily i.i.d.) centered Gaussians with variance $\sigma_B^2$.</p>
 <p>In a <a href="https://arxiv.org/abs/2508.04501" target="_blank" rel="noopener">new paper</a>, Dana and I evaluate the extent of local–global correlation that these random Markov chains exhibit. The local–global correlation is defined as</p>
 <p>$$\rho = \mathrm{Corr}(-\log \pi (X), \log q(X)),$$</p>
-<p>where $q(x) = \sum_{y: y \sim x} Q(x,y)$ and $X$ is a uniformly random state. This correlation is important because $\rho \approx 1$ indicates that the stationary distribution satisfies an approximate analogue of the Boltzmann distribution, with the logarithm of the exit rate in the place of energy. Since the exit rate is the reciprocal of the average holding time in a state, estimating it merely requires repeatedly initializing the Markov chain in the state, and averaging the times it takes to leave.</p>
+<p>for a uniformly random state $X$. This correlation is important because $\rho \approx 1$ indicates that the stationary distribution satisfies an approximate analogue of the Boltzmann distribution, with the logarithm of the exit rate in the place of energy. Since the exit rate is the reciprocal of the average holding time in a state, estimating it merely requires repeatedly initializing the Markov chain in the state, and averaging the times it takes to leave.</p>
 <p>Assuming that $G$ is regular, and under certain conditions on the dependence between the well depths and barrier heights, we prove that</p>
 <p>$$ \mathbb{E} (\rho) \geq 1 - c\frac{\sigma_B^2}{\sigma_W^2}, $$</p>
 <p>where $c &gt; 0$ is a universal constant, independent of the features of the graph $G$. The implication of this result is that, for typical local–global correlation to be high, it suffices to the barrier heights to vary sufficiently less than the well depths. Note that this does <em>not</em> necessarily mean that the barrier heights are small.</p>
@@ -117,13 +117,13 @@
     
         <div class="tags">
             
-                <a href="https://jscalvert.github.io/tags/probability">probability</a>
+                <a href="http://localhost:1313/tags/probability">probability</a>
             
-                <a href="https://jscalvert.github.io/tags/markov-chains">Markov chains</a>
+                <a href="http://localhost:1313/tags/markov-chains">Markov chains</a>
             
-                <a href="https://jscalvert.github.io/tags/statistical-physics">statistical physics</a>
+                <a href="http://localhost:1313/tags/statistical-physics">statistical physics</a>
             
-                <a href="https://jscalvert.github.io/tags/paper-highlights">paper highlights</a>
+                <a href="http://localhost:1313/tags/paper-highlights">paper highlights</a>
             
         </div>
     
@@ -168,6 +168,5 @@
 </footer>
 
 
-
-  <script src="/js/analytics.min.879ddf388acc8b759c40a48f30018c0f6459741e69860286166e0d36a0b70240.js" integrity="sha256-h53fOIrMi3WcQKSPMAGMD2RZdB5phgKGFm4NNqC3AkA="></script></body>
+</body>
 </html>

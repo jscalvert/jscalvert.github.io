@@ -9,14 +9,21 @@
     <lastBuildDate>Fri, 22 Aug 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://jscalvert.github.io/tags/markov-chains/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Correlation thresholds in steady-state distributions</title>
+      <link>https://jscalvert.github.io/posts/correlation-thresholds/</link>
+      <pubDate>Fri, 22 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://jscalvert.github.io/posts/correlation-thresholds/</guid>
+      <description>&lt;p&gt;Dana Randall and I find thresholds in the local–global correlations exhibited by the steady-state distributions of a particle system and the dynamics of the Sherrington–Kirkpatrick spin glass.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Local–global correlations in reaction kinetics</title>
       <link>https://jscalvert.github.io/posts/local-global-correlations-in-reaction-kinetics/</link>
-      <pubDate>Fri, 22 Aug 2025 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 06 Aug 2025 00:00:00 +0000</pubDate>
       <guid>https://jscalvert.github.io/posts/local-global-correlations-in-reaction-kinetics/</guid>
       <description>&lt;p&gt;In a new paper, Dana Randall and I identify conditions under which reaction kinetics on disordered energy landscapes exhibit high local–global correlation.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Random Markov chains have simple stationary distributions</title>
+      <title>Markov chains with random transition rates</title>
       <link>https://jscalvert.github.io/posts/asymptotic-uniformity/</link>
       <pubDate>Sun, 11 May 2025 12:05:05 -0700</pubDate>
       <guid>https://jscalvert.github.io/posts/asymptotic-uniformity/</guid>

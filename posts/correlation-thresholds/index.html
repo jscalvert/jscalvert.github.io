@@ -2,12 +2,12 @@
 <html lang="en-us">
   <head>
 
-    <title>Local–global correlations in reaction kinetics | Jacob Calvert</title>
+    <title>Correlation thresholds in steady-state distributions | Jacob Calvert</title>
 
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">    
 <meta name="viewport" content="width=device-width,minimum-scale=1">
-<meta name="description" content="In a new paper, Dana Randall and I identify conditions under which reaction kinetics on disordered energy landscapes exhibit high local–global correlation.">
+<meta name="description" content="Dana Randall and I find thresholds in the local–global correlations exhibited by the steady-state distributions of a particle system and the dynamics of the Sherrington–Kirkpatrick spin glass.">
 <meta name="generator" content="Hugo 0.139.2">
 
 
@@ -71,21 +71,21 @@
       
 
 <section id="single">
-    <h1 class="title">Local–global correlations in reaction kinetics</h1>
+    <h1 class="title">Correlation thresholds in steady-state distributions</h1>
 
     <div class="tip">
-        <time datetime="2025-08-06 00:00:00 &#43;0000 UTC">Aug 6, 2025</time>
+        <time datetime="2025-08-22 00:00:00 &#43;0000 UTC">Aug 22, 2025</time>
         <span class="split">
           ·
         </span>
         <span>
-          429 words
+          289 words
         </span>
         <span class="split">
           ·
         </span>
         <span>
-          3 minute read
+          2 minute read
         </span>
     </div>
 
@@ -99,19 +99,15 @@
 
 
     <div class="content">
-      <p>In a new paper, Dana Randall and I identify conditions under which reaction kinetics on disordered energy landscapes exhibit high local–global correlation.</p>
-<p>The Arrhenius parameterization is a popular way to express the transition rates $Q(x,y)$ of a Markov chain, inspired by the Arrhenius law of reaction kinetics:</p>
-<p>$$ Q(x,y) = \exp (W_x - B_{xy} + F_{xy}/2).$$</p>
-<p>Here, $W_x$ is the depth of an energy well at state $x$, $B_{xy} = B_{yx}$ is a symmetric energy barrier between neighboring states $x$ and $y$, and $F_{xy} = -F_{yx}$ is an anti-symmetric force, all real numbers. Neighboring states are determined by an underlying adjacency graph $G$, which is assumed to be finite and connected. In the absence of forces (i.e., $F_{xy} = 0$ for every $x$ and $y$), the Markov chain satisfies detailed balance, with Boltzmann stationary distribution</p>
-<p>$$ \pi (x) \propto \exp (-W_x).$$</p>
-<p>This parameterization is valuable in part because it provides a natural way to put a distribution on reversible Markov chains—sample $W_x$ and $B_{xy}$ at random, subject to the symmetry and anti-symmetry conditions. We consider the case when the well depths are i.i.d. Gaussian random variables with mean $0$ and variance $\sigma_W^2$, and the barrier heights are (not necessarily i.i.d.) centered Gaussians with variance $\sigma_B^2$.</p>
-<p>In a <a href="https://arxiv.org/abs/2508.04501" target="_blank" rel="noopener">new paper</a>, Dana and I evaluate the extent of local–global correlation that these random Markov chains exhibit. The local–global correlation is defined as</p>
+      <p>Dana Randall and I find thresholds in the local–global correlations exhibited by the steady-state distributions of a particle system and the dynamics of the Sherrington–Kirkpatrick spin glass.</p>
+<p>For a Markov chain with a finite number of states and a unique stationary distribution $\pi$, the local–global correlation is defined as</p>
 <p>$$\rho = \mathrm{Corr}(-\log \pi (X), \log q(X)),$$</p>
-<p>where $q(x) = \sum_{y: y \sim x} Q(x,y)$ and $X$ is a uniformly random state. This correlation is important because $\rho \approx 1$ indicates that the stationary distribution satisfies an approximate analogue of the Boltzmann distribution, with the logarithm of the exit rate in the place of energy. Since the exit rate is the reciprocal of the average holding time in a state, estimating it merely requires repeatedly initializing the Markov chain in the state, and averaging the times it takes to leave.</p>
-<p>Assuming that $G$ is regular, and under certain conditions on the dependence between the well depths and barrier heights, we prove that</p>
-<p>$$ \mathbb{E} (\rho) \geq 1 - c\frac{\sigma_B^2}{\sigma_W^2}, $$</p>
-<p>where $c &gt; 0$ is a universal constant, independent of the features of the graph $G$. The implication of this result is that, for typical local–global correlation to be high, it suffices to the barrier heights to vary sufficiently less than the well depths. Note that this does <em>not</em> necessarily mean that the barrier heights are small.</p>
-<p>The proof of the lower bound combines a formula from our recent <a href="https://www.pnas.org/doi/abs/10.1073/pnas.2411731121" target="_blank" rel="noopener">paper in <em>PNAS</em></a> with the Gaussian concentration of Lipschitz functions.</p>
+<p>where $q(x)$ is the exit rate of state $x$ and $X$ is a uniformly random state.</p>
+<p>It is important to identify classes of Markov chains for which $\rho$ is close to $1$, because these Markov chains satisfy an approximate analogue of the Boltzmann distribution. In this analogy, the logarithm of the exit rate plays the role of energy, and the states with the highest values of $\pi$ are simply those with the lowest exit rates. In other words, when $\rho \approx 1$, there is a simple explanation of the order that $\pi$ exhibits.</p>
+<p>The challenge is that $\rho$ is generally difficult to calculate, so our <a href="/posts/local-global-correlations-in-reaction-kinetics.md">recent work</a> resorts to bounding below its expected value under a certain distribution on Markov chains. In a <a href="/papers/correlation-thresholds.pdf">new paper</a>, Dana and I provide the first explicit estimate of $\rho$ in a model system of interest, namely, dynamics of the Sherrington–Kirkpatrick spin glass on the $N$-dimensional hypercube ${-1,1}^N$. We find that, as a parameter $\lambda \in [0,1]$ of the dynamics varies, the correlation $\rho$ jumps from $-1$ to $1$. More precisely, we prove that</p>
+<p>$$\rho(\lambda) = \mathrm{sign}(\lambda-\lambda_\ast) \left(1 + \mathrm{error} \right),$$</p>
+<p>for $\lambda \neq \lambda_\ast = (1 - 4/N)/(2 - 4/N)$ and where the error is negligible at sufficiently high temperatures, depending on $N$ and $|\lambda-\lambda_\ast|$.</p>
+<p>Our hope is that this paper makes the notion of local–global correlation more broadly accessible by presenting a concrete estimate of $\rho$.</p>
     </div>
 
     
