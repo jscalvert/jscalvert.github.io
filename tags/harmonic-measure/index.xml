@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Harmonic Measure on Jacob Calvert</title>
-    <link>http://localhost:1313/tags/harmonic-measure/</link>
+    <link>https://jscalvert.github.io/tags/harmonic-measure/</link>
     <description>Recent content in Harmonic Measure on Jacob Calvert</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 24 May 2022 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/harmonic-measure/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jscalvert.github.io/tags/harmonic-measure/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A third rigorous result about DLA</title>
-      <link>http://localhost:1313/posts/discrepancy-in-dla-research/</link>
+      <link>https://jscalvert.github.io/posts/discrepancy-in-dla-research/</link>
       <pubDate>Tue, 24 May 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/discrepancy-in-dla-research/</guid>
+      <guid>https://jscalvert.github.io/posts/discrepancy-in-dla-research/</guid>
       <description>&lt;p&gt;This post highlights recent work which constitutes only the third rigorous result about planar diffusion-limited aggregation (DLA), a paradigmatic model of random, dendritic growth.&lt;/p&gt;</description>
     </item>
     <item>
       <title>A conjecture about harmonic measure</title>
-      <link>http://localhost:1313/posts/a-conjecture-about-harmonic-measure/</link>
+      <link>https://jscalvert.github.io/posts/a-conjecture-about-harmonic-measure/</link>
       <pubDate>Fri, 29 Apr 2022 12:32:46 -0700</pubDate>
-      <guid>http://localhost:1313/posts/a-conjecture-about-harmonic-measure/</guid>
+      <guid>https://jscalvert.github.io/posts/a-conjecture-about-harmonic-measure/</guid>
       <description>&lt;p&gt;Given finite $A \subset \mathbb{Z}^2$, the harmonic measure of $x \in A$ is the probability that a simple random walk &amp;ldquo;from infinity&amp;rdquo; first visits $A$ at $x$. If $A$ has $n$ elements, what is the smallest positive harmonic measure that you can get?&lt;/p&gt;</description>
     </item>
   </channel>
