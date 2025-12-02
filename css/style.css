@@ -532,3 +532,35 @@ nav.navigation a.button {
   top: 1px;
   color: #bbb;
 }
+
+/* Bold the date column */
+table.news td:first-child {
+  font-weight: 600;
+}
+
+/* Reduce space above the table */
+table.news {
+  margin-top: 0.25rem;   /* or 0 */
+}
+
+table.news {
+  border-collapse: collapse;   /* removes the “gaps” look */
+}
+
+table.news th,
+table.news td {
+  text-align: left;            /* left-justify everything */
+  padding: 0.25rem 0.25rem;     /* reduce padding (vertical, horizontal) */
+  border: none !important;     /* no borders */
+  vertical-align: top;
+}
+
+table.news thead { display: none; } /* if you’re hiding the header */
+
+table.news td:first-child {
+  white-space: nowrap;         /* keep MM/YYYY on one line */
+  padding-left: 0;             /* often looks better */
+  padding-right: 0.8rem;       /* tune the gap between columns */
+}
+
+
