@@ -308,49 +308,16 @@ nav.navigation .nav-links a.active {
 }
 
 .home-avatar-float {
+  float: left;
   width: 128px;
   height: 128px;
   object-fit: cover;
-  margin: 0;
+  margin: 4px 18px 10px 0;
   border: 3px outset var(--border-color);
 }
 
 .home-avatar-link {
   text-decoration: none;
-}
-
-.home-avatar-swap {
-  float: left;
-  position: relative;
-  width: 128px;
-  height: 128px;
-  margin: 4px 18px 10px 0;
-  display: inline-block;
-}
-
-.home-avatar-swap .home-avatar-float {
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: opacity 0.2s ease-in-out;
-}
-
-.home-avatar-swap .avatar-default {
-  opacity: 1;
-}
-
-.home-avatar-swap .avatar-hover {
-  opacity: 0;
-}
-
-.home-avatar-swap:hover .avatar-default,
-.home-avatar-swap:focus-within .avatar-default {
-  opacity: 0;
-}
-
-.home-avatar-swap:hover .avatar-hover,
-.home-avatar-swap:focus-within .avatar-hover {
-  opacity: 1;
 }
 
 .section-divider {
@@ -1131,14 +1098,6 @@ table.news td:first-child {
     margin: 0 auto 14px;
     width: 110px;
     height: 110px;
-  }
-
-  .home-avatar-swap {
-    float: none;
-    display: block;
-    width: 110px;
-    height: 110px;
-    margin: 0 auto 14px;
   }
 }
 
