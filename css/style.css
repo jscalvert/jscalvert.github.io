@@ -959,32 +959,6 @@ nav.navigation .nav-links a.active {
   margin: 8px auto;
 }
 
-.retro-counter {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  margin: 0 auto 8px;
-  padding: 4px 10px;
-  border: 2px inset var(--border-color);
-  background: var(--bg-elevated);
-  font-family: var(--font-mono);
-  font-size: 12px;
-  line-height: 1;
-}
-
-.retro-counter-label {
-  color: var(--text-secondary);
-  letter-spacing: 0.08em;
-}
-
-.retro-counter-value {
-  display: inline-block;
-  min-width: 7ch;
-  text-align: right;
-  color: var(--teal);
-  font-weight: bold;
-}
-
 #social {
   margin-bottom: 8px;
 }

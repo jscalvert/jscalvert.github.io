@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Numerosity on Jacob Calvert</title>
-    <link>http://localhost:1313/tags/numerosity/</link>
+    <link>https://jscalvert.github.io/tags/numerosity/</link>
     <description>Recent content in Numerosity on Jacob Calvert</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 27 Apr 2022 13:46:26 -0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/numerosity/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jscalvert.github.io/tags/numerosity/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Numerosity-driven phase transitions</title>
-      <link>http://localhost:1313/posts/quorum-transitions/</link>
+      <link>https://jscalvert.github.io/posts/quorum-transitions/</link>
       <pubDate>Wed, 27 Apr 2022 13:46:26 -0700</pubDate>
-      <guid>http://localhost:1313/posts/quorum-transitions/</guid>
+      <guid>https://jscalvert.github.io/posts/quorum-transitions/</guid>
       <description>&lt;p&gt;This post discusses the intersection of some of my recent and forthcoming work in probability theory with studies of programmable matter and ant colonies.&lt;/p&gt;</description>
     </item>
   </channel>

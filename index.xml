@@ -2,115 +2,115 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home on Jacob Calvert</title>
-    <link>http://localhost:1313/</link>
+    <link>https://jscalvert.github.io/</link>
     <description>Recent content in Home on Jacob Calvert</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 19 Feb 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jscalvert.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Update on random Markov matrices</title>
-      <link>http://localhost:1313/posts/asymptotic-uniformity-update/</link>
+      <link>https://jscalvert.github.io/posts/asymptotic-uniformity-update/</link>
       <pubDate>Thu, 19 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/asymptotic-uniformity-update/</guid>
+      <guid>https://jscalvert.github.io/posts/asymptotic-uniformity-update/</guid>
       <description>&lt;p&gt;Frank den Hollander, Dana Randall, and I recently posted a &lt;a href=&#34;https://arxiv.org/abs/2505.01608&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;new version&lt;/a&gt; of our paper on random Markov matrices. We significantly improved the main result and newly answered a question of &lt;a href=&#34;https://link.springer.com/article/10.1007/s00440-010-0336-1&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Bordenave, Caputo, and Chafaï (2012)&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Collective behavior vs. number</title>
-      <link>http://localhost:1313/gallery/collective-behavior-vs-number/</link>
+      <link>https://jscalvert.github.io/gallery/collective-behavior-vs-number/</link>
       <pubDate>Wed, 18 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/gallery/collective-behavior-vs-number/</guid>
-      <description>&lt;p&gt;&lt;p class=&#34;markdown-image&#34;&gt;&#xA;  &lt;img src=&#34;http://localhost:1313/images/gallery/numerosity-thumb.png&#34; alt=&#34;image info&#34;  /&gt;&#xA;&lt;/p&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;A recent preprint &lt;a href=&#34;https://arxiv.org/pdf/2510.06011&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;How many more is different?&amp;rdquo;&lt;/a&gt; attempts to reconcile the common wisdom that collective behaviors are robust to the loss of individuals with the obvious reliance of such collectives on being numerous. The figure highlights three examples of collectives (living and non-living, at different physical scales) whose behaviors have been shown to depend sensitively on the numbers of their constituents. The example of water clusters is especially striking, as the formation of ice is the paradigm of a phase transition. Familiar phase transitions are mediated by temperature, which determines the relative strength of intermolecular interactions and thermal noise. At a fixed temperature below the freezing point, however, number—mere number!—decides collective behavior.&lt;/p&gt;</description>
+      <guid>https://jscalvert.github.io/gallery/collective-behavior-vs-number/</guid>
+      <description>&lt;p&gt;&lt;p class=&#34;markdown-image&#34;&gt;&#xA;  &lt;img src=&#34;https://jscalvert.github.io/images/gallery/numerosity-thumb.png&#34; alt=&#34;image info&#34;  /&gt;&#xA;&lt;/p&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;A recent preprint &lt;a href=&#34;https://arxiv.org/pdf/2510.06011&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;How many more is different?&amp;rdquo;&lt;/a&gt; attempts to reconcile the common wisdom that collective behaviors are robust to the loss of individuals with the obvious reliance of such collectives on being numerous. The figure highlights three examples of collectives (living and non-living, at different physical scales) whose behaviors have been shown to depend sensitively on the numbers of their constituents. The example of water clusters is especially striking, as the formation of ice is the paradigm of a phase transition. Familiar phase transitions are mediated by temperature, which determines the relative strength of intermolecular interactions and thermal noise. At a fixed temperature below the freezing point, however, number—mere number!—decides collective behavior.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Local–global relationships</title>
-      <link>http://localhost:1313/gallery/rho-contour-diagram/</link>
+      <link>https://jscalvert.github.io/gallery/rho-contour-diagram/</link>
       <pubDate>Wed, 18 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/gallery/rho-contour-diagram/</guid>
+      <guid>https://jscalvert.github.io/gallery/rho-contour-diagram/</guid>
       <description>&lt;p&gt;The paper &amp;ldquo;&lt;a href=&#34;https://www.pnas.org/doi/10.1073/pnas.2411731121&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;A local–global principle for nonequilibrium steady states&lt;/a&gt;&amp;rdquo; explains striking, recent experiments in active matter physics using Markov chain theory. To do so, the paper introduces the correlation coefficient&lt;/p&gt;&#xA;$$\rho = \mathrm{Corr}(-\log \pi (X), \log q(X)),$$&lt;p&gt;where $\pi$ is the stationary distribution of an (irreducible) Markov chain on a finite state space, $q(x)$ is the sum of transition rates out of state $x$, and $X$ is a state chosen randomly according to some distribution. (By $\mathrm{Corr}(U,V)$, I mean the familiar Pearson correlation coefficient, defined by normalizing the covariance of $U$ and $V$.)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Tunneling to the origin</title>
-      <link>http://localhost:1313/gallery/tunneling-to-the-origin/</link>
+      <link>https://jscalvert.github.io/gallery/tunneling-to-the-origin/</link>
       <pubDate>Wed, 18 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/gallery/tunneling-to-the-origin/</guid>
-      <description>&lt;p&gt;Theorem 4 of &lt;a href=&#34;https://www.cambridge.org/core/journals/forum-of-mathematics-sigma/article/collapse-and-diffusion-in-harmonic-activation-and-transport/F236C7550C6E9B48D80B24DD4896518A&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;Collapse and diffusion in harmonic activation and transport&amp;rdquo;&lt;/a&gt; states that there is a universal constant $c&gt;0$ such that, if $A$ is a subset of $\mathbb{Z}^2$ with $n \geq 1$ elements, then the harmonic measure of $x$ in $A$ is either zero or at least $\exp (-c n \log n)$. In other words, the least positive value of harmonic measure can be no smaller than exponential in $n \log n$. See &lt;a href=&#34;http://localhost:1313/posts/a-conjecture-about-harmonic-measure/&#34;&gt;this post&lt;/a&gt; for a definition of harmonic measure and an explanation of why this is an interesting quantity to study. The same paper &lt;a href=&#34;http://localhost:1313/posts/a-conjecture-about-harmonic-measure/&#34;&gt;conjectured&lt;/a&gt; an optimal lower bound of $\exp (-c n)$. In fact, this was recently &lt;a href=&#34;https://link.springer.com/article/10.1007/s00440-025-01393-6&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;proved&lt;/a&gt; by Cai, Kozma, Procaccia, and Zhang, who introduced the notion of &lt;em&gt;vertex-removal stability&lt;/em&gt; to do so!&lt;/p&gt;</description>
+      <guid>https://jscalvert.github.io/gallery/tunneling-to-the-origin/</guid>
+      <description>&lt;p&gt;Theorem 4 of &lt;a href=&#34;https://www.cambridge.org/core/journals/forum-of-mathematics-sigma/article/collapse-and-diffusion-in-harmonic-activation-and-transport/F236C7550C6E9B48D80B24DD4896518A&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;Collapse and diffusion in harmonic activation and transport&amp;rdquo;&lt;/a&gt; states that there is a universal constant $c&gt;0$ such that, if $A$ is a subset of $\mathbb{Z}^2$ with $n \geq 1$ elements, then the harmonic measure of $x$ in $A$ is either zero or at least $\exp (-c n \log n)$. In other words, the least positive value of harmonic measure can be no smaller than exponential in $n \log n$. See &lt;a href=&#34;https://jscalvert.github.io/posts/a-conjecture-about-harmonic-measure/&#34;&gt;this post&lt;/a&gt; for a definition of harmonic measure and an explanation of why this is an interesting quantity to study. The same paper &lt;a href=&#34;https://jscalvert.github.io/posts/a-conjecture-about-harmonic-measure/&#34;&gt;conjectured&lt;/a&gt; an optimal lower bound of $\exp (-c n)$. In fact, this was recently &lt;a href=&#34;https://link.springer.com/article/10.1007/s00440-025-01393-6&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;proved&lt;/a&gt; by Cai, Kozma, Procaccia, and Zhang, who introduced the notion of &lt;em&gt;vertex-removal stability&lt;/em&gt; to do so!&lt;/p&gt;</description>
     </item>
     <item>
       <title>Correlation thresholds in steady-state distributions</title>
-      <link>http://localhost:1313/posts/correlation-thresholds/</link>
+      <link>https://jscalvert.github.io/posts/correlation-thresholds/</link>
       <pubDate>Fri, 22 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/correlation-thresholds/</guid>
+      <guid>https://jscalvert.github.io/posts/correlation-thresholds/</guid>
       <description>&lt;p&gt;Dana Randall and I find thresholds in the local–global correlations exhibited by the steady-state distributions of a particle system and the dynamics of the Sherrington–Kirkpatrick spin glass.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Local–global correlations in reaction kinetics</title>
-      <link>http://localhost:1313/posts/local-global-correlations-in-reaction-kinetics/</link>
+      <link>https://jscalvert.github.io/posts/local-global-correlations-in-reaction-kinetics/</link>
       <pubDate>Wed, 06 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/local-global-correlations-in-reaction-kinetics/</guid>
+      <guid>https://jscalvert.github.io/posts/local-global-correlations-in-reaction-kinetics/</guid>
       <description>&lt;p&gt;In a new paper, Dana Randall and I identify conditions under which reaction kinetics on disordered energy landscapes exhibit high local–global correlation.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Markov chains with random transition rates</title>
-      <link>http://localhost:1313/posts/asymptotic-uniformity/</link>
+      <link>https://jscalvert.github.io/posts/asymptotic-uniformity/</link>
       <pubDate>Sun, 11 May 2025 12:05:05 -0700</pubDate>
-      <guid>http://localhost:1313/posts/asymptotic-uniformity/</guid>
+      <guid>https://jscalvert.github.io/posts/asymptotic-uniformity/</guid>
       <description>&lt;p&gt;The stationary distribution of a continuous-time Markov chain is generally a complicated function of its transition rates. However, if the rates are i.i.d. random variables whose common distribution satisfies certain tail conditions, then the stationary distribution is essentially a simple function of the exit rates out of each state.  This is the main result of a new preprint with Frank den Hollander and Dana Randall, which generalizes and makes a precise prediction by Chvykov et al. (2021) and settles a question raised by Bordenave, Caputo, and Chafaï (2012) under certain assumptions.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Programming hierarchical self-organization</title>
-      <link>http://localhost:1313/posts/programming-hierarchical-self-organization/</link>
+      <link>https://jscalvert.github.io/posts/programming-hierarchical-self-organization/</link>
       <pubDate>Thu, 07 Nov 2024 18:59:16 -0600</pubDate>
-      <guid>http://localhost:1313/posts/programming-hierarchical-self-organization/</guid>
+      <guid>https://jscalvert.github.io/posts/programming-hierarchical-self-organization/</guid>
       <description>&lt;p&gt;A new preprint with Shunhao Oh and Dana Randall explains how to program simple computational &amp;ldquo;particles&amp;rdquo; of different types to self-organize into corresponding spatial regions that have a given hierarchical structure. The size, shape, and hierarchy of the regions are determined by the particles&amp;rsquo; densities and affinities for particles of different types. Proving that the algorithm works requires new techniques for analyzing the Gibbs distributions of fixed-magnetization models from equilibrium statistical mechanics.&lt;/p&gt;</description>
     </item>
     <item>
       <title>New preprint on rattling theory</title>
-      <link>http://localhost:1313/posts/rattling/</link>
+      <link>https://jscalvert.github.io/posts/rattling/</link>
       <pubDate>Wed, 26 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/rattling/</guid>
+      <guid>https://jscalvert.github.io/posts/rattling/</guid>
       <description>&lt;p&gt;Dana Randall and I generalize and prove the main claims of an emerging physical theory of nonequilibrium self-organization, called rattling theory, by interpreting its main claims in terms of Markov processes. The result is a principle that relates a local aspect of the dynamics to the global steady state. We apply it to random walks on random graphs, spin-glass dynamics, and models of ant colonies.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Dynamic clinical risk scores can cheat the AUC</title>
-      <link>http://localhost:1313/posts/auc-cheating/</link>
+      <link>https://jscalvert.github.io/posts/auc-cheating/</link>
       <pubDate>Fri, 07 Apr 2023 11:45:26 -0700</pubDate>
-      <guid>http://localhost:1313/posts/auc-cheating/</guid>
+      <guid>https://jscalvert.github.io/posts/auc-cheating/</guid>
       <description>&lt;p&gt;Clinical risk scores can cheat the AUC when the time that an adverse event occurs in a positive-class stay tends to exceed the duration of a negative-class stay. Risk scores should be compared to uniformly random scores that match their timing.&lt;/p&gt;</description>
     </item>
     <item>
       <title>New paper on critical numerosity</title>
-      <link>http://localhost:1313/posts/critical-numerosity-paper/</link>
+      <link>https://jscalvert.github.io/posts/critical-numerosity-paper/</link>
       <pubDate>Sun, 05 Feb 2023 09:21:46 -0800</pubDate>
-      <guid>http://localhost:1313/posts/critical-numerosity-paper/</guid>
+      <guid>https://jscalvert.github.io/posts/critical-numerosity-paper/</guid>
       <description>&lt;p&gt;My latest &lt;a href=&#34;https://arxiv.org/abs/2302.01919&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;paper&lt;/a&gt; introduces the concept of critical numerosity: A number of individuals above and below which the behavior of a collective qualitatively differs.&lt;/p&gt;</description>
     </item>
     <item>
       <title>A dichotomy in models of collective motion</title>
-      <link>http://localhost:1313/posts/markov-chain-dichotomy/</link>
+      <link>https://jscalvert.github.io/posts/markov-chain-dichotomy/</link>
       <pubDate>Wed, 13 Jul 2022 13:52:11 -0400</pubDate>
-      <guid>http://localhost:1313/posts/markov-chain-dichotomy/</guid>
+      <guid>https://jscalvert.github.io/posts/markov-chain-dichotomy/</guid>
       <description>&lt;p&gt;This post explains how the Markov chain dichotomy of transience and recurrence implies dichotomous behavior for certain models of collective motion.&lt;/p&gt;</description>
     </item>
     <item>
       <title>A third rigorous result about DLA</title>
-      <link>http://localhost:1313/posts/discrepancy-in-dla-research/</link>
+      <link>https://jscalvert.github.io/posts/discrepancy-in-dla-research/</link>
       <pubDate>Tue, 24 May 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/discrepancy-in-dla-research/</guid>
+      <guid>https://jscalvert.github.io/posts/discrepancy-in-dla-research/</guid>
       <description>&lt;p&gt;This post highlights recent work which constitutes only the third rigorous result about planar diffusion-limited aggregation (DLA), a paradigmatic model of random, dendritic growth.&lt;/p&gt;</description>
     </item>
     <item>
       <title>A conjecture about harmonic measure</title>
-      <link>http://localhost:1313/posts/a-conjecture-about-harmonic-measure/</link>
+      <link>https://jscalvert.github.io/posts/a-conjecture-about-harmonic-measure/</link>
       <pubDate>Fri, 29 Apr 2022 12:32:46 -0700</pubDate>
-      <guid>http://localhost:1313/posts/a-conjecture-about-harmonic-measure/</guid>
+      <guid>https://jscalvert.github.io/posts/a-conjecture-about-harmonic-measure/</guid>
       <description>&lt;p&gt;Given finite $A \subset \mathbb{Z}^2$, the harmonic measure of $x \in A$ is the probability that a simple random walk &amp;ldquo;from infinity&amp;rdquo; first visits $A$ at $x$. If $A$ has $n$ elements, what is the smallest positive harmonic measure that you can get?&lt;/p&gt;</description>
     </item>
     <item>
       <title>Numerosity-driven phase transitions</title>
-      <link>http://localhost:1313/posts/quorum-transitions/</link>
+      <link>https://jscalvert.github.io/posts/quorum-transitions/</link>
       <pubDate>Wed, 27 Apr 2022 13:46:26 -0700</pubDate>
-      <guid>http://localhost:1313/posts/quorum-transitions/</guid>
+      <guid>https://jscalvert.github.io/posts/quorum-transitions/</guid>
       <description>&lt;p&gt;This post discusses the intersection of some of my recent and forthcoming work in probability theory with studies of programmable matter and ant colonies.&lt;/p&gt;</description>
     </item>
   </channel>

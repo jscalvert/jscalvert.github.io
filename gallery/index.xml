@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Gallery on Jacob Calvert</title>
-    <link>http://localhost:1313/gallery/</link>
+    <link>https://jscalvert.github.io/gallery/</link>
     <description>Recent content in Gallery on Jacob Calvert</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 18 Feb 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/gallery/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jscalvert.github.io/gallery/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Collective behavior vs. number</title>
-      <link>http://localhost:1313/gallery/collective-behavior-vs-number/</link>
+      <link>https://jscalvert.github.io/gallery/collective-behavior-vs-number/</link>
       <pubDate>Wed, 18 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/gallery/collective-behavior-vs-number/</guid>
-      <description>&lt;p&gt;&lt;p class=&#34;markdown-image&#34;&gt;&#xA;  &lt;img src=&#34;http://localhost:1313/images/gallery/numerosity-thumb.png&#34; alt=&#34;image info&#34;  /&gt;&#xA;&lt;/p&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;A recent preprint &lt;a href=&#34;https://arxiv.org/pdf/2510.06011&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;How many more is different?&amp;rdquo;&lt;/a&gt; attempts to reconcile the common wisdom that collective behaviors are robust to the loss of individuals with the obvious reliance of such collectives on being numerous. The figure highlights three examples of collectives (living and non-living, at different physical scales) whose behaviors have been shown to depend sensitively on the numbers of their constituents. The example of water clusters is especially striking, as the formation of ice is the paradigm of a phase transition. Familiar phase transitions are mediated by temperature, which determines the relative strength of intermolecular interactions and thermal noise. At a fixed temperature below the freezing point, however, number—mere number!—decides collective behavior.&lt;/p&gt;</description>
+      <guid>https://jscalvert.github.io/gallery/collective-behavior-vs-number/</guid>
+      <description>&lt;p&gt;&lt;p class=&#34;markdown-image&#34;&gt;&#xA;  &lt;img src=&#34;https://jscalvert.github.io/images/gallery/numerosity-thumb.png&#34; alt=&#34;image info&#34;  /&gt;&#xA;&lt;/p&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;A recent preprint &lt;a href=&#34;https://arxiv.org/pdf/2510.06011&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;How many more is different?&amp;rdquo;&lt;/a&gt; attempts to reconcile the common wisdom that collective behaviors are robust to the loss of individuals with the obvious reliance of such collectives on being numerous. The figure highlights three examples of collectives (living and non-living, at different physical scales) whose behaviors have been shown to depend sensitively on the numbers of their constituents. The example of water clusters is especially striking, as the formation of ice is the paradigm of a phase transition. Familiar phase transitions are mediated by temperature, which determines the relative strength of intermolecular interactions and thermal noise. At a fixed temperature below the freezing point, however, number—mere number!—decides collective behavior.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Local–global relationships</title>
-      <link>http://localhost:1313/gallery/rho-contour-diagram/</link>
+      <link>https://jscalvert.github.io/gallery/rho-contour-diagram/</link>
       <pubDate>Wed, 18 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/gallery/rho-contour-diagram/</guid>
+      <guid>https://jscalvert.github.io/gallery/rho-contour-diagram/</guid>
       <description>&lt;p&gt;The paper &amp;ldquo;&lt;a href=&#34;https://www.pnas.org/doi/10.1073/pnas.2411731121&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;A local–global principle for nonequilibrium steady states&lt;/a&gt;&amp;rdquo; explains striking, recent experiments in active matter physics using Markov chain theory. To do so, the paper introduces the correlation coefficient&lt;/p&gt;&#xA;$$\rho = \mathrm{Corr}(-\log \pi (X), \log q(X)),$$&lt;p&gt;where $\pi$ is the stationary distribution of an (irreducible) Markov chain on a finite state space, $q(x)$ is the sum of transition rates out of state $x$, and $X$ is a state chosen randomly according to some distribution. (By $\mathrm{Corr}(U,V)$, I mean the familiar Pearson correlation coefficient, defined by normalizing the covariance of $U$ and $V$.)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Tunneling to the origin</title>
-      <link>http://localhost:1313/gallery/tunneling-to-the-origin/</link>
+      <link>https://jscalvert.github.io/gallery/tunneling-to-the-origin/</link>
       <pubDate>Wed, 18 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/gallery/tunneling-to-the-origin/</guid>
-      <description>&lt;p&gt;Theorem 4 of &lt;a href=&#34;https://www.cambridge.org/core/journals/forum-of-mathematics-sigma/article/collapse-and-diffusion-in-harmonic-activation-and-transport/F236C7550C6E9B48D80B24DD4896518A&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;Collapse and diffusion in harmonic activation and transport&amp;rdquo;&lt;/a&gt; states that there is a universal constant $c&gt;0$ such that, if $A$ is a subset of $\mathbb{Z}^2$ with $n \geq 1$ elements, then the harmonic measure of $x$ in $A$ is either zero or at least $\exp (-c n \log n)$. In other words, the least positive value of harmonic measure can be no smaller than exponential in $n \log n$. See &lt;a href=&#34;http://localhost:1313/posts/a-conjecture-about-harmonic-measure/&#34;&gt;this post&lt;/a&gt; for a definition of harmonic measure and an explanation of why this is an interesting quantity to study. The same paper &lt;a href=&#34;http://localhost:1313/posts/a-conjecture-about-harmonic-measure/&#34;&gt;conjectured&lt;/a&gt; an optimal lower bound of $\exp (-c n)$. In fact, this was recently &lt;a href=&#34;https://link.springer.com/article/10.1007/s00440-025-01393-6&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;proved&lt;/a&gt; by Cai, Kozma, Procaccia, and Zhang, who introduced the notion of &lt;em&gt;vertex-removal stability&lt;/em&gt; to do so!&lt;/p&gt;</description>
+      <guid>https://jscalvert.github.io/gallery/tunneling-to-the-origin/</guid>
+      <description>&lt;p&gt;Theorem 4 of &lt;a href=&#34;https://www.cambridge.org/core/journals/forum-of-mathematics-sigma/article/collapse-and-diffusion-in-harmonic-activation-and-transport/F236C7550C6E9B48D80B24DD4896518A&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;Collapse and diffusion in harmonic activation and transport&amp;rdquo;&lt;/a&gt; states that there is a universal constant $c&gt;0$ such that, if $A$ is a subset of $\mathbb{Z}^2$ with $n \geq 1$ elements, then the harmonic measure of $x$ in $A$ is either zero or at least $\exp (-c n \log n)$. In other words, the least positive value of harmonic measure can be no smaller than exponential in $n \log n$. See &lt;a href=&#34;https://jscalvert.github.io/posts/a-conjecture-about-harmonic-measure/&#34;&gt;this post&lt;/a&gt; for a definition of harmonic measure and an explanation of why this is an interesting quantity to study. The same paper &lt;a href=&#34;https://jscalvert.github.io/posts/a-conjecture-about-harmonic-measure/&#34;&gt;conjectured&lt;/a&gt; an optimal lower bound of $\exp (-c n)$. In fact, this was recently &lt;a href=&#34;https://link.springer.com/article/10.1007/s00440-025-01393-6&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;proved&lt;/a&gt; by Cai, Kozma, Procaccia, and Zhang, who introduced the notion of &lt;em&gt;vertex-removal stability&lt;/em&gt; to do so!&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

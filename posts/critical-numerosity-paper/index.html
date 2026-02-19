@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head>
     <title>New paper on critical numerosity | Jacob Calvert</title>
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -95,15 +95,15 @@
     
         <div class="tags">
             
-                <a href="http://localhost:1313/tags/probability">probability</a>
+                <a href="https://jscalvert.github.io/tags/probability">probability</a>
             
-                <a href="http://localhost:1313/tags/critical-numerosity">critical numerosity</a>
+                <a href="https://jscalvert.github.io/tags/critical-numerosity">critical numerosity</a>
             
-                <a href="http://localhost:1313/tags/collective-behavior">collective behavior</a>
+                <a href="https://jscalvert.github.io/tags/collective-behavior">collective behavior</a>
             
-                <a href="http://localhost:1313/tags/programmable-matter">programmable matter</a>
+                <a href="https://jscalvert.github.io/tags/programmable-matter">programmable matter</a>
             
-                <a href="http://localhost:1313/tags/paper-highlights">paper highlights</a>
+                <a href="https://jscalvert.github.io/tags/paper-highlights">paper highlights</a>
             
         </div>
     
@@ -118,38 +118,12 @@
     <footer id="footer">
     
 
-    <div class="retro-counter" aria-live="polite">
-      <span class="retro-counter-label">VISITORS</span>
-      <span id="retro-counter-value" class="retro-counter-value">LOADING</span>
-    </div>
-
     <div class="copyright">
     
         © Copyright 2026 Jacob Calvert
     
     </div>
 </footer>
-
-<script>
-  (function () {
-    var counterEl = document.getElementById("retro-counter-value");
-    if (!counterEl) return;
-    var endpoint = "https://api.countapi.xyz/hit/jacobcalvert-site/main";
-    fetch(endpoint)
-      .then(function (response) { return response.json(); })
-      .then(function (data) {
-        var value = (data && typeof data.value === "number") ? data.value : null;
-        if (value === null) {
-          counterEl.textContent = "N/A";
-          return;
-        }
-        counterEl.textContent = String(value).padStart(6, "0");
-      })
-      .catch(function () {
-        counterEl.textContent = "N/A";
-      });
-  })();
-</script>
 
 
 
