@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <title>Correlation thresholds in steady-state distributions | Jacob Calvert</title>
-
     <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">    
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width,minimum-scale=1">
 <meta name="description" content="Dana Randall and I find thresholds in the local–global correlations exhibited by the steady-state distributions of a particle system and the dynamics of the Sherrington–Kirkpatrick spin glass.">
 <meta name="generator" content="Hugo 0.139.2">
 
-
   <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="/css/style.css">
 
@@ -21,51 +23,30 @@
 <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
 
 
-
   
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css" integrity="sha384-KiWOvVjnN8qwAZbuQyWDIbfCLFhLXNETzBQjA/92pIowpC0d2O3nppDGQVgwd2nB" crossorigin="anonymous">
-
-
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js" integrity="sha384-0fdwu/T/EQMsQlrHCCHoH10pkPLlKA1jL5dFyUOvB3lfeT2540/2g6YgSi2BL14p" crossorigin="anonymous"></script>
-
-
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        renderMathInElement(document.body, {
-            delimiters: [
-                {left: "$$", right: "$$", display: true},
-                {left: "$", right: "$", display: false}
-            ]
-        });
-    });
-</script>
-
-
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous"
+    onload="renderMathInElement(document.body,{throwOnError:false,delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false},{left:'\\(',right:'\\)',display:false},{left:'\\[',right:'\\]',display:true}]});"></script>
 
 
 
 
 
   </head>
-
   <body>
-    <nav class="navigation">
-	
-		<a href="/"> <span class="arrow">←</span>Home</a>
-	
-	
-	<a href="/about">About</a>
-	<a href="/papers">Papers</a>
-	<a href="/posts">Posts</a>
-	<a href="/tags">Tags</a>
-	
-
-	
+    <nav class="navigation" role="navigation">
+  <div class="nav-inner">
+    <a href="/" class="nav-name">Jacob Calvert</a>
+    <div class="nav-links">
+      <a href="/about" >About</a>
+      <a href="/papers" >Papers</a>
+      <a href="/gallery" >Gallery</a>
+      <a href="/posts" class="active">Posts</a>
+      
+    </div>
+  </div>
 </nav>
-
 
     <main class="main">
       
@@ -75,21 +56,12 @@
 
     <div class="tip">
         <time datetime="2025-08-22 00:00:00 &#43;0000 UTC">Aug 22, 2025</time>
-        <span class="split">
-          ·
-        </span>
-        <span>
-          289 words
-        </span>
-        <span class="split">
-          ·
-        </span>
-        <span>
-          2 minute read
-        </span>
+        <span class="split">&middot;</span>
+        <span>287 words</span>
+        <span class="split">&middot;</span>
+        <span>2 minute read</span>
     </div>
 
-    
     
         
   
@@ -97,73 +69,87 @@
 
     
 
-
     <div class="content">
       <p>Dana Randall and I find thresholds in the local–global correlations exhibited by the steady-state distributions of a particle system and the dynamics of the Sherrington–Kirkpatrick spin glass.</p>
 <p>For a Markov chain with a finite number of states and a unique stationary distribution $\pi$, the local–global correlation is defined as</p>
-<p>$$\rho = \mathrm{Corr}(-\log \pi (X), \log q(X)),$$</p>
-<p>where $q(x)$ is the exit rate of state $x$ and $X$ is a uniformly random state.</p>
+$$\rho = \mathrm{Corr}(-\log \pi (X), \log q(X)),$$<p>where $q(x)$ is the exit rate of state $x$ and $X$ is a uniformly random state.</p>
 <p>It is important to identify classes of Markov chains for which $\rho$ is close to $1$, because these Markov chains satisfy an approximate analogue of the Boltzmann distribution. In this analogy, the logarithm of the exit rate plays the role of energy, and the states with the highest values of $\pi$ are simply those with the lowest exit rates. In other words, when $\rho \approx 1$, there is a simple explanation of the order that $\pi$ exhibits.</p>
-<p>The challenge is that $\rho$ is generally difficult to calculate, so our <a href="/posts/local-global-correlations-in-reaction-kinetics.md">recent work</a> resorts to bounding below its expected value under a certain distribution on Markov chains. In a <a href="/papers/correlation-thresholds.pdf">new paper</a>, Dana and I provide the first explicit estimate of $\rho$ in a model system of interest, namely, dynamics of the Sherrington–Kirkpatrick spin glass on the $N$-dimensional hypercube $\{-1,1\}^N$. We find that, as a parameter $\lambda \in [0,1]$ of the dynamics varies, the correlation $\rho$ jumps from $-1$ to $1$. More precisely, we prove that</p>
-<p>$$\rho(\lambda) = \mathrm{sign}(\lambda-\lambda_\ast) \left(1 + \mathrm{error} \right),$$</p>
-<p>for $\lambda \neq \lambda_\ast = (1 - 4/N)/(2 - 4/N)$ and where the error is negligible at sufficiently high temperatures, depending on $N$ and $|\lambda-\lambda_\ast|$.</p>
+<p>The challenge is that $\rho$ is generally difficult to calculate, so our <a href="/posts/local-global-correlations-in-reaction-kinetics.md">recent work</a> resorts to bounding below its expected value under a certain distribution on Markov chains. In a <a href="/papers/correlation-thresholds.pdf">new paper</a>, Dana and I provide the first explicit estimate of $\rho$ in a model system of interest, namely, dynamics of the Sherrington–Kirkpatrick spin glass on the $N$-dimensional hypercube $\\{-1,1\\}^N$. We find that, as a parameter $\lambda \in [0,1]$ of the dynamics varies, the correlation $\rho$ jumps from $-1$ to $1$. More precisely, we prove that</p>
+$$\rho(\lambda) = \mathrm{sign}(\lambda-\lambda_\ast) \left(1 + \mathrm{error} \right),$$<p>for $\lambda \neq \lambda_\ast = (1 - 4/N)/(2 - 4/N)$ and where the error is negligible at sufficiently high temperatures, depending on $N$ and $|\lambda-\lambda_\ast|$.</p>
 <p>Our hope is that this paper makes the notion of local–global correlation more broadly accessible by presenting a concrete estimate of $\rho$.</p>
     </div>
 
     
         <div class="tags">
             
-                <a href="https://jscalvert.github.io/tags/probability">probability</a>
+                <a href="http://localhost:1313/tags/probability">probability</a>
             
-                <a href="https://jscalvert.github.io/tags/markov-chains">Markov chains</a>
+                <a href="http://localhost:1313/tags/markov-chains">Markov chains</a>
             
-                <a href="https://jscalvert.github.io/tags/statistical-physics">statistical physics</a>
+                <a href="http://localhost:1313/tags/statistical-physics">statistical physics</a>
             
-                <a href="https://jscalvert.github.io/tags/paper-highlights">paper highlights</a>
+                <a href="http://localhost:1313/tags/paper-highlights">paper highlights</a>
             
         </div>
     
+
     
-    
+
 
 </section>
-<script>
-      renderMathInElement(
-          document.getElementById("test"),
-          {
-              delimiters: [
-                  {left: "$$", right: "$$", display: true},
-                  {left: "$", right: "$", display: false},
-                  {left: "\\begin{equation}", right: "\\end{equation}", display: true},
-                  {left: "\\begin{align}", right: "\\end{align}", display: true},
-                  {left: "\\begin{alignat}", right: "\\end{alignat}", display: true},
-                  {left: "\\begin{gather}", right: "\\end{gather}", display: true},
-                  {left: "\\(", right: "\\)", display: false},
-                  {left: "\\[", right: "\\]", display: true}
-              ]
-          }
-      );
-    </script>
+
 
     </main>
-    
     <footer id="footer">
     
 
-    <div class="copyright">
-    
-        © Copyright 2025 Jacob Calvert
-    
+    <div class="retro-counter" aria-live="polite">
+      <span class="retro-counter-label">VISITORS</span>
+      <span id="retro-counter-value" class="retro-counter-value">LOADING</span>
     </div>
 
+    <div class="copyright">
     
-      <div class="powerby">
-        Powered by <a href='http://www.gohugo.io/'>Hugo</a> Theme By <a href='https://https://github.com/nodejh/hugo-theme-mini'>nodejh</a>
-      </div>
+        © Copyright 2026 Jacob Calvert
     
+    </div>
 </footer>
 
+<script>
+  (function () {
+    var counterEl = document.getElementById("retro-counter-value");
+    if (!counterEl) return;
+    var endpoint = "https://api.countapi.xyz/hit/jacobcalvert-site/main";
+    fetch(endpoint)
+      .then(function (response) { return response.json(); })
+      .then(function (data) {
+        var value = (data && typeof data.value === "number") ? data.value : null;
+        if (value === null) {
+          counterEl.textContent = "N/A";
+          return;
+        }
+        counterEl.textContent = String(value).padStart(6, "0");
+      })
+      .catch(function () {
+        counterEl.textContent = "N/A";
+      });
+  })();
+</script>
 
 
-  <script src="/js/analytics.min.879ddf388acc8b759c40a48f30018c0f6459741e69860286166e0d36a0b70240.js" integrity="sha256-h53fOIrMi3WcQKSPMAGMD2RZdB5phgKGFm4NNqC3AkA="></script></body>
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-M3NJZLRV9F"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-M3NJZLRV9F');
+        }
+      </script></body>
 </html>

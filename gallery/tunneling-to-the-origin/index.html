@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>Tunneling to the origin | Jacob Calvert</title>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,minimum-scale=1">
+<meta name="description" content="Random walk reaches the origin without hitting the points in a set through radial (beige) and annular (blue) tunnels.">
+<meta name="generator" content="Hugo 0.139.2">
+
+  <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+
+<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+
+
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous"
+    onload="renderMathInElement(document.body,{throwOnError:false,delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false},{left:'\\(',right:'\\)',display:false},{left:'\\[',right:'\\]',display:true}]});"></script>
+
+
+
+
+
+  </head>
+  <body>
+    <nav class="navigation" role="navigation">
+  <div class="nav-inner">
+    <a href="/" class="nav-name">Jacob Calvert</a>
+    <div class="nav-links">
+      <a href="/about" >About</a>
+      <a href="/papers" >Papers</a>
+      <a href="/gallery" class="active">Gallery</a>
+      <a href="/posts" >Posts</a>
+      
+    </div>
+  </div>
+</nav>
+
+    <main class="main">
+      
+
+<section id="single" class="gallery-single">
+    <h1 class="title">Tunneling to the origin</h1>
+
+    <div class="tip">
+        <time datetime="2026-02-18 00:00:00 &#43;0000 UTC">Feb 18, 2026</time>
+        
+        <span class="split">&middot;</span>
+        <a href="/pdfs/tunnel.pdf" target="_blank" rel="noopener">PDF</a>
+        
+    </div>
+
+    
+    
+      
+    
+    
+    
+    
+    <aside class="toc">
+      <details>
+          <summary>Source Files</summary>
+          <div>
+            <ul>
+              
+                <li>
+                  <a href="/tex/tunnel1.tex" target="_blank" rel="noopener">tunnel1.tex</a>
+                  <span class="source-file-ext">.tex</span>
+                </li>
+              
+                <li>
+                  <a href="/tex/tunnel2.tex" target="_blank" rel="noopener">tunnel2.tex</a>
+                  <span class="source-file-ext">.tex</span>
+                </li>
+              
+                <li>
+                  <a href="/tex/tunnel3.tex" target="_blank" rel="noopener">tunnel3.tex</a>
+                  <span class="source-file-ext">.tex</span>
+                </li>
+              
+            </ul>
+          </div>
+      </details>
+    </aside>
+    
+
+    
+        
+  
+
+
+    
+
+    <div class="content">
+      <p>Theorem 4 of <a href="https://www.cambridge.org/core/journals/forum-of-mathematics-sigma/article/collapse-and-diffusion-in-harmonic-activation-and-transport/F236C7550C6E9B48D80B24DD4896518A" target="_blank" rel="noopener">&ldquo;Collapse and diffusion in harmonic activation and transport&rdquo;</a> states that there is a universal constant $c>0$ such that, if $A$ is a subset of $\mathbb{Z}^2$ with $n \geq 1$ elements, then the harmonic measure of $x$ in $A$ is either zero or at least $\exp (-c n \log n)$. In other words, the least positive value of harmonic measure can be no smaller than exponential in $n \log n$. See <a href="/posts/a-conjecture-about-harmonic-measure/">this post</a> for a definition of harmonic measure and an explanation of why this is an interesting quantity to study. The same paper <a href="/posts/a-conjecture-about-harmonic-measure/">conjectured</a> an optimal lower bound of $\exp (-c n)$. In fact, this was recently <a href="https://link.springer.com/article/10.1007/s00440-025-01393-6" target="_blank" rel="noopener">proved</a> by Cai, Kozma, Procaccia, and Zhang, who introduced the notion of <em>vertex-removal stability</em> to do so!</p>
+<p><p class="markdown-image">
+  <img src="/images/gallery/tunnel-thumb.png" alt="image info"  />
+</p>
+</p>
+<p>The proof of our estimate is by induction on $n$. The preceding figure illustrates a key idea in the induction step. Here, we assume (without loss of generality) that the origin has positive harmonic measure in $A$, and seek to bound below this harmonic measure.</p>
+<p>To do so, we construct a contiguous sequence of radial (beige) and annular (blue) tunnels, through which a random walk starting in the outer annulus $\mathcal{A}_J$ can reach the inner circle $C(\delta R_I)$ without encountering the other elements of $A$ (green dots). I&rsquo;ll spare you the definitions of $J$ and $I$, which label special annuli. Essentially, we use the induction hypothesis to advance random walk to the outer annulus, then tunnel to the inner circle, and use a separate estimate to reach the origin without hitting any other elements of $A$ within $C(R_1)$.</p>
+<p>The fact that you can find such a sequence of tunnels to the origin follows from the pigeonhole principle applied to the radial and angular coordinates. The size of each tunnel depends on the number of elements of $A$ in the corresponding region, which affects how easily random walk navigates the tunnel, ultimately producing the $n$ dependence in our estimate. The argument requires quite a bit of notation, which the following, zoomed-in version provides.</p>
+<p><p class="markdown-image">
+  <img src="/images/gallery/detailed-tunnel.png" alt="image info"  />
+</p>
+</p>
+<p>The random walk navigates each annular tunnel by exiting a sequence of rectangles through their far ends. The rectangles are situated along a guiding circle inside the annulus. The figure illustrating this didn&rsquo;t make the paper, but I thought I&rsquo;d include it anyway.</p>
+<p><p class="markdown-image">
+  <img src="/images/gallery/sagitta-thumb.png" alt="image info"  />
+</p>
+</p>
+<p>The .tex files that I used to generate these figures are linked in order above.</p>
+
+    </div>
+
+</section>
+
+
+    </main>
+    <footer id="footer">
+    
+
+    <div class="retro-counter" aria-live="polite">
+      <span class="retro-counter-label">VISITORS</span>
+      <span id="retro-counter-value" class="retro-counter-value">LOADING</span>
+    </div>
+
+    <div class="copyright">
+    
+        © Copyright 2026 Jacob Calvert
+    
+    </div>
+</footer>
+
+<script>
+  (function () {
+    var counterEl = document.getElementById("retro-counter-value");
+    if (!counterEl) return;
+    var endpoint = "https://api.countapi.xyz/hit/jacobcalvert-site/main";
+    fetch(endpoint)
+      .then(function (response) { return response.json(); })
+      .then(function (data) {
+        var value = (data && typeof data.value === "number") ? data.value : null;
+        if (value === null) {
+          counterEl.textContent = "N/A";
+          return;
+        }
+        counterEl.textContent = String(value).padStart(6, "0");
+      })
+      .catch(function () {
+        counterEl.textContent = "N/A";
+      });
+  })();
+</script>
+
+
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-M3NJZLRV9F"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-M3NJZLRV9F');
+        }
+      </script></body>
+</html>

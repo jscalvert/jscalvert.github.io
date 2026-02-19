@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>Update on random Markov matrices | Jacob Calvert</title>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,minimum-scale=1">
+<meta name="description" content="Frank den Hollander, Dana Randall, and I recently posted a new version of our paper on random Markov matrices. We significantly improved the main result and newly answered a question of Bordenave, Caputo, and Chafaï (2012).">
+<meta name="generator" content="Hugo 0.139.2">
+
+  <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+
+<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+
+
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous"
+    onload="renderMathInElement(document.body,{throwOnError:false,delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false},{left:'\\(',right:'\\)',display:false},{left:'\\[',right:'\\]',display:true}]});"></script>
+
+
+
+
+
+  </head>
+  <body>
+    <nav class="navigation" role="navigation">
+  <div class="nav-inner">
+    <a href="/" class="nav-name">Jacob Calvert</a>
+    <div class="nav-links">
+      <a href="/about" >About</a>
+      <a href="/papers" >Papers</a>
+      <a href="/gallery" >Gallery</a>
+      <a href="/posts" class="active">Posts</a>
+      
+    </div>
+  </div>
+</nav>
+
+    <main class="main">
+      
+
+<section id="single">
+    <h1 class="title">Update on random Markov matrices</h1>
+
+    <div class="tip">
+        <time datetime="2026-02-19 00:00:00 &#43;0000 UTC">Feb 19, 2026</time>
+        <span class="split">&middot;</span>
+        <span>743 words</span>
+        <span class="split">&middot;</span>
+        <span>4 minute read</span>
+    </div>
+
+    
+        
+  
+    <aside class="toc">
+      <details>
+          <summary>Table of Contents
+          </summary>
+          <div>
+              <nav id="TableOfContents">
+  <ul>
+    <li><a href="#approximation-of-markov-chain-stationary-distributions">Approximation of Markov chain stationary distributions</a></li>
+    <li><a href="#answering-a-question-of-bordenave-caputo-and-chafaï">Answering a question of Bordenave, Caputo, and Chafaï</a></li>
+  </ul>
+</nav>
+          </div>
+      </details>
+    </aside>
+  
+
+
+    
+
+    <div class="content">
+      <p>Frank den Hollander, Dana Randall, and I recently posted a <a href="https://arxiv.org/abs/2505.01608" target="_blank" rel="noopener">new version</a> of our paper on random Markov matrices. We significantly improved the main result and newly answered a question of <a href="https://link.springer.com/article/10.1007/s00440-010-0336-1" target="_blank" rel="noopener">Bordenave, Caputo, and Chafaï (2012)</a>.</p>
+<h1 id="approximation-of-markov-chain-stationary-distributions">Approximation of Markov chain stationary distributions <a href="#approximation-of-markov-chain-stationary-distributions" class="anchor" aria-hidden="true">&sect;</a></h1>
+<p>The setting is a random Markov transition rate matrix $Q$ on $n$ states. For simplicity, assume that $Q$ is irreducible (this holds eventually a.s. for the model we study), so that  there is a unique stationary distribution $\pi_Q$ which solves the matrix equation $\pi_Q Q = 0$. The main result of the paper identifies conditions under which $\pi_Q$ is close in total variation distance to the distribution $\nu_q$ that is proportional to $1/q_i$, where $q_i = \sum_{j \ne i} Q_{i,j}$ is the exit rate of $i$. This is interesting because $\pi_Q$ is generally a complicated function of all the transition rates. To get a sense of <em>how</em> complicated, see the <a href="https://en.wikipedia.org/wiki/Markov_chain_tree_theorem" target="_blank" rel="noopener">Markov chain tree theorem</a>.</p>
+<p>A basic fact is that the probabilities $\pi_Q(i)$ are proportional to $\pi_{\widehat{Q}}(i) / q_i$, where $\widehat{Q}$ is the transition probability matrix obtained by normalizing the entries of $Q$ by the corresponding exit rates. So the closeness of $\pi_Q$ and $\nu_q$ in total variation distance naturally relates to a measure of how uniform $\pi_{\widehat{Q}}$ is. There are multiple ways to show that $\pi_{\widehat{Q}}$ is roughly uniform.</p>
+<p>In the first draft of our paper, we showed that $\pi_{\widehat{Q}}$ was asymptotically uniform (a.s. as $n \to \infty$) by showing that $\widehat{Q}$ is a small perturbation of a rapidly mixing, doubly stochastic matrix. (This required some assumptions on the upper and lower tails of the common distribution of the entries of $Q$.) A result from <a href="https://www.cambridge.org/core/journals/journal-of-applied-probability/article/abs/stability-and-exponential-convergence-of-continuoustime-markov-chains/7AA2C9EAF8B63A313635193034A2D6B7" target="_blank" rel="noopener">Mitrophanov (2003)</a> explains that small perturbations of rapidly mixing Markov chains do not change the stationary distribution much. Because doubly stochastic Markov chains have uniform stationary distributions, this implies that $\pi_{\widehat{Q}}$ is nearly uniform. We later realized that a different argument, which involves applying Bernstein&rsquo;s inequality to the rows of the two-step transition probability matrix $\widehat{Q}^2$, ultimately gives better control on the uniformity of $\pi_{\widehat{Q}}$.</p>
+<p>In the updated paper, we also expand the class of random transition rate matrices that we consider. We do so by separately assigning vertex and edge weights to the complete digraph, and forming $Q_{i,j}$ as the product of the vertex weight $\theta_i$ at $i$ and the weight $X_{i,j}$ of edge $(i,j)$. The edge weights are drawn i.i.d. from a non-negative distribution that can have an atom at zero, so the resulting Markov chain need not have transitions between every pair of states. Our main result merely requires that the law of edge weights has a finite $p$-th moment, for some $p > 4$. In this case, regardless of what the positive vertex weights $\theta_i$ are, we find that</p>
+$$ \| \pi_Q - \nu_q \|_{\mathrm{TV}} = o(1) \quad \mathrm{a.s.} $$<p>In fact, because the inhomogeneity in the exit rates comes primarily from differences in the vertex weights, the same conclusion applies with $\nu_\theta$ in the place of $\nu_q$, where</p>
+$$ \nu_\theta (i) = \frac{1/\theta_i}{\sum_{k=1}^n 1/\theta_k}. $$<p>Since $\pi_Q$ is close in total variation distance to $\nu_\theta$, and because we can make $\nu_\theta$ into any positive distribution by choosing the vertex parameters accordingly, the same is true of $\pi_Q$.</p>
+<h1 id="answering-a-question-of-bordenave-caputo-and-chafaï">Answering a question of Bordenave, Caputo, and Chafaï <a href="#answering-a-question-of-bordenave-caputo-and-chafa%c3%af" class="anchor" aria-hidden="true">&sect;</a></h1>
+<p>Now, instead of the random transition rate matrix $Q$, consider the random transition probability matrix $P$ that results from drawing i.i.d. edge weights $X_{i,j}$ for every edge $(i,j)$ of the complete digraph and normalizing the rows of the resulting matrix. In a 2012 <em>PTRF</em> <a href="https://link.springer.com/content/pdf/10.1007/s00440-010-0336-1.pdf" target="_blank" rel="noopener">paper</a>, Bordenave, Caputo, and Chafaï asked: If the $X_{i,j}$ have a finite second moment, is</p>
+$$ \| \pi_P - u \|_{\mathrm{TV}} = o(1) \quad \mathrm{a.s.}, $$<p>where $u$ is the uniform distribution? In fact, special cases of this question have been raised several times in the random matrix theory, physics, and computer science literatures.</p>
+<p>We answer this question in the affirmative by showing that the entries of the two-step transition matrix $P^2$ are uniformly bounded below by $(1-o(1))/n$. The reason for studying $P^2$ instead of $P$ itself is that the entries of $P^2$ have &ldquo;numerators&rdquo; that are sums of edge weights. These sums have exponential lower tails—meaning that even the smallest of these $n^2$ numerators cannot be much smaller than its mean. We convert the lower bound on the entries of $P^2$ into a lower bound on the entries of $\pi_P$ using the fact that $\pi_P$ is also the stationary distribution of $P^2$.</p>
+    </div>
+
+    
+        <div class="tags">
+            
+                <a href="http://localhost:1313/tags/probability">probability</a>
+            
+                <a href="http://localhost:1313/tags/markov-chains">Markov chains</a>
+            
+                <a href="http://localhost:1313/tags/random-matrix-theory">random matrix theory</a>
+            
+                <a href="http://localhost:1313/tags/paper-highlights">paper highlights</a>
+            
+        </div>
+    
+
+    
+
+
+</section>
+
+
+    </main>
+    <footer id="footer">
+    
+
+    <div class="retro-counter" aria-live="polite">
+      <span class="retro-counter-label">VISITORS</span>
+      <span id="retro-counter-value" class="retro-counter-value">LOADING</span>
+    </div>
+
+    <div class="copyright">
+    
+        © Copyright 2026 Jacob Calvert
+    
+    </div>
+</footer>
+
+<script>
+  (function () {
+    var counterEl = document.getElementById("retro-counter-value");
+    if (!counterEl) return;
+    var endpoint = "https://api.countapi.xyz/hit/jacobcalvert-site/main";
+    fetch(endpoint)
+      .then(function (response) { return response.json(); })
+      .then(function (data) {
+        var value = (data && typeof data.value === "number") ? data.value : null;
+        if (value === null) {
+          counterEl.textContent = "N/A";
+          return;
+        }
+        counterEl.textContent = String(value).padStart(6, "0");
+      })
+      .catch(function () {
+        counterEl.textContent = "N/A";
+      });
+  })();
+</script>
+
+
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-M3NJZLRV9F"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-M3NJZLRV9F');
+        }
+      </script></body>
+</html>

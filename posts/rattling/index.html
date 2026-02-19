@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <title>New preprint on rattling theory | Jacob Calvert</title>
-
     <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">    
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width,minimum-scale=1">
 <meta name="description" content="Dana Randall and I generalize and prove the main claims of an emerging physical theory of nonequilibrium self-organization, called rattling theory, by interpreting its main claims in terms of Markov processes. The result is a principle that relates a local aspect of the dynamics to the global steady state. We apply it to random walks on random graphs, spin-glass dynamics, and models of ant colonies.">
 <meta name="generator" content="Hugo 0.139.2">
 
-
   <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="/css/style.css">
 
@@ -21,51 +23,30 @@
 <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
 
 
-
   
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css" integrity="sha384-KiWOvVjnN8qwAZbuQyWDIbfCLFhLXNETzBQjA/92pIowpC0d2O3nppDGQVgwd2nB" crossorigin="anonymous">
-
-
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js" integrity="sha384-0fdwu/T/EQMsQlrHCCHoH10pkPLlKA1jL5dFyUOvB3lfeT2540/2g6YgSi2BL14p" crossorigin="anonymous"></script>
-
-
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        renderMathInElement(document.body, {
-            delimiters: [
-                {left: "$$", right: "$$", display: true},
-                {left: "$", right: "$", display: false}
-            ]
-        });
-    });
-</script>
-
-
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous"
+    onload="renderMathInElement(document.body,{throwOnError:false,delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false},{left:'\\(',right:'\\)',display:false},{left:'\\[',right:'\\]',display:true}]});"></script>
 
 
 
 
 
   </head>
-
   <body>
-    <nav class="navigation">
-	
-		<a href="/"> <span class="arrow">←</span>Home</a>
-	
-	
-	<a href="/about">About</a>
-	<a href="/papers">Papers</a>
-	<a href="/posts">Posts</a>
-	<a href="/tags">Tags</a>
-	
-
-	
+    <nav class="navigation" role="navigation">
+  <div class="nav-inner">
+    <a href="/" class="nav-name">Jacob Calvert</a>
+    <div class="nav-links">
+      <a href="/about" >About</a>
+      <a href="/papers" >Papers</a>
+      <a href="/gallery" >Gallery</a>
+      <a href="/posts" class="active">Posts</a>
+      
+    </div>
+  </div>
 </nav>
-
 
     <main class="main">
       
@@ -75,21 +56,12 @@
 
     <div class="tip">
         <time datetime="2024-06-26 00:00:00 &#43;0000 UTC">Jun 26, 2024</time>
-        <span class="split">
-          ·
-        </span>
-        <span>
-          251 words
-        </span>
-        <span class="split">
-          ·
-        </span>
-        <span>
-          2 minute read
-        </span>
+        <span class="split">&middot;</span>
+        <span>252 words</span>
+        <span class="split">&middot;</span>
+        <span>2 minute read</span>
     </div>
 
-    
     
         
   
@@ -115,71 +87,88 @@
 
     
 
-
     <div class="content">
       <p>Dana Randall and I generalize and prove the main claims of an emerging physical theory of nonequilibrium self-organization, called rattling theory, by interpreting its main claims in terms of Markov processes. The result is a principle that relates a local aspect of the dynamics to the global steady state. We apply it to random walks on random graphs, spin-glass dynamics, and models of ant colonies.</p>
 <p>Check out our <a href="https://arxiv.org/abs/2311.10957" target="_blank" rel="noopener">preprint</a> to learn more.</p>
-<h2 id="abstract">Abstract <a href="#abstract" class="anchor">🔗</a></h2><p>The global steady state of a system in thermal equilibrium exponentially favors configurations with lesser energy. This principle is a powerful explanation of self-organization because energy is a local property of a configuration. For nonequilibrium systems, there is no such property for which an analogous principle holds, hence no common explanation of the diverse forms of self-organization they exhibit. However, a flurry of recent work demonstrates that a local property of configurations called &ldquo;rattling&rdquo; predicts the global steady states of a broad class of nonequilibrium systems. We interpret this emerging physical theory in terms of Markov processes to generalize and prove its main claims. Surprisingly, we find that the idea at the core of rattling theory is so general as to apply to equilibrium and nonequilibrium systems alike. Its predictions hold to an extent determined by the relative variance of, and correlation between, the local and global &ldquo;parts&rdquo; of an arbitrary steady state. We show how these key quantities characterize the local-global relationships of random walks on random graphs, various spin-glass dynamics, and models of animal collective behavior.</p>
+<h2 id="abstract">Abstract <a href="#abstract" class="anchor" aria-hidden="true">&sect;</a></h2>
+<p>The global steady state of a system in thermal equilibrium exponentially favors configurations with lesser energy. This principle is a powerful explanation of self-organization because energy is a local property of a configuration. For nonequilibrium systems, there is no such property for which an analogous principle holds, hence no common explanation of the diverse forms of self-organization they exhibit. However, a flurry of recent work demonstrates that a local property of configurations called &ldquo;rattling&rdquo; predicts the global steady states of a broad class of nonequilibrium systems. We interpret this emerging physical theory in terms of Markov processes to generalize and prove its main claims. Surprisingly, we find that the idea at the core of rattling theory is so general as to apply to equilibrium and nonequilibrium systems alike. Its predictions hold to an extent determined by the relative variance of, and correlation between, the local and global &ldquo;parts&rdquo; of an arbitrary steady state. We show how these key quantities characterize the local-global relationships of random walks on random graphs, various spin-glass dynamics, and models of animal collective behavior.</p>
     </div>
 
     
         <div class="tags">
             
-                <a href="https://jscalvert.github.io/tags/probability">probability</a>
+                <a href="http://localhost:1313/tags/probability">probability</a>
             
-                <a href="https://jscalvert.github.io/tags/markov-chains">Markov chains</a>
+                <a href="http://localhost:1313/tags/markov-chains">Markov chains</a>
             
-                <a href="https://jscalvert.github.io/tags/statistical-physics">statistical physics</a>
+                <a href="http://localhost:1313/tags/statistical-physics">statistical physics</a>
             
-                <a href="https://jscalvert.github.io/tags/collective-motion">collective motion</a>
+                <a href="http://localhost:1313/tags/collective-motion">collective motion</a>
             
-                <a href="https://jscalvert.github.io/tags/programmable-matter">programmable matter</a>
+                <a href="http://localhost:1313/tags/programmable-matter">programmable matter</a>
             
-                <a href="https://jscalvert.github.io/tags/paper-highlights">paper highlights</a>
+                <a href="http://localhost:1313/tags/paper-highlights">paper highlights</a>
             
         </div>
     
+
     
-    
+
 
 </section>
-<script>
-      renderMathInElement(
-          document.getElementById("test"),
-          {
-              delimiters: [
-                  {left: "$$", right: "$$", display: true},
-                  {left: "$", right: "$", display: false},
-                  {left: "\\begin{equation}", right: "\\end{equation}", display: true},
-                  {left: "\\begin{align}", right: "\\end{align}", display: true},
-                  {left: "\\begin{alignat}", right: "\\end{alignat}", display: true},
-                  {left: "\\begin{gather}", right: "\\end{gather}", display: true},
-                  {left: "\\(", right: "\\)", display: false},
-                  {left: "\\[", right: "\\]", display: true}
-              ]
-          }
-      );
-    </script>
+
 
     </main>
-    
     <footer id="footer">
     
 
-    <div class="copyright">
-    
-        © Copyright 2025 Jacob Calvert
-    
+    <div class="retro-counter" aria-live="polite">
+      <span class="retro-counter-label">VISITORS</span>
+      <span id="retro-counter-value" class="retro-counter-value">LOADING</span>
     </div>
 
+    <div class="copyright">
     
-      <div class="powerby">
-        Powered by <a href='http://www.gohugo.io/'>Hugo</a> Theme By <a href='https://https://github.com/nodejh/hugo-theme-mini'>nodejh</a>
-      </div>
+        © Copyright 2026 Jacob Calvert
     
+    </div>
 </footer>
 
+<script>
+  (function () {
+    var counterEl = document.getElementById("retro-counter-value");
+    if (!counterEl) return;
+    var endpoint = "https://api.countapi.xyz/hit/jacobcalvert-site/main";
+    fetch(endpoint)
+      .then(function (response) { return response.json(); })
+      .then(function (data) {
+        var value = (data && typeof data.value === "number") ? data.value : null;
+        if (value === null) {
+          counterEl.textContent = "N/A";
+          return;
+        }
+        counterEl.textContent = String(value).padStart(6, "0");
+      })
+      .catch(function () {
+        counterEl.textContent = "N/A";
+      });
+  })();
+</script>
 
 
-  <script src="/js/analytics.min.879ddf388acc8b759c40a48f30018c0f6459741e69860286166e0d36a0b70240.js" integrity="sha256-h53fOIrMi3WcQKSPMAGMD2RZdB5phgKGFm4NNqC3AkA="></script></body>
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-M3NJZLRV9F"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-M3NJZLRV9F');
+        }
+      </script></body>
 </html>

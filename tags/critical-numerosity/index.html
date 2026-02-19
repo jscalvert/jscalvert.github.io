@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <title>Jacob Calvert</title>
-
     <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">    
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width,minimum-scale=1">
 <meta name="description" content="">
 <meta name="generator" content="Hugo 0.139.2">
 
-
   <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="/css/style.css">
 
@@ -23,113 +25,128 @@
 
 
 
-
   
     <link href="/tags/critical-numerosity/index.xml" rel="alternate" type="application/rss+xml" title="Jacob Calvert" />
     <link href="/tags/critical-numerosity/index.xml" rel="feed" type="application/rss+xml" title="Jacob Calvert" />
   
 
 
-
-
-
   </head>
-
   <body>
-    <nav class="navigation">
-	
-		<a href="/"> <span class="arrow">←</span>Home</a>
-	
-	
-	<a href="/about">About</a>
-	<a href="/papers">Papers</a>
-	<a href="/posts">Posts</a>
-	<a href="/tags">Tags</a>
-	
-
-	
+    <nav class="navigation" role="navigation">
+  <div class="nav-inner">
+    <a href="/" class="nav-name">Jacob Calvert</a>
+    <div class="nav-links">
+      <a href="/about" >About</a>
+      <a href="/papers" >Papers</a>
+      <a href="/gallery" >Gallery</a>
+      <a href="/posts" >Posts</a>
+      
+    </div>
+  </div>
 </nav>
-
 
     <main class="main">
       
 <header class="profile">
-    
-        <img class="avatar" alt="avatar" src="/images/avatar.png" />
-    
+    <div class="profile-inner">
+        
+            <img class="avatar" alt="avatar" src="/images/avatar.png" />
+        
 
-    <h1>Jacob Calvert</h1>
-    
-
-
-    
+        <div class="profile-text">
+            <h1 class="site-title">Jacob Calvert</h1>
+            
+        </div>
+    </div>
 </header>
 
+
 <section id="archive">
-   
     
         <div class="group">
-            <h3 class="key">
-                2023
-            </h3>
-
+            <h3 class="key">2023</h3>
             
                 <div class="value">
                   <div class="date">
                       <time datetime="2023-02-05 09:21:46 -0800 -0800">Feb 5</time>
                   </div>
                   <div class="title">
-                      <a href="https://jscalvert.github.io/posts/critical-numerosity-paper/">
-                          New paper on critical numerosity
-                      </a>
-
+                      <a href="http://localhost:1313/posts/critical-numerosity-paper/">New paper on critical numerosity</a>
                       
                           <div class="tags">
                               
-                                  <a href="https://jscalvert.github.io/tags/probability">probability</a>
+                                  <a href="http://localhost:1313/tags/probability">probability</a>
                               
-                                  <a href="https://jscalvert.github.io/tags/critical-numerosity">critical numerosity</a>
+                                  <a href="http://localhost:1313/tags/critical-numerosity">critical numerosity</a>
                               
-                                  <a href="https://jscalvert.github.io/tags/collective-behavior">collective behavior</a>
+                                  <a href="http://localhost:1313/tags/collective-behavior">collective behavior</a>
                               
-                                  <a href="https://jscalvert.github.io/tags/programmable-matter">programmable matter</a>
+                                  <a href="http://localhost:1313/tags/programmable-matter">programmable matter</a>
                               
-                                  <a href="https://jscalvert.github.io/tags/paper-highlights">paper highlights</a>
+                                  <a href="http://localhost:1313/tags/paper-highlights">paper highlights</a>
                               
                           </div>
                       
                   </div>
                 </div>
-                      
+            
         </div>
-
     
-
-
-
 </section>
 
 
-
     </main>
-    
     <footer id="footer">
     
 
-    <div class="copyright">
-    
-        © Copyright 2025 Jacob Calvert
-    
+    <div class="retro-counter" aria-live="polite">
+      <span class="retro-counter-label">VISITORS</span>
+      <span id="retro-counter-value" class="retro-counter-value">LOADING</span>
     </div>
 
+    <div class="copyright">
     
-      <div class="powerby">
-        Powered by <a href='http://www.gohugo.io/'>Hugo</a> Theme By <a href='https://https://github.com/nodejh/hugo-theme-mini'>nodejh</a>
-      </div>
+        © Copyright 2026 Jacob Calvert
     
+    </div>
 </footer>
 
+<script>
+  (function () {
+    var counterEl = document.getElementById("retro-counter-value");
+    if (!counterEl) return;
+    var endpoint = "https://api.countapi.xyz/hit/jacobcalvert-site/main";
+    fetch(endpoint)
+      .then(function (response) { return response.json(); })
+      .then(function (data) {
+        var value = (data && typeof data.value === "number") ? data.value : null;
+        if (value === null) {
+          counterEl.textContent = "N/A";
+          return;
+        }
+        counterEl.textContent = String(value).padStart(6, "0");
+      })
+      .catch(function () {
+        counterEl.textContent = "N/A";
+      });
+  })();
+</script>
 
 
-  <script src="/js/analytics.min.879ddf388acc8b759c40a48f30018c0f6459741e69860286166e0d36a0b70240.js" integrity="sha256-h53fOIrMi3WcQKSPMAGMD2RZdB5phgKGFm4NNqC3AkA="></script></body>
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-M3NJZLRV9F"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-M3NJZLRV9F');
+        }
+      </script></body>
 </html>

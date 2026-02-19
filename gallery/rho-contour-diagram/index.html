@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>Local–global relationships | Jacob Calvert</title>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,minimum-scale=1">
+<meta name="description" content="Visualizing the relationship between the local and global &#39;parts&#39; of Markov chain stationary distributions.">
+<meta name="generator" content="Hugo 0.139.2">
+
+  <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+
+<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+
+
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous"
+    onload="renderMathInElement(document.body,{throwOnError:false,delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false},{left:'\\(',right:'\\)',display:false},{left:'\\[',right:'\\]',display:true}]});"></script>
+
+
+
+
+
+  </head>
+  <body>
+    <nav class="navigation" role="navigation">
+  <div class="nav-inner">
+    <a href="/" class="nav-name">Jacob Calvert</a>
+    <div class="nav-links">
+      <a href="/about" >About</a>
+      <a href="/papers" >Papers</a>
+      <a href="/gallery" class="active">Gallery</a>
+      <a href="/posts" >Posts</a>
+      
+    </div>
+  </div>
+</nav>
+
+    <main class="main">
+      
+
+<section id="single" class="gallery-single">
+    <h1 class="title">Local–global relationships</h1>
+
+    <div class="tip">
+        <time datetime="2026-02-18 00:00:00 &#43;0000 UTC">Feb 18, 2026</time>
+        
+        <span class="split">&middot;</span>
+        <a href="/pdfs/rho-contour.pdf" target="_blank" rel="noopener">PDF</a>
+        
+    </div>
+
+    
+    
+      
+    
+    
+    
+    
+    <aside class="toc">
+      <details>
+          <summary>Source Files</summary>
+          <div>
+            <ul>
+              
+                <li>
+                  <a href="/other/plotRho.m" target="_blank" rel="noopener">plotRho.m</a>
+                  <span class="source-file-ext">.m</span>
+                </li>
+              
+            </ul>
+          </div>
+      </details>
+    </aside>
+    
+
+    
+        
+  
+
+
+    
+
+    <div class="content">
+      <p>The paper &ldquo;<a href="https://www.pnas.org/doi/10.1073/pnas.2411731121" target="_blank" rel="noopener">A local–global principle for nonequilibrium steady states</a>&rdquo; explains striking, recent experiments in active matter physics using Markov chain theory. To do so, the paper introduces the correlation coefficient</p>
+$$\rho = \mathrm{Corr}(-\log \pi (X), \log q(X)),$$<p>where $\pi$ is the stationary distribution of an (irreducible) Markov chain on a finite state space, $q(x)$ is the sum of transition rates out of state $x$, and $X$ is a state chosen randomly according to some distribution. (By $\mathrm{Corr}(U,V)$, I mean the familiar Pearson correlation coefficient, defined by normalizing the covariance of $U$ and $V$.)</p>
+<p>A key result of the paper is a simple formula for $\rho$ in terms of two other quantities $\widehat\rho$ and $r$, which together characterize the relationship between the local and global &ldquo;parts&rdquo; of $\pi$, in a sense that the paper details. Because the formula appears complicated, we visualized it using a contour diagram on the $(r,\widehat\rho)$ &ldquo;strip.&rdquo; I say strip because $\widehat\rho$ is also a correlation coefficient, so it takes values in the interval $[-1,1]$, while $r$ is a nonnegative number.</p>
+<p><p class="markdown-image">
+  <img src="/images/gallery/rho-contour-thumb.png" alt="image info"  />
+</p>
+</p>
+<p>An interesting thing about these contour diagrams is that you can use them to visualize how local–global relationships change as the parameters of a Markov chain vary. For each value of the parameter, you plot a point on the strip—that is, each point corresponds to a Markov chain. Below is an example of dynamics of the Sherrington–Kirkpatrick spin glass from &ldquo;<a href="https://journals.aps.org/pre/abstract/10.1103/f4bq-s228" target="_blank" rel="noopener">Correlation thresholds in the steady states of particle systems and spin glasses</a>.&rdquo; It shows that, as a certain parameter of the Glauber dynamics varies, there is a rapid change from $\rho \approx -1$ (blue) to $\rho \approx 1$ (green), driven primarily by a change in $\widehat\rho$. Interpreting this threshold requires some discussion of what $\widehat\rho$ and $r$ represent. I&rsquo;ll defer to the linked papers for that.</p>
+<p><p class="markdown-image">
+  <img src="/images/gallery/rho-contour-sk.png" alt="image info"  />
+</p>
+</p>
+
+    </div>
+
+</section>
+
+
+    </main>
+    <footer id="footer">
+    
+
+    <div class="retro-counter" aria-live="polite">
+      <span class="retro-counter-label">VISITORS</span>
+      <span id="retro-counter-value" class="retro-counter-value">LOADING</span>
+    </div>
+
+    <div class="copyright">
+    
+        © Copyright 2026 Jacob Calvert
+    
+    </div>
+</footer>
+
+<script>
+  (function () {
+    var counterEl = document.getElementById("retro-counter-value");
+    if (!counterEl) return;
+    var endpoint = "https://api.countapi.xyz/hit/jacobcalvert-site/main";
+    fetch(endpoint)
+      .then(function (response) { return response.json(); })
+      .then(function (data) {
+        var value = (data && typeof data.value === "number") ? data.value : null;
+        if (value === null) {
+          counterEl.textContent = "N/A";
+          return;
+        }
+        counterEl.textContent = String(value).padStart(6, "0");
+      })
+      .catch(function () {
+        counterEl.textContent = "N/A";
+      });
+  })();
+</script>
+
+
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-M3NJZLRV9F"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-M3NJZLRV9F');
+        }
+      </script></body>
+</html>

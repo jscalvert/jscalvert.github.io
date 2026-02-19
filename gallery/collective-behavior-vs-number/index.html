@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>Collective behavior vs. number | Jacob Calvert</title>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,minimum-scale=1">
+<meta name="description" content="Experiments show that the behavior of collectives, broadly construed, can depend sensitively on how numerous they are.">
+<meta name="generator" content="Hugo 0.139.2">
+
+  <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+
+<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+
+
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous"
+    onload="renderMathInElement(document.body,{throwOnError:false,delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false},{left:'\\(',right:'\\)',display:false},{left:'\\[',right:'\\]',display:true}]});"></script>
+
+
+
+
+
+  </head>
+  <body>
+    <nav class="navigation" role="navigation">
+  <div class="nav-inner">
+    <a href="/" class="nav-name">Jacob Calvert</a>
+    <div class="nav-links">
+      <a href="/about" >About</a>
+      <a href="/papers" >Papers</a>
+      <a href="/gallery" class="active">Gallery</a>
+      <a href="/posts" >Posts</a>
+      
+    </div>
+  </div>
+</nav>
+
+    <main class="main">
+      
+
+<section id="single" class="gallery-single">
+    <h1 class="title">Collective behavior vs. number</h1>
+
+    <div class="tip">
+        <time datetime="2026-02-18 00:00:00 &#43;0000 UTC">Feb 18, 2026</time>
+        
+        <span class="split">&middot;</span>
+        <a href="/pdfs/numerosity.pdf" target="_blank" rel="noopener">PDF</a>
+        
+    </div>
+
+    
+    
+      
+    
+    
+    
+    
+    <aside class="toc">
+      <details>
+          <summary>Source Files</summary>
+          <div>
+            <ul>
+              
+                <li>
+                  <a href="/illustrator/numerosity-diagram.ai" target="_blank" rel="noopener">numerosity-diagram.ai</a>
+                  <span class="source-file-ext">.ai</span>
+                </li>
+              
+            </ul>
+          </div>
+      </details>
+    </aside>
+    
+
+    
+        
+  
+
+
+    
+
+    <div class="content">
+      <p><p class="markdown-image">
+  <img src="/images/gallery/numerosity-thumb.png" alt="image info"  />
+</p>
+</p>
+<p>A recent preprint <a href="https://arxiv.org/pdf/2510.06011" target="_blank" rel="noopener">&ldquo;How many more is different?&rdquo;</a> attempts to reconcile the common wisdom that collective behaviors are robust to the loss of individuals with the obvious reliance of such collectives on being numerous. The figure highlights three examples of collectives (living and non-living, at different physical scales) whose behaviors have been shown to depend sensitively on the numbers of their constituents. The example of water clusters is especially striking, as the formation of ice is the paradigm of a phase transition. Familiar phase transitions are mediated by temperature, which determines the relative strength of intermolecular interactions and thermal noise. At a fixed temperature below the freezing point, however, number—mere number!—decides collective behavior.</p>
+<p>What is it about these behaviors that determines the number of constituents needed to realize them? Is it possible to predict on the basis of first principles that more fish are needed to exhibit milling than water molecules are needed to stabilize ice? Of course, the precise numbers at which these behaviors emerge depend on the definitions of behavior, which suggests they may simply be artifacts of these definitions. Instead, our preprint shows that these numbers can be viewed in a canonical way, as features of certain probability distributions over the space of behaviors.</p>
+<p>The Adobe Illustrator file that I used to generate this figure is linked above.</p>
+
+    </div>
+
+</section>
+
+
+    </main>
+    <footer id="footer">
+    
+
+    <div class="retro-counter" aria-live="polite">
+      <span class="retro-counter-label">VISITORS</span>
+      <span id="retro-counter-value" class="retro-counter-value">LOADING</span>
+    </div>
+
+    <div class="copyright">
+    
+        © Copyright 2026 Jacob Calvert
+    
+    </div>
+</footer>
+
+<script>
+  (function () {
+    var counterEl = document.getElementById("retro-counter-value");
+    if (!counterEl) return;
+    var endpoint = "https://api.countapi.xyz/hit/jacobcalvert-site/main";
+    fetch(endpoint)
+      .then(function (response) { return response.json(); })
+      .then(function (data) {
+        var value = (data && typeof data.value === "number") ? data.value : null;
+        if (value === null) {
+          counterEl.textContent = "N/A";
+          return;
+        }
+        counterEl.textContent = String(value).padStart(6, "0");
+      })
+      .catch(function () {
+        counterEl.textContent = "N/A";
+      });
+  })();
+</script>
+
+
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-M3NJZLRV9F"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-M3NJZLRV9F');
+        }
+      </script></body>
+</html>

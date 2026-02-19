@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <title>Programming hierarchical self-organization | Jacob Calvert</title>
-
     <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">    
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width,minimum-scale=1">
 <meta name="description" content="A new preprint with Shunhao Oh and Dana Randall explains how to program simple computational &ldquo;particles&rdquo; of different types to self-organize into corresponding spatial regions that have a given hierarchical structure. The size, shape, and hierarchy of the regions are determined by the particles&rsquo; densities and affinities for particles of different types. Proving that the algorithm works requires new techniques for analyzing the Gibbs distributions of fixed-magnetization models from equilibrium statistical mechanics.">
 <meta name="generator" content="Hugo 0.139.2">
 
-
   <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="/css/style.css">
 
@@ -21,51 +23,30 @@
 <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
 
 
-
   
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css" integrity="sha384-KiWOvVjnN8qwAZbuQyWDIbfCLFhLXNETzBQjA/92pIowpC0d2O3nppDGQVgwd2nB" crossorigin="anonymous">
-
-
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js" integrity="sha384-0fdwu/T/EQMsQlrHCCHoH10pkPLlKA1jL5dFyUOvB3lfeT2540/2g6YgSi2BL14p" crossorigin="anonymous"></script>
-
-
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        renderMathInElement(document.body, {
-            delimiters: [
-                {left: "$$", right: "$$", display: true},
-                {left: "$", right: "$", display: false}
-            ]
-        });
-    });
-</script>
-
-
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous"
+    onload="renderMathInElement(document.body,{throwOnError:false,delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false},{left:'\\(',right:'\\)',display:false},{left:'\\[',right:'\\]',display:true}]});"></script>
 
 
 
 
 
   </head>
-
   <body>
-    <nav class="navigation">
-	
-		<a href="/"> <span class="arrow">←</span>Home</a>
-	
-	
-	<a href="/about">About</a>
-	<a href="/papers">Papers</a>
-	<a href="/posts">Posts</a>
-	<a href="/tags">Tags</a>
-	
-
-	
+    <nav class="navigation" role="navigation">
+  <div class="nav-inner">
+    <a href="/" class="nav-name">Jacob Calvert</a>
+    <div class="nav-links">
+      <a href="/about" >About</a>
+      <a href="/papers" >Papers</a>
+      <a href="/gallery" >Gallery</a>
+      <a href="/posts" class="active">Posts</a>
+      
+    </div>
+  </div>
 </nav>
-
 
     <main class="main">
       
@@ -75,21 +56,12 @@
 
     <div class="tip">
         <time datetime="2024-11-07 18:59:16 -0600 -0600">Nov 7, 2024</time>
-        <span class="split">
-          ·
-        </span>
-        <span>
-          384 words
-        </span>
-        <span class="split">
-          ·
-        </span>
-        <span>
-          2 minute read
-        </span>
+        <span class="split">&middot;</span>
+        <span>386 words</span>
+        <span class="split">&middot;</span>
+        <span>2 minute read</span>
     </div>
 
-    
     
         
   
@@ -112,18 +84,21 @@
 
     
 
-
     <div class="content">
       <p>A new preprint with Shunhao Oh and Dana Randall explains how to program simple computational &ldquo;particles&rdquo; of different types to self-organize into corresponding spatial regions that have a given hierarchical structure. The size, shape, and hierarchy of the regions are determined by the particles&rsquo; densities and affinities for particles of different types. Proving that the algorithm works requires new techniques for analyzing the Gibbs distributions of fixed-magnetization models from equilibrium statistical mechanics.</p>
 <p>You can read the preprint <a href="https://arxiv.org/pdf/2411.03643" target="_blank" rel="noopener">here</a>.</p>
-<h1 id="examples-of-hierarchical-sorting">Examples of hierarchical sorting <a href="#examples-of-hierarchical-sorting" class="anchor">🔗</a></h1><p>If you&rsquo;d like to know where the connection between programmable matter and statistical mechanics comes from, read on. But, first, some examples of hierarchical sorting from the paper. Here, &ldquo;types&rdquo; of particles are represented by colors. The first figure features eight types of particles, while the second features nine types. I defer to the preprint for an explanation of the interactions between colors that lead to these hierarchical sorts.</p>
+<h1 id="examples-of-hierarchical-sorting">Examples of hierarchical sorting <a href="#examples-of-hierarchical-sorting" class="anchor" aria-hidden="true">&sect;</a></h1>
+<p>If you&rsquo;d like to know where the connection between programmable matter and statistical mechanics comes from, read on. But, first, some examples of hierarchical sorting from the paper. Here, &ldquo;types&rdquo; of particles are represented by colors. The first figure features eight types of particles, while the second features nine types. I defer to the preprint for an explanation of the interactions between colors that lead to these hierarchical sorts.</p>
 <p><p class="markdown-image">
   <img src="/images/sorting-figure-1.png" alt="image"  />
-</p></p>
+</p>
+</p>
 <p><p class="markdown-image">
   <img src="/images/sorting-figure-2.png" alt="image"  />
-</p></p>
-<h1 id="connection-to-equilibrium-statistical-mechanics">Connection to equilibrium statistical mechanics <a href="#connection-to-equilibrium-statistical-mechanics" class="anchor">🔗</a></h1><p>The goals of statistical mechanics and programmable matter are inverses. While the former seeks to understand the collective behavior that arises from the dynamics of constituents, the latter seeks to design constituents that produce a desired collective behavior. This relationship underlies an approach to programmable matter pioneered by Dana and Andréa Richa. The idea is that, if you can encode the collective behavior of interest in the Hamiltonian of a model of equilibrium statistical mechanics, then the Glauber dynamics of the corresponding Gibbs distribution can, in some instances, be converted into a stochastic distributed algorithm for that behavior.</p>
+</p>
+</p>
+<h1 id="connection-to-equilibrium-statistical-mechanics">Connection to equilibrium statistical mechanics <a href="#connection-to-equilibrium-statistical-mechanics" class="anchor" aria-hidden="true">&sect;</a></h1>
+<p>The goals of statistical mechanics and programmable matter are inverses. While the former seeks to understand the collective behavior that arises from the dynamics of constituents, the latter seeks to design constituents that produce a desired collective behavior. This relationship underlies an approach to programmable matter pioneered by Dana and Andréa Richa. The idea is that, if you can encode the collective behavior of interest in the Hamiltonian of a model of equilibrium statistical mechanics, then the Glauber dynamics of the corresponding Gibbs distribution can, in some instances, be converted into a stochastic distributed algorithm for that behavior.</p>
 <p>Some interesting aspects of this approach:</p>
 <ul>
 <li>Proving the correctness of the algorithm is equivalent to proving that the collective behavior of interest occurs with high probability under the Gibbs distribution. This is why our preprint is all about analyzing a Gibbs distribution.</li>
@@ -135,59 +110,76 @@
     
         <div class="tags">
             
-                <a href="https://jscalvert.github.io/tags/probability">probability</a>
+                <a href="http://localhost:1313/tags/probability">probability</a>
             
-                <a href="https://jscalvert.github.io/tags/markov-chains">Markov chains</a>
+                <a href="http://localhost:1313/tags/markov-chains">Markov chains</a>
             
-                <a href="https://jscalvert.github.io/tags/statistical-physics">statistical physics</a>
+                <a href="http://localhost:1313/tags/statistical-physics">statistical physics</a>
             
-                <a href="https://jscalvert.github.io/tags/programmable-matter">programmable matter</a>
+                <a href="http://localhost:1313/tags/programmable-matter">programmable matter</a>
             
-                <a href="https://jscalvert.github.io/tags/paper-highlights">paper highlights</a>
+                <a href="http://localhost:1313/tags/paper-highlights">paper highlights</a>
             
         </div>
     
+
     
-    
+
 
 </section>
-<script>
-      renderMathInElement(
-          document.getElementById("test"),
-          {
-              delimiters: [
-                  {left: "$$", right: "$$", display: true},
-                  {left: "$", right: "$", display: false},
-                  {left: "\\begin{equation}", right: "\\end{equation}", display: true},
-                  {left: "\\begin{align}", right: "\\end{align}", display: true},
-                  {left: "\\begin{alignat}", right: "\\end{alignat}", display: true},
-                  {left: "\\begin{gather}", right: "\\end{gather}", display: true},
-                  {left: "\\(", right: "\\)", display: false},
-                  {left: "\\[", right: "\\]", display: true}
-              ]
-          }
-      );
-    </script>
+
 
     </main>
-    
     <footer id="footer">
     
 
-    <div class="copyright">
-    
-        © Copyright 2025 Jacob Calvert
-    
+    <div class="retro-counter" aria-live="polite">
+      <span class="retro-counter-label">VISITORS</span>
+      <span id="retro-counter-value" class="retro-counter-value">LOADING</span>
     </div>
 
+    <div class="copyright">
     
-      <div class="powerby">
-        Powered by <a href='http://www.gohugo.io/'>Hugo</a> Theme By <a href='https://https://github.com/nodejh/hugo-theme-mini'>nodejh</a>
-      </div>
+        © Copyright 2026 Jacob Calvert
     
+    </div>
 </footer>
 
+<script>
+  (function () {
+    var counterEl = document.getElementById("retro-counter-value");
+    if (!counterEl) return;
+    var endpoint = "https://api.countapi.xyz/hit/jacobcalvert-site/main";
+    fetch(endpoint)
+      .then(function (response) { return response.json(); })
+      .then(function (data) {
+        var value = (data && typeof data.value === "number") ? data.value : null;
+        if (value === null) {
+          counterEl.textContent = "N/A";
+          return;
+        }
+        counterEl.textContent = String(value).padStart(6, "0");
+      })
+      .catch(function () {
+        counterEl.textContent = "N/A";
+      });
+  })();
+</script>
 
 
-  <script src="/js/analytics.min.879ddf388acc8b759c40a48f30018c0f6459741e69860286166e0d36a0b70240.js" integrity="sha256-h53fOIrMi3WcQKSPMAGMD2RZdB5phgKGFm4NNqC3AkA="></script></body>
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-M3NJZLRV9F"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-M3NJZLRV9F');
+        }
+      </script></body>
 </html>

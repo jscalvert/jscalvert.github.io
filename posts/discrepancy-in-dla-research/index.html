@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <title>A third rigorous result about DLA | Jacob Calvert</title>
-
     <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">    
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width,minimum-scale=1">
 <meta name="description" content="This post highlights recent work which constitutes only the third rigorous result about planar diffusion-limited aggregation (DLA), a paradigmatic model of random, dendritic growth.">
 <meta name="generator" content="Hugo 0.139.2">
 
-
   <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="/css/style.css">
 
@@ -21,51 +23,30 @@
 <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
 
 
-
   
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css" integrity="sha384-KiWOvVjnN8qwAZbuQyWDIbfCLFhLXNETzBQjA/92pIowpC0d2O3nppDGQVgwd2nB" crossorigin="anonymous">
-
-
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js" integrity="sha384-0fdwu/T/EQMsQlrHCCHoH10pkPLlKA1jL5dFyUOvB3lfeT2540/2g6YgSi2BL14p" crossorigin="anonymous"></script>
-
-
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        renderMathInElement(document.body, {
-            delimiters: [
-                {left: "$$", right: "$$", display: true},
-                {left: "$", right: "$", display: false}
-            ]
-        });
-    });
-</script>
-
-
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous"
+    onload="renderMathInElement(document.body,{throwOnError:false,delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false},{left:'\\(',right:'\\)',display:false},{left:'\\[',right:'\\]',display:true}]});"></script>
 
 
 
 
 
   </head>
-
   <body>
-    <nav class="navigation">
-	
-		<a href="/"> <span class="arrow">←</span>Home</a>
-	
-	
-	<a href="/about">About</a>
-	<a href="/papers">Papers</a>
-	<a href="/posts">Posts</a>
-	<a href="/tags">Tags</a>
-	
-
-	
+    <nav class="navigation" role="navigation">
+  <div class="nav-inner">
+    <a href="/" class="nav-name">Jacob Calvert</a>
+    <div class="nav-links">
+      <a href="/about" >About</a>
+      <a href="/papers" >Papers</a>
+      <a href="/gallery" >Gallery</a>
+      <a href="/posts" class="active">Posts</a>
+      
+    </div>
+  </div>
 </nav>
-
 
     <main class="main">
       
@@ -75,21 +56,12 @@
 
     <div class="tip">
         <time datetime="2022-05-24 00:00:00 &#43;0000 UTC">May 24, 2022</time>
-        <span class="split">
-          ·
-        </span>
-        <span>
-          1227 words
-        </span>
-        <span class="split">
-          ·
-        </span>
-        <span>
-          6 minute read
-        </span>
+        <span class="split">&middot;</span>
+        <span>704 words</span>
+        <span class="split">&middot;</span>
+        <span>4 minute read</span>
     </div>
 
-    
     
         
   
@@ -114,14 +86,10 @@
 
     
 
-
     <div class="content">
       <p>This post highlights recent work which constitutes only the third rigorous result about planar diffusion-limited aggregation (DLA), a paradigmatic model of random, dendritic growth.</p>
-<h1 id="the-definition-of-dla">The definition of DLA <a href="#the-definition-of-dla" class="anchor">🔗</a></h1><p>DLA is a random process which grows a connected subset, or cluster, of the two-dimensional Euclidean lattice $\mathbb{Z}^2$, one element at a time.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> It was introduced by Witten and Sander in 1981 and serves to model a variety of physical phenomena, such as electrodeposition and Hele-Shaw flow.<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> Start with a set $A_0 = \{o\}$ consisting of the origin $o$. One step of the dynamics is given by
-$$ A_{t+1} = A_t \cup \{X\},$$
-where $X$ is the first site in the boundary of $A_t$ visited by a simple random walk &ldquo;from infinity.&rdquo; In other words, DLA is a Markov chain with transition probabilities (known in this context as growth probabilities) given by
-$$ P (A_{t+1} = A_t \cup \{x\} \bigm\vert A_t) = H_{\partial A_t} (x), $$</p>
-<p>where $H_{\partial A_t}$ is the harmonic measure of $\partial A_t$,<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> and where $\partial A_t$ denotes the boundary of $A_t$, i.e., elements $y$ which do not belong to $A_t$, but are at distance $| y - x| = 1$ from some element $x$ which does.</p>
+<h1 id="the-definition-of-dla">The definition of DLA <a href="#the-definition-of-dla" class="anchor" aria-hidden="true">&sect;</a></h1>
+$$ A_{t+1} = A_t \cup \\{X\\},$$$$ P (A_{t+1} = A_t \cup \\{x\\} \bigm\vert A_t) = H_{\partial A_t} (x), $$<p>where $H_{\partial A_t}$ is the harmonic measure of $\partial A_t$,<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> and where $\partial A_t$ denotes the boundary of $A_t$, i.e., elements $y$ which do not belong to $A_t$, but are at distance $\| y - x\| = 1$ from some element $x$ which does.</p>
 <p>State-of-the-art simulations show that large DLA clusters have a cross-shaped backbone with many smaller scales of branching, the confluence of which forms narrow channels, called &ldquo;fjords&rdquo; (Figure 1).<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> Since the &ldquo;tips&rdquo; of the cluster are exposed, their boundaries have greater growth probabilities than those at the bottom of the fjords. The multifractal conjecture concerns the way these growth probabilities scale with the linear size (i.e., the diameter) of the cluster.</p>
 <figure><img src="/images/dla_cluster.png"
     alt="Figure 1. A DLA cluster with roughly 145 million particles simulated by Denis Grebenkov and Dmitry Beliaev." width="600"><figcaption>
@@ -129,42 +97,30 @@ $$ P (A_{t+1} = A_t \cup \{x\} \bigm\vert A_t) = H_{\partial A_t} (x), $$</p>
     </figcaption>
 </figure>
 
-<h1 id="there-are-few-rigorous-results-about-dla">There are few rigorous results about DLA <a href="#there-are-few-rigorous-results-about-dla" class="anchor">🔗</a></h1><p>Before discussing the multifractal conjecture in greater detail, it is worth highlighting the extent to which DLA has evaded rigorous study. Despite being introduced more than 40 years ago, there are only <em>two</em> non-trivial, rigorous results about DLA on $\mathbb{Z}^2$. The first, due to Kesten,<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup> states that there is a number $C &lt; \infty$ such that, almost surely, for all sufficiently large $t$, the diameter of the cluster at time $t$ satisfies
-$$ \mathrm{diam} (A_t) \leq C t^{\frac{2}{3}}. $$
+<h1 id="there-are-few-rigorous-results-about-dla">There are few rigorous results about DLA <a href="#there-are-few-rigorous-results-about-dla" class="anchor" aria-hidden="true">&sect;</a></h1>
+$$ \mathrm{diam} (A_t) \leq C t^{\frac{2}{3}}. $$<p>
 This result is a consequence of an upper bound on the harmonic measure of a connected set.
 The second, due to Eberz-Wagner,<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup> states that, almost surely, the DLA cluster will have infinitely-many holes.</p>
 <p>The third rigorous result about DLA comes from a harmonic measure lower bound I recently proved with Shirshendu Ganguly and Alan Hammond. This result is related to the conjectural multifractality of DLA.</p>
-<h1 id="the-multifractal-conjecture">The multifractal conjecture <a href="#the-multifractal-conjecture" class="anchor">🔗</a></h1><!-- raw HTML omitted -->
-<p>Informally, the assertion that DLA is multifractal means that the growth probabilities on the boundary of a typical cluster exhibit power-law scaling with the linear size of such a cluster.<sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup>
-In particular, concerning the least positive growth probability, $p_{min}$, we can make &ldquo;typical&rdquo; precise via expectation, by defining
-$$ \log p_{min} (t) = E \big[ \log \min \{ H_{\partial A_t} (x): H_{\partial A_t} (x) &gt; 0 \} \big]. $$
-Note that, in the absence of the expectation, $p_{min} (t)$ would simply be the random quantity
-$$ \min \{ H_{\partial A_t} (x): H_{\partial A_t} (x) &gt; 0 \}. $$
-In terms of the expected linear size $L(t) = E [\mathrm{diam} (A_t)]$ of a DLA cluster at time $t$, multifractality asserts that there is a positive number $\alpha &lt; \infty$ such that
-$$ p_{min} (t) \approx L(t)^{-\alpha}, $$
-where we write $f(t) \approx g(t)$
-to mean that there are positive real numbers $c$ and $C$ such that
-$$ c g(t) \leq f(t) \leq C g(t) $$
+<h1 id="the-multifractal-conjecture">The multifractal conjecture <a href="#the-multifractal-conjecture" class="anchor" aria-hidden="true">&sect;</a></h1>
+<!---## What it means for the smallest growth probability--->
+$$ \log p_{min} (t) = E \big[ \log \min \\{ H_{\partial A_t} (x): H_{\partial A_t} (x) > 0 \\} \big]. $$$$ \min \\{ H_{\partial A_t} (x): H_{\partial A_t} (x) > 0 \\}. $$$$ p_{min} (t) \approx L(t)^{-\alpha}, $$$$ c g(t) \leq f(t) \leq C g(t) $$<p>
 for all sufficiently large $t$.</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<h1 id="a-rigorous-result-concerning-the-failure-of-multifractality">A rigorous result concerning the failure of multifractality <a href="#a-rigorous-result-concerning-the-failure-of-multifractality" class="anchor">🔗</a></h1><p>It is unclear if $\alpha$ exists. Indeed, while a pair of studies<sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup> claimed to have definitively established a finite value of $\alpha$, they were based on simulations of DLA clusters over only tens of thousands of steps, whereas the later simulations of Grebenkov and Beliaev suggest that the cluster&rsquo;s shape changes dramatically over 100 times as many steps. Additionally, many earlier studies (at least nine by my count) predicted that $p_{min} (t)$ decays faster than any inverse power of $L(t)$, and it is unclear how the concerns raised by these studies are addressed by the simulations which claim a finite $\alpha$.<sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup> If multifractality fails for $p_{min} (t)$, meaning that no finite $\alpha$ satisfies
-$$ p_{min} (t) \approx L(t)^{-\alpha}, $$
+<!---For example, suppose there is a $\beta \in [\frac12,1]$ such that $L (t)$ almost surely scales as 
+$L (t) \approx t^{\beta}$.[^4] In this case, $p_{min} (t)$ must satisfy
+$$ p_{min} (t) \approx t^{- \beta \alpha}. $$--->
+<!---## What is predicted about $\alpha$ and $\beta$?
+
+Concerning $\beta$, nearly every (non-rigorous) analytical study has predicted $\beta = \frac35$,[^9] while nearly every simulation study has predicted a slightly smaller value of approximately $\beta = \frac{1}{1.71}$.[^10] The fact that these separate consensuses appear to be at odds is interesting but, for the purposes of our discussion, it suffices to note that it is widely believed that $\beta > \frac12$. In other words, it is believed that the DLA cluster forms branches like those in Figure 1 and, in particular, the cluster is not a disk.--->
+<h1 id="a-rigorous-result-concerning-the-failure-of-multifractality">A rigorous result concerning the failure of multifractality <a href="#a-rigorous-result-concerning-the-failure-of-multifractality" class="anchor" aria-hidden="true">&sect;</a></h1>
+$$ p_{min} (t) \approx L(t)^{-\alpha}, $$<p>
 then it is natural to wonder: How rapidly can $p_{min} (t)$ decrease, as a function of $L(t)$?</p>
-<p>My recent work with Shirshendu Ganguly and Alan Hammond includes a harmonic measure lower bound, which partly addresses this question.<sup id="fnref:10"><a href="#fn:10" class="footnote-ref" role="doc-noteref">10</a></sup> Specifically, our result states that there is a positive number $C_1$ such that, if $B$ is a connected, $n$-element subset of $\mathbb{Z}^2$, then
-$$ \log \min \{ H_B (x): H_B (x) &gt; 0 \} \geq -C_1 n. $$
-In the context of DLA, this implies that there is a positive number $C_2$ such that, for $t \geq 1$,
-$$ \log p_{min} (t) \geq -C_2 t. $$</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+$$ \log \min \\{ H_B (x): H_B (x) > 0 \\} \geq -C_1 n. $$$$ \log p_{min} (t) \geq -C_2 t. $$<!---Since Kesten's bound implies $L(t) \leq C_3 t^{\frac{2}{3}}$ for a positive number $C_3$ and sufficiently large $t$, we conclude that $p_{min} (t)$ must satisfy
+$$ \log p_{min} (t) \geq -C L(t)^{\frac{3}{2}}, $$
+again for a positive number $C$ and sufficiently large $t$.--->
 <p>Hence, the smallest growth probability can be no smaller than exponential in $t$.</p>
-<p>Compare this to the prediction made by Lee and Stanley<sup id="fnref:11"><a href="#fn:11" class="footnote-ref" role="doc-noteref">11</a></sup> that the smallest positive growth probability $\widetilde p$ among DLA clusters with linear size $\widetilde L$ satisfies
-$$ \log \widetilde p \approx - \widetilde L^2, $$
-which agrees with our result because the linear size at least scales as $t^{\frac{1}{2}}$. Additionally, consider the form assumed by Blumenfeld and Aharony,<sup id="fnref:12"><a href="#fn:12" class="footnote-ref" role="doc-noteref">12</a></sup>
-$$ \log p_{min} (t) \approx - t^\beta, $$
-which our result constrains to $\beta &lt; 1$.</p>
+$$ \log \widetilde p \approx - \widetilde L^2, $$$$ \log p_{min} (t) \approx - t^\beta, $$<p>
+which our result constrains to $\beta < 1$.</p>
 <p><strong>Takeaway</strong>: <em>A result about harmonic measure leads to the third rigorous result about DLA, which is a lower bound on the smallest growth probability.</em></p>
 <div class="footnotes" role="doc-endnotes">
 <hr>
@@ -223,59 +179,76 @@ aggregation. <em>Phys. Rev. Lett.</em>, 61:2945&ndash;2948, Dec 1988.&#160;<a hr
     
         <div class="tags">
             
-                <a href="https://jscalvert.github.io/tags/probability">probability</a>
+                <a href="http://localhost:1313/tags/probability">probability</a>
             
-                <a href="https://jscalvert.github.io/tags/harmonic-measure">harmonic measure</a>
+                <a href="http://localhost:1313/tags/harmonic-measure">harmonic measure</a>
             
-                <a href="https://jscalvert.github.io/tags/paper-highlights">paper highlights</a>
+                <a href="http://localhost:1313/tags/paper-highlights">paper highlights</a>
             
-                <a href="https://jscalvert.github.io/tags/laplacian-growth">Laplacian growth</a>
+                <a href="http://localhost:1313/tags/laplacian-growth">Laplacian growth</a>
             
-                <a href="https://jscalvert.github.io/tags/diffusion-limited-aggregation">diffusion-limited aggregation</a>
+                <a href="http://localhost:1313/tags/diffusion-limited-aggregation">diffusion-limited aggregation</a>
             
         </div>
     
+
     
-    
+
 
 </section>
-<script>
-      renderMathInElement(
-          document.getElementById("test"),
-          {
-              delimiters: [
-                  {left: "$$", right: "$$", display: true},
-                  {left: "$", right: "$", display: false},
-                  {left: "\\begin{equation}", right: "\\end{equation}", display: true},
-                  {left: "\\begin{align}", right: "\\end{align}", display: true},
-                  {left: "\\begin{alignat}", right: "\\end{alignat}", display: true},
-                  {left: "\\begin{gather}", right: "\\end{gather}", display: true},
-                  {left: "\\(", right: "\\)", display: false},
-                  {left: "\\[", right: "\\]", display: true}
-              ]
-          }
-      );
-    </script>
+
 
     </main>
-    
     <footer id="footer">
     
 
-    <div class="copyright">
-    
-        © Copyright 2025 Jacob Calvert
-    
+    <div class="retro-counter" aria-live="polite">
+      <span class="retro-counter-label">VISITORS</span>
+      <span id="retro-counter-value" class="retro-counter-value">LOADING</span>
     </div>
 
+    <div class="copyright">
     
-      <div class="powerby">
-        Powered by <a href='http://www.gohugo.io/'>Hugo</a> Theme By <a href='https://https://github.com/nodejh/hugo-theme-mini'>nodejh</a>
-      </div>
+        © Copyright 2026 Jacob Calvert
     
+    </div>
 </footer>
 
+<script>
+  (function () {
+    var counterEl = document.getElementById("retro-counter-value");
+    if (!counterEl) return;
+    var endpoint = "https://api.countapi.xyz/hit/jacobcalvert-site/main";
+    fetch(endpoint)
+      .then(function (response) { return response.json(); })
+      .then(function (data) {
+        var value = (data && typeof data.value === "number") ? data.value : null;
+        if (value === null) {
+          counterEl.textContent = "N/A";
+          return;
+        }
+        counterEl.textContent = String(value).padStart(6, "0");
+      })
+      .catch(function () {
+        counterEl.textContent = "N/A";
+      });
+  })();
+</script>
 
 
-  <script src="/js/analytics.min.879ddf388acc8b759c40a48f30018c0f6459741e69860286166e0d36a0b70240.js" integrity="sha256-h53fOIrMi3WcQKSPMAGMD2RZdB5phgKGFm4NNqC3AkA="></script></body>
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-M3NJZLRV9F"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-M3NJZLRV9F');
+        }
+      </script></body>
 </html>

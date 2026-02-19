@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <title>A dichotomy in models of collective motion | Jacob Calvert</title>
-
     <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">    
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width,minimum-scale=1">
 <meta name="description" content="This post explains how the Markov chain dichotomy of transience and recurrence implies dichotomous behavior for certain models of collective motion.">
 <meta name="generator" content="Hugo 0.139.2">
 
-
   <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="/css/style.css">
 
@@ -21,51 +23,30 @@
 <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
 
 
-
   
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css" integrity="sha384-KiWOvVjnN8qwAZbuQyWDIbfCLFhLXNETzBQjA/92pIowpC0d2O3nppDGQVgwd2nB" crossorigin="anonymous">
-
-
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js" integrity="sha384-0fdwu/T/EQMsQlrHCCHoH10pkPLlKA1jL5dFyUOvB3lfeT2540/2g6YgSi2BL14p" crossorigin="anonymous"></script>
-
-
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        renderMathInElement(document.body, {
-            delimiters: [
-                {left: "$$", right: "$$", display: true},
-                {left: "$", right: "$", display: false}
-            ]
-        });
-    });
-</script>
-
-
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous"
+    onload="renderMathInElement(document.body,{throwOnError:false,delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false},{left:'\\(',right:'\\)',display:false},{left:'\\[',right:'\\]',display:true}]});"></script>
 
 
 
 
 
   </head>
-
   <body>
-    <nav class="navigation">
-	
-		<a href="/"> <span class="arrow">←</span>Home</a>
-	
-	
-	<a href="/about">About</a>
-	<a href="/papers">Papers</a>
-	<a href="/posts">Posts</a>
-	<a href="/tags">Tags</a>
-	
-
-	
+    <nav class="navigation" role="navigation">
+  <div class="nav-inner">
+    <a href="/" class="nav-name">Jacob Calvert</a>
+    <div class="nav-links">
+      <a href="/about" >About</a>
+      <a href="/papers" >Papers</a>
+      <a href="/gallery" >Gallery</a>
+      <a href="/posts" class="active">Posts</a>
+      
+    </div>
+  </div>
 </nav>
-
 
     <main class="main">
       
@@ -75,21 +56,12 @@
 
     <div class="tip">
         <time datetime="2022-07-13 13:52:11 -0400 -0400">Jul 13, 2022</time>
-        <span class="split">
-          ·
-        </span>
-        <span>
-          1280 words
-        </span>
-        <span class="split">
-          ·
-        </span>
-        <span>
-          7 minute read
-        </span>
+        <span class="split">&middot;</span>
+        <span>1047 words</span>
+        <span class="split">&middot;</span>
+        <span>5 minute read</span>
     </div>
 
-    
     
         
   
@@ -114,65 +86,46 @@
 
     
 
-
     <div class="content">
       <p>This post explains how the Markov chain dichotomy of transience and recurrence implies dichotomous behavior for certain models of collective motion.</p>
 <p>One way to model the motion of a collective with $n$ individuals is as a Markov chain on $n$-element subsets of a grid.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> This approach has been validated by correctly predicting aspects of the collection motion of a swarm of robots.<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> Harmonic activation and transport (HAT), which I briefly described in an older <a href="/posts/quorum-transitions">post</a>, also fits this description.<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></p>
-<h1 id="collective-states">Collective states <a href="#collective-states" class="anchor">🔗</a></h1><p>In this context, it is often natural to view collective states up to translation, such as when assessing dispersion or aggregation, or when forming shapes.<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> For example, consider the state space
+<h1 id="collective-states">Collective states <a href="#collective-states" class="anchor" aria-hidden="true">&sect;</a></h1>
 $$
-\Omega := \{ A \subset \mathbb{Z}^d: |A| = n\}
-$$
-for positive integers $d$ and $n$. Define the equivalence relation $\sim$ on $\Omega$ according to $A \sim B$ if and only if $A$ is a translate of $B,$ i.e.,
-$$
-A \sim B \quad \iff \quad \exists \, z \in \mathbb{Z}^d: B = \{a+z: a \in A\}.
-$$
+\Omega := \\{ A \subset \mathbb{Z}^d: |A| = n\\}
+$$$$
+A \sim B \quad \iff \quad \exists \\, z \in \mathbb{Z}^d: B = \\{a+z: a \in A\\}.
+$$<p>
 Denote by $\widehat{A}$ the class of elements of $\Omega$ which are translates of $A$ and define $\mathrm{diam} (\widehat{A})$ to be the diameter of any representative of the class $\widehat{A}$.</p>
 <p>The key difference between $\Omega$ and $\widehat{\Omega}$ is that there are only finitely many elements of $\widehat{\Omega}$ with a given diameter, which is not true of $\Omega$. This fact, paired with the Markov chain dichotomy, will imply a dichotomy in the behavior of the diameter of collective states.</p>
-<h1 id="markov-chain-dichotomy">Markov chain dichotomy <a href="#markov-chain-dichotomy" class="anchor">🔗</a></h1><p>A standard result in Markov chain theory states that an irreducible (time-homogeneous) Markov chain
+<h1 id="markov-chain-dichotomy">Markov chain dichotomy <a href="#markov-chain-dichotomy" class="anchor" aria-hidden="true">&sect;</a></h1>
 $$
 (X(0), X(1), \dots)
-$$
-on a countable state space $\Sigma$ is either transient or recurrent. Define the number of visits it makes to $\sigma \in \Sigma$ by
-$$
-V (\sigma) := \sum_{t=0}^\infty \mathbf{1}_{\{ X(t) = \sigma\}}.
-$$
-Transience means that
-$${\color{red}
-\forall \, \sigma \in \Sigma, \quad \mathbb{P} \big( V(\sigma) &lt; \infty \bigm\vert X(0) = \sigma \big) = 1},
-$$
-while recurrence means
-$${\color{blue}
-\forall \, \sigma \in \Sigma, \quad \mathbb{P} \big( V(\sigma) = \infty \bigm\vert X(0) = \sigma \big) = 1}.
-$$</p>
-<h1 id="dichotomous-behavior-of-collective-diameter">Dichotomous behavior of collective diameter <a href="#dichotomous-behavior-of-collective-diameter" class="anchor">🔗</a></h1><p>Assume that the dynamics of the collective is described by a (time-homogeneous) Markov chain
+$$$$
+V (\sigma) := \sum_{t=0}^\infty \mathbf{1}_{\\{ X(t) = \sigma\\}}.
+$$$${\color{red}
+\forall \\, \sigma \in \Sigma, \quad \mathbb{P} \big( V(\sigma) < \infty \bigm\vert X(0) = \sigma \big) = 1},
+$$$${\color{blue}
+\forall \\, \sigma \in \Sigma, \quad \mathbb{P} \big( V(\sigma) = \infty \bigm\vert X(0) = \sigma \big) = 1}.
+$$<h1 id="dichotomous-behavior-of-collective-diameter">Dichotomous behavior of collective diameter <a href="#dichotomous-behavior-of-collective-diameter" class="anchor" aria-hidden="true">&sect;</a></h1>
 $$
 (U(0), U(1), \dots)
-$$
-that is irreducible on $\Omega$, in which case the corresponding Markov chain on states viewed up to translation,<br>
-$$
+$$$$
 (\widehat{U}(0), \widehat{U}(1), \dots),
-$$
+$$<p>
 is an irreducible Markov chain on $\widehat{\Omega}$.</p>
 <p>The Markov chain dichotomy states that $(\widehat{U}(t))_{t\geq 0}$ is either transient or recurrent. Because there are only finitely many states in $\widehat{\Omega}$ with a given diameter, the dichotomy implies that the limit infimum of the diameter of the collective is either infinite or finite, almost surely. To see why, consider the two cases.</p>
 <p><strong>Transience</strong></p>
-<p>Suppose that $(\widehat{U}(t))_{t\geq 0}$ is transient. For any real number $r$, there are only finitely many classes in $\widehat{\Omega}$ with diameter of $r$ or less, i.e., in
 $$
-\{ \widehat{\omega} \in \widehat{\Omega}: \mathrm{diam} (\widehat{\omega}) \leq r \}.
-$$
-By the definition of transience, these finitely many states are each visited only finitely many times almost surely, hence
-$$
-\forall \, \widehat{\omega} \in \widehat{\Omega}, \quad \mathbb{P} \big( \liminf_t \mathrm{diam} (\widehat{U} (t)) &gt; r \bigm\vert \widehat{U} (0) = \widehat{\omega} \big) = 1.
-$$
-This conclusion holds for any $r$ and, since the event in question is decreasing as $r$ increases, it implies
-$${\color{red}
-\forall \, \widehat{\omega} \in \widehat{\Omega}, \quad \mathbb{P} \big( \liminf_t \mathrm{diam} (\widehat{U} (t)) = \infty \bigm\vert \widehat{U} (0) = \widehat{\omega} \big) = 1}.
-$$</p>
-<p><strong>Recurrence</strong></p>
-<p>Suppose instead that $(\widehat{U}(t))_{t\geq 0}$ is recurrent. While the diameter of $\widehat{U} (t)$ may become arbitrarily large, it nevertheless visits states with finite diameter infinitely often. Hence
+\\{ \widehat{\omega} \in \widehat{\Omega}: \mathrm{diam} (\widehat{\omega}) \leq r \\}.
+$$$$
+\forall \\, \widehat{\omega} \in \widehat{\Omega}, \quad \mathbb{P} \big( \liminf_t \mathrm{diam} (\widehat{U} (t)) > r \bigm\vert \widehat{U} (0) = \widehat{\omega} \big) = 1.
+$$$${\color{red}
+\forall \\, \widehat{\omega} \in \widehat{\Omega}, \quad \mathbb{P} \big( \liminf_t \mathrm{diam} (\widehat{U} (t)) = \infty \bigm\vert \widehat{U} (0) = \widehat{\omega} \big) = 1}.
+$$<p><strong>Recurrence</strong></p>
 $${\color{blue}
-\forall \, \widehat{\omega} \in \widehat{\Omega}, \quad \mathbb{P} \big( \liminf_t \mathrm{diam} ( \widehat{U} (t) ) &lt; \infty \bigm\vert \widehat{U} (0) = \widehat{\omega} \big) = 1.}
-$$</p>
-<h1 id="discussion">Discussion <a href="#discussion" class="anchor">🔗</a></h1><p><strong>Some collectives can exhibit both behaviors of diameter as $n$ varies</strong></p>
+\forall \\, \widehat{\omega} \in \widehat{\Omega}, \quad \mathbb{P} \big( \liminf_t \mathrm{diam} ( \widehat{U} (t) ) < \infty \bigm\vert \widehat{U} (0) = \widehat{\omega} \big) = 1.}
+$$<h1 id="discussion">Discussion <a href="#discussion" class="anchor" aria-hidden="true">&sect;</a></h1>
+<p><strong>Some collectives can exhibit both behaviors of diameter as $n$ varies</strong></p>
 <p>The pairs of red and blue statements show how the dichotomy of transience and recurrence implies a dichotomy in the behavior of diameter for Markov chain models of collective motion. For some models, like those which require the state to be a connected set, this dichotomy is irrelevant because the diameter is bounded in terms of the number of elements.<sup id="fnref1:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> However, other models can realize both behaviors of diameter as $d$ and $n$ vary.</p>
 <p>Indeed, for some values of $d$ and $n$, if HAT starts in a state with sufficiently large diameter, $r$, it tends to reach a state with a diameter of roughly $\log r$ over roughly $\log r$ steps.<sup id="fnref1:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> For other values of $d$ and $n$, HAT reaches a state consisting of well separated &ldquo;clusters&rdquo; of elements, which then grow increasingly separated, leading to unchecked diameter growth.<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup> The remarkable fact that the number of individuals mediates the different collective behaviors of HAT is the subject of an older <a href="/posts/quorum-transitions">post</a>.</p>
 <p><strong>This change in behavior differs from familiar phase transitions</strong></p>
@@ -215,57 +168,74 @@ Publishing.&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink"
     
         <div class="tags">
             
-                <a href="https://jscalvert.github.io/tags/probability">probability</a>
+                <a href="http://localhost:1313/tags/probability">probability</a>
             
-                <a href="https://jscalvert.github.io/tags/markov-chains">Markov chains</a>
+                <a href="http://localhost:1313/tags/markov-chains">Markov chains</a>
             
-                <a href="https://jscalvert.github.io/tags/collective-motion">collective motion</a>
+                <a href="http://localhost:1313/tags/collective-motion">collective motion</a>
             
-                <a href="https://jscalvert.github.io/tags/paper-highlights">paper highlights</a>
+                <a href="http://localhost:1313/tags/paper-highlights">paper highlights</a>
             
         </div>
     
+
     
-    
+
 
 </section>
-<script>
-      renderMathInElement(
-          document.getElementById("test"),
-          {
-              delimiters: [
-                  {left: "$$", right: "$$", display: true},
-                  {left: "$", right: "$", display: false},
-                  {left: "\\begin{equation}", right: "\\end{equation}", display: true},
-                  {left: "\\begin{align}", right: "\\end{align}", display: true},
-                  {left: "\\begin{alignat}", right: "\\end{alignat}", display: true},
-                  {left: "\\begin{gather}", right: "\\end{gather}", display: true},
-                  {left: "\\(", right: "\\)", display: false},
-                  {left: "\\[", right: "\\]", display: true}
-              ]
-          }
-      );
-    </script>
+
 
     </main>
-    
     <footer id="footer">
     
 
-    <div class="copyright">
-    
-        © Copyright 2025 Jacob Calvert
-    
+    <div class="retro-counter" aria-live="polite">
+      <span class="retro-counter-label">VISITORS</span>
+      <span id="retro-counter-value" class="retro-counter-value">LOADING</span>
     </div>
 
+    <div class="copyright">
     
-      <div class="powerby">
-        Powered by <a href='http://www.gohugo.io/'>Hugo</a> Theme By <a href='https://https://github.com/nodejh/hugo-theme-mini'>nodejh</a>
-      </div>
+        © Copyright 2026 Jacob Calvert
     
+    </div>
 </footer>
 
+<script>
+  (function () {
+    var counterEl = document.getElementById("retro-counter-value");
+    if (!counterEl) return;
+    var endpoint = "https://api.countapi.xyz/hit/jacobcalvert-site/main";
+    fetch(endpoint)
+      .then(function (response) { return response.json(); })
+      .then(function (data) {
+        var value = (data && typeof data.value === "number") ? data.value : null;
+        if (value === null) {
+          counterEl.textContent = "N/A";
+          return;
+        }
+        counterEl.textContent = String(value).padStart(6, "0");
+      })
+      .catch(function () {
+        counterEl.textContent = "N/A";
+      });
+  })();
+</script>
 
 
-  <script src="/js/analytics.min.879ddf388acc8b759c40a48f30018c0f6459741e69860286166e0d36a0b70240.js" integrity="sha256-h53fOIrMi3WcQKSPMAGMD2RZdB5phgKGFm4NNqC3AkA="></script></body>
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-M3NJZLRV9F"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-M3NJZLRV9F');
+        }
+      </script></body>
 </html>

@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <title>Dynamic clinical risk scores can cheat the AUC | Jacob Calvert</title>
-
     <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">    
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width,minimum-scale=1">
 <meta name="description" content="Clinical risk scores can cheat the AUC when the time that an adverse event occurs in a positive-class stay tends to exceed the duration of a negative-class stay. Risk scores should be compared to uniformly random scores that match their timing.">
 <meta name="generator" content="Hugo 0.139.2">
 
-
   <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="/css/style.css">
 
@@ -21,51 +23,30 @@
 <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
 
 
-
   
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css" integrity="sha384-KiWOvVjnN8qwAZbuQyWDIbfCLFhLXNETzBQjA/92pIowpC0d2O3nppDGQVgwd2nB" crossorigin="anonymous">
-
-
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js" integrity="sha384-0fdwu/T/EQMsQlrHCCHoH10pkPLlKA1jL5dFyUOvB3lfeT2540/2g6YgSi2BL14p" crossorigin="anonymous"></script>
-
-
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        renderMathInElement(document.body, {
-            delimiters: [
-                {left: "$$", right: "$$", display: true},
-                {left: "$", right: "$", display: false}
-            ]
-        });
-    });
-</script>
-
-
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous"
+    onload="renderMathInElement(document.body,{throwOnError:false,delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false},{left:'\\(',right:'\\)',display:false},{left:'\\[',right:'\\]',display:true}]});"></script>
 
 
 
 
 
   </head>
-
   <body>
-    <nav class="navigation">
-	
-		<a href="/"> <span class="arrow">←</span>Home</a>
-	
-	
-	<a href="/about">About</a>
-	<a href="/papers">Papers</a>
-	<a href="/posts">Posts</a>
-	<a href="/tags">Tags</a>
-	
-
-	
+    <nav class="navigation" role="navigation">
+  <div class="nav-inner">
+    <a href="/" class="nav-name">Jacob Calvert</a>
+    <div class="nav-links">
+      <a href="/about" >About</a>
+      <a href="/papers" >Papers</a>
+      <a href="/gallery" >Gallery</a>
+      <a href="/posts" class="active">Posts</a>
+      
+    </div>
+  </div>
 </nav>
-
 
     <main class="main">
       
@@ -75,21 +56,12 @@
 
     <div class="tip">
         <time datetime="2023-04-07 11:45:26 -0700 -0700">Apr 7, 2023</time>
-        <span class="split">
-          ·
-        </span>
-        <span>
-          625 words
-        </span>
-        <span class="split">
-          ·
-        </span>
-        <span>
-          3 minute read
-        </span>
+        <span class="split">&middot;</span>
+        <span>625 words</span>
+        <span class="split">&middot;</span>
+        <span>3 minute read</span>
     </div>
 
-    
     
         
   
@@ -112,17 +84,15 @@
 
     
 
-
     <div class="content">
       <p>Clinical risk scores can cheat the AUC when the time that an adverse event occurs in a positive-class stay tends to exceed the duration of a negative-class stay. Risk scores should be compared to uniformly random scores that match their timing.</p>
 <p>Informally, area under the (receiver operating characteristic) curve (AUC) cheating occurs when risk scores that are i.i.d. standard uniform random variables result in an AUC greater than $0.5$.</p>
-<h1 id="auc-cheating">AUC cheating <a href="#auc-cheating" class="anchor">🔗</a></h1><p>Imagine that, at the beginning of every hour of each patient&rsquo;s hospital stay, you estimate the probability that they experience sepsis onset during their stay (a positive-class stay). At the first time that this estimate exceeds a predetermined threshold $t \in [0,1]$, you produce an alert. If this estimate never exceeds $t$ before the end of their stay, then you never produce an alert.</p>
+<h1 id="auc-cheating">AUC cheating <a href="#auc-cheating" class="anchor" aria-hidden="true">&sect;</a></h1>
+<p>Imagine that, at the beginning of every hour of each patient&rsquo;s hospital stay, you estimate the probability that they experience sepsis onset during their stay (a positive-class stay). At the first time that this estimate exceeds a predetermined threshold $t \in [0,1]$, you produce an alert. If this estimate never exceeds $t$ before the end of their stay, then you never produce an alert.</p>
 <p>Define $\tau_{onset}$ to be the time of sepsis onset, which is $\infty$ if the patient does not get sepsis during their stay (a negative-class stay), and $\tau_{end}$ to be the time that the stay ends. If you estimate the probability of sepsis onset by generating an i.i.d. sequence of standard uniform random variables, then the true and false positive rates are</p>
-<p>$$ TPR (t) = 1 - E_+ (t^{\tau_{onset}}) \quad \text{and} \quad FPR (t) = 1 - E_- (t^{\tau_{end}}),$$</p>
-<p>where $E_+$ and $E_-$ denote expectation with respect to $P_+$ and $P_-$, the conditional distributions of positive- and negative-class stays. A straightforward calculation shows that</p>
-<p>$$ AUC = E_{\tau_{onset} \sim P_+, \tau_{end} \sim P_-} \left( \frac{\tau_{onset}}{\tau_{onset} + \tau_{end}} \right).$$</p>
-<p>In other words, the AUC is the expected ratio of $\tau_{onset}$ to $\tau_{onset} + \tau_{end}$, where $\tau_{onset}$ is the sepsis onset time of a random positive-class stay and $\tau_{end}$ is the stay length of a random negative-class stay.</p>
-<p><strong>Example.</strong> If sepsis onset always occurs at the beginning of the $n$th hour of a positive-class stay and every negative-class stay lasts $m$ hours, then hourly, i.i.d., standard uniform risk scores result in an AUC of $\frac{n}{n+m},$ which exceeds $0.5$ when $n&gt;m$.</p>
+$$ TPR (t) = 1 - E_+ (t^{\tau_{onset}}) \quad \text{and} \quad FPR (t) = 1 - E_- (t^{\tau_{end}}),$$<p>where $E_+$ and $E_-$ denote expectation with respect to $P_+$ and $P_-$, the conditional distributions of positive- and negative-class stays. A straightforward calculation shows that</p>
+$$ AUC = E_{\tau_{onset} \sim P_+, \tau_{end} \sim P_-} \left( \frac{\tau_{onset}}{\tau_{onset} + \tau_{end}} \right).$$<p>In other words, the AUC is the expected ratio of $\tau_{onset}$ to $\tau_{onset} + \tau_{end}$, where $\tau_{onset}$ is the sepsis onset time of a random positive-class stay and $\tau_{end}$ is the stay length of a random negative-class stay.</p>
+<p><strong>Example.</strong> If sepsis onset always occurs at the beginning of the $n$th hour of a positive-class stay and every negative-class stay lasts $m$ hours, then hourly, i.i.d., standard uniform risk scores result in an AUC of $\frac{n}{n+m},$ which exceeds $0.5$ when $n>m$.</p>
 <p><strong>Some observations:</strong></p>
 <ul>
 <li>
@@ -135,7 +105,8 @@
 <p>AUC cheating is not possible when at most one score is generated for each stay.</p>
 </li>
 </ul>
-<h1 id="practical-implications">Practical implications <a href="#practical-implications" class="anchor">🔗</a></h1><p>There are several practical implications for the development and evaluation of risk scores.</p>
+<h1 id="practical-implications">Practical implications <a href="#practical-implications" class="anchor" aria-hidden="true">&sect;</a></h1>
+<p>There are several practical implications for the development and evaluation of risk scores.</p>
 <ol>
 <li>The evaluation of a dynamic risk score should include a comparison with i.i.d. standard uniform risk scores generated at the same times.</li>
 <li>Alert systems that can generate more than one score per stay may have a structural advantage or disadvantage relative to those that generate at most one score per stay, in terms of AUC.
@@ -156,53 +127,70 @@
     
         <div class="tags">
             
-                <a href="https://jscalvert.github.io/tags/probability">probability</a>
+                <a href="http://localhost:1313/tags/probability">probability</a>
             
-                <a href="https://jscalvert.github.io/tags/clinical-informatics">clinical informatics</a>
+                <a href="http://localhost:1313/tags/clinical-informatics">clinical informatics</a>
             
         </div>
     
+
     
-    
+
 
 </section>
-<script>
-      renderMathInElement(
-          document.getElementById("test"),
-          {
-              delimiters: [
-                  {left: "$$", right: "$$", display: true},
-                  {left: "$", right: "$", display: false},
-                  {left: "\\begin{equation}", right: "\\end{equation}", display: true},
-                  {left: "\\begin{align}", right: "\\end{align}", display: true},
-                  {left: "\\begin{alignat}", right: "\\end{alignat}", display: true},
-                  {left: "\\begin{gather}", right: "\\end{gather}", display: true},
-                  {left: "\\(", right: "\\)", display: false},
-                  {left: "\\[", right: "\\]", display: true}
-              ]
-          }
-      );
-    </script>
+
 
     </main>
-    
     <footer id="footer">
     
 
-    <div class="copyright">
-    
-        © Copyright 2025 Jacob Calvert
-    
+    <div class="retro-counter" aria-live="polite">
+      <span class="retro-counter-label">VISITORS</span>
+      <span id="retro-counter-value" class="retro-counter-value">LOADING</span>
     </div>
 
+    <div class="copyright">
     
-      <div class="powerby">
-        Powered by <a href='http://www.gohugo.io/'>Hugo</a> Theme By <a href='https://https://github.com/nodejh/hugo-theme-mini'>nodejh</a>
-      </div>
+        © Copyright 2026 Jacob Calvert
     
+    </div>
 </footer>
 
+<script>
+  (function () {
+    var counterEl = document.getElementById("retro-counter-value");
+    if (!counterEl) return;
+    var endpoint = "https://api.countapi.xyz/hit/jacobcalvert-site/main";
+    fetch(endpoint)
+      .then(function (response) { return response.json(); })
+      .then(function (data) {
+        var value = (data && typeof data.value === "number") ? data.value : null;
+        if (value === null) {
+          counterEl.textContent = "N/A";
+          return;
+        }
+        counterEl.textContent = String(value).padStart(6, "0");
+      })
+      .catch(function () {
+        counterEl.textContent = "N/A";
+      });
+  })();
+</script>
 
 
-  <script src="/js/analytics.min.879ddf388acc8b759c40a48f30018c0f6459741e69860286166e0d36a0b70240.js" integrity="sha256-h53fOIrMi3WcQKSPMAGMD2RZdB5phgKGFm4NNqC3AkA="></script></body>
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-M3NJZLRV9F"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-M3NJZLRV9F');
+        }
+      </script></body>
 </html>
