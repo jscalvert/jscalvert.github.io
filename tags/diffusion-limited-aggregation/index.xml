@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Diffusion-Limited Aggregation on Jacob Calvert</title>
-    <link>https://jscalvert.github.io/tags/diffusion-limited-aggregation/</link>
+    <link>http://localhost:1313/tags/diffusion-limited-aggregation/</link>
     <description>Recent content in Diffusion-Limited Aggregation on Jacob Calvert</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 24 May 2022 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://jscalvert.github.io/tags/diffusion-limited-aggregation/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/diffusion-limited-aggregation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A third rigorous result about DLA</title>
-      <link>https://jscalvert.github.io/posts/discrepancy-in-dla-research/</link>
+      <link>http://localhost:1313/posts/discrepancy-in-dla-research/</link>
       <pubDate>Tue, 24 May 2022 00:00:00 +0000</pubDate>
-      <guid>https://jscalvert.github.io/posts/discrepancy-in-dla-research/</guid>
+      <guid>http://localhost:1313/posts/discrepancy-in-dla-research/</guid>
       <description>&lt;p&gt;This post highlights recent work which constitutes only the third rigorous result about planar diffusion-limited aggregation (DLA), a paradigmatic model of random, dendritic growth.&lt;/p&gt;</description>
     </item>
   </channel>
