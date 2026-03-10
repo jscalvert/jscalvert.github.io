@@ -2,94 +2,94 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Probability on Jacob Calvert</title>
-    <link>http://localhost:1313/tags/probability/</link>
+    <link>https://jscalvert.github.io/tags/probability/</link>
     <description>Recent content in Probability on Jacob Calvert</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 19 Feb 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/probability/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jscalvert.github.io/tags/probability/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Update on random Markov matrices</title>
-      <link>http://localhost:1313/posts/asymptotic-uniformity-update/</link>
+      <link>https://jscalvert.github.io/posts/asymptotic-uniformity-update/</link>
       <pubDate>Thu, 19 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/asymptotic-uniformity-update/</guid>
+      <guid>https://jscalvert.github.io/posts/asymptotic-uniformity-update/</guid>
       <description>&lt;p&gt;Frank den Hollander, Dana Randall, and I recently posted a &lt;a href=&#34;https://arxiv.org/abs/2505.01608&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;new version&lt;/a&gt; of our paper on random Markov matrices. We significantly improved the main result and newly answered a question of &lt;a href=&#34;https://link.springer.com/article/10.1007/s00440-010-0336-1&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Bordenave, Caputo, and Chafaï (2012)&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Correlation thresholds in steady-state distributions</title>
-      <link>http://localhost:1313/posts/correlation-thresholds/</link>
+      <link>https://jscalvert.github.io/posts/correlation-thresholds/</link>
       <pubDate>Fri, 22 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/correlation-thresholds/</guid>
+      <guid>https://jscalvert.github.io/posts/correlation-thresholds/</guid>
       <description>&lt;p&gt;Dana Randall and I find thresholds in the local–global correlations exhibited by the steady-state distributions of a particle system and the dynamics of the Sherrington–Kirkpatrick spin glass.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Local–global correlations in reaction kinetics</title>
-      <link>http://localhost:1313/posts/local-global-correlations-in-reaction-kinetics/</link>
+      <link>https://jscalvert.github.io/posts/local-global-correlations-in-reaction-kinetics/</link>
       <pubDate>Wed, 06 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/local-global-correlations-in-reaction-kinetics/</guid>
+      <guid>https://jscalvert.github.io/posts/local-global-correlations-in-reaction-kinetics/</guid>
       <description>&lt;p&gt;In a new paper, Dana Randall and I identify conditions under which reaction kinetics on disordered energy landscapes exhibit high local–global correlation.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Markov chains with random transition rates</title>
-      <link>http://localhost:1313/posts/asymptotic-uniformity/</link>
+      <link>https://jscalvert.github.io/posts/asymptotic-uniformity/</link>
       <pubDate>Sun, 11 May 2025 12:05:05 -0700</pubDate>
-      <guid>http://localhost:1313/posts/asymptotic-uniformity/</guid>
+      <guid>https://jscalvert.github.io/posts/asymptotic-uniformity/</guid>
       <description>&lt;p&gt;The stationary distribution of a continuous-time Markov chain is generally a complicated function of its transition rates. However, if the rates are i.i.d. random variables whose common distribution satisfies certain tail conditions, then the stationary distribution is essentially a simple function of the exit rates out of each state.  This is the main result of a new preprint with Frank den Hollander and Dana Randall, which generalizes and makes a precise prediction by Chvykov et al. (2021) and settles a question raised by Bordenave, Caputo, and Chafaï (2012) under certain assumptions.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Programming hierarchical self-organization</title>
-      <link>http://localhost:1313/posts/programming-hierarchical-self-organization/</link>
+      <link>https://jscalvert.github.io/posts/programming-hierarchical-self-organization/</link>
       <pubDate>Thu, 07 Nov 2024 18:59:16 -0600</pubDate>
-      <guid>http://localhost:1313/posts/programming-hierarchical-self-organization/</guid>
+      <guid>https://jscalvert.github.io/posts/programming-hierarchical-self-organization/</guid>
       <description>&lt;p&gt;A new preprint with Shunhao Oh and Dana Randall explains how to program simple computational &amp;ldquo;particles&amp;rdquo; of different types to self-organize into corresponding spatial regions that have a given hierarchical structure. The size, shape, and hierarchy of the regions are determined by the particles&amp;rsquo; densities and affinities for particles of different types. Proving that the algorithm works requires new techniques for analyzing the Gibbs distributions of fixed-magnetization models from equilibrium statistical mechanics.&lt;/p&gt;</description>
     </item>
     <item>
       <title>New preprint on rattling theory</title>
-      <link>http://localhost:1313/posts/rattling/</link>
+      <link>https://jscalvert.github.io/posts/rattling/</link>
       <pubDate>Wed, 26 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/rattling/</guid>
+      <guid>https://jscalvert.github.io/posts/rattling/</guid>
       <description>&lt;p&gt;Dana Randall and I generalize and prove the main claims of an emerging physical theory of nonequilibrium self-organization, called rattling theory, by interpreting its main claims in terms of Markov processes. The result is a principle that relates a local aspect of the dynamics to the global steady state. We apply it to random walks on random graphs, spin-glass dynamics, and models of ant colonies.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Dynamic clinical risk scores can cheat the AUC</title>
-      <link>http://localhost:1313/posts/auc-cheating/</link>
+      <link>https://jscalvert.github.io/posts/auc-cheating/</link>
       <pubDate>Fri, 07 Apr 2023 11:45:26 -0700</pubDate>
-      <guid>http://localhost:1313/posts/auc-cheating/</guid>
+      <guid>https://jscalvert.github.io/posts/auc-cheating/</guid>
       <description>&lt;p&gt;Clinical risk scores can cheat the AUC when the time that an adverse event occurs in a positive-class stay tends to exceed the duration of a negative-class stay. Risk scores should be compared to uniformly random scores that match their timing.&lt;/p&gt;</description>
     </item>
     <item>
       <title>New paper on critical numerosity</title>
-      <link>http://localhost:1313/posts/critical-numerosity-paper/</link>
+      <link>https://jscalvert.github.io/posts/critical-numerosity-paper/</link>
       <pubDate>Sun, 05 Feb 2023 09:21:46 -0800</pubDate>
-      <guid>http://localhost:1313/posts/critical-numerosity-paper/</guid>
+      <guid>https://jscalvert.github.io/posts/critical-numerosity-paper/</guid>
       <description>&lt;p&gt;My latest &lt;a href=&#34;https://arxiv.org/abs/2302.01919&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;paper&lt;/a&gt; introduces the concept of critical numerosity: A number of individuals above and below which the behavior of a collective qualitatively differs.&lt;/p&gt;</description>
     </item>
     <item>
       <title>A dichotomy in models of collective motion</title>
-      <link>http://localhost:1313/posts/markov-chain-dichotomy/</link>
+      <link>https://jscalvert.github.io/posts/markov-chain-dichotomy/</link>
       <pubDate>Wed, 13 Jul 2022 13:52:11 -0400</pubDate>
-      <guid>http://localhost:1313/posts/markov-chain-dichotomy/</guid>
+      <guid>https://jscalvert.github.io/posts/markov-chain-dichotomy/</guid>
       <description>&lt;p&gt;This post explains how the Markov chain dichotomy of transience and recurrence implies dichotomous behavior for certain models of collective motion.&lt;/p&gt;</description>
     </item>
     <item>
       <title>A third rigorous result about DLA</title>
-      <link>http://localhost:1313/posts/discrepancy-in-dla-research/</link>
+      <link>https://jscalvert.github.io/posts/discrepancy-in-dla-research/</link>
       <pubDate>Tue, 24 May 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/discrepancy-in-dla-research/</guid>
+      <guid>https://jscalvert.github.io/posts/discrepancy-in-dla-research/</guid>
       <description>&lt;p&gt;This post highlights recent work which constitutes only the third rigorous result about planar diffusion-limited aggregation (DLA), a paradigmatic model of random, dendritic growth.&lt;/p&gt;</description>
     </item>
     <item>
       <title>A conjecture about harmonic measure</title>
-      <link>http://localhost:1313/posts/a-conjecture-about-harmonic-measure/</link>
+      <link>https://jscalvert.github.io/posts/a-conjecture-about-harmonic-measure/</link>
       <pubDate>Fri, 29 Apr 2022 12:32:46 -0700</pubDate>
-      <guid>http://localhost:1313/posts/a-conjecture-about-harmonic-measure/</guid>
+      <guid>https://jscalvert.github.io/posts/a-conjecture-about-harmonic-measure/</guid>
       <description>&lt;p&gt;Given finite $A \subset \mathbb{Z}^2$, the harmonic measure of $x \in A$ is the probability that a simple random walk &amp;ldquo;from infinity&amp;rdquo; first visits $A$ at $x$. If $A$ has $n$ elements, what is the smallest positive harmonic measure that you can get?&lt;/p&gt;</description>
     </item>
     <item>
       <title>Numerosity-driven phase transitions</title>
-      <link>http://localhost:1313/posts/quorum-transitions/</link>
+      <link>https://jscalvert.github.io/posts/quorum-transitions/</link>
       <pubDate>Wed, 27 Apr 2022 13:46:26 -0700</pubDate>
-      <guid>http://localhost:1313/posts/quorum-transitions/</guid>
+      <guid>https://jscalvert.github.io/posts/quorum-transitions/</guid>
       <description>&lt;p&gt;This post discusses the intersection of some of my recent and forthcoming work in probability theory with studies of programmable matter and ant colonies.&lt;/p&gt;</description>
     </item>
   </channel>
