@@ -1,12 +1,1 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Papers on Jacob Calvert</title>
-    <link>http://localhost:1313/papers/</link>
-    <description>Recent content in Papers on Jacob Calvert</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate></lastBuildDate>
-    <atom:link href="http://localhost:1313/papers/index.xml" rel="self" type="application/rss+xml" />
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Papers on Jacob Calvert</title><link>https://jscalvert.github.io/papers/</link><description>Recent content in Papers on Jacob Calvert</description><generator>Hugo</generator><language>en-us</language><lastBuildDate/><atom:link href="https://jscalvert.github.io/papers/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
