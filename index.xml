@@ -6,8 +6,15 @@
     <description>Recent content in Home on Jacob Calvert</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 13 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://jscalvert.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Nonequilibrium steady states on dense networks</title>
+      <link>https://jscalvert.github.io/posts/ness-on-dense-networks/</link>
+      <pubDate>Sat, 13 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://jscalvert.github.io/posts/ness-on-dense-networks/</guid>
+      <description>&lt;p&gt;A new &lt;a href=&#34;https://arxiv.org/abs/2606.14542&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;preprint&lt;/a&gt; shows that nonequilibrium steady states (NESS) on large dense networks satisfy analogues of the Boltzmann distribution.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Update on random Markov matrices</title>
       <link>https://jscalvert.github.io/posts/asymptotic-uniformity-update/</link>

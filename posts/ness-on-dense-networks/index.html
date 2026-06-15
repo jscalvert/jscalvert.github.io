@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>Nonequilibrium steady states on dense networks | Jacob Calvert</title>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,minimum-scale=1">
+<meta name="description" content="A new preprint shows that nonequilibrium steady states (NESS) on large dense networks satisfy analogues of the Boltzmann distribution.">
+<meta name="generator" content="Hugo 0.139.2">
+
+  <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+
+<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+
+
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous"
+    onload="renderMathInElement(document.body,{throwOnError:false,delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false},{left:'\\(',right:'\\)',display:false},{left:'\\[',right:'\\]',display:true}]});"></script>
+
+
+
+
+
+  </head>
+  <body>
+    <nav class="navigation" role="navigation">
+  <div class="nav-inner">
+    <a href="/" class="nav-name">Jacob Calvert</a>
+    <div class="nav-links">
+      <a href="/about" >About</a>
+      <a href="/papers" >Papers</a>
+      <a href="/gallery" >Gallery</a>
+      <a href="/posts" class="active">Posts</a>
+      
+    </div>
+  </div>
+</nav>
+
+    <main class="main">
+      
+
+<section id="single">
+    <h1 class="title">Nonequilibrium steady states on dense networks</h1>
+
+    <div class="tip">
+        <time datetime="2026-06-13 00:00:00 &#43;0000 UTC">Jun 13, 2026</time>
+        <span class="split">&middot;</span>
+        <span>1070 words</span>
+        <span class="split">&middot;</span>
+        <span>6 minute read</span>
+    </div>
+
+    
+        
+  
+    <aside class="toc">
+      <details>
+          <summary>Table of Contents
+          </summary>
+          <div>
+              <nav id="TableOfContents">
+  <ul>
+    <li><a href="#model">Model</a>
+      <ul>
+        <li><a href="#rate-matrix-parameterization">Rate matrix parameterization</a></li>
+        <li><a href="#model-assumptions">Model assumptions</a></li>
+      </ul>
+    </li>
+    <li><a href="#main-results">Main results</a>
+      <ul>
+        <li><a href="#boltzmann-like-occupation">Boltzmann-like occupation</a></li>
+        <li><a href="#low-rattling-is-asymptotically-exact">&ldquo;Low rattling&rdquo; is asymptotically exact</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+          </div>
+      </details>
+    </aside>
+  
+
+
+    
+
+    <div class="content">
+      <p>A new <a href="https://arxiv.org/abs/2606.14542" target="_blank" rel="noopener">preprint</a> shows that nonequilibrium steady states (NESS) on large dense networks satisfy analogues of the Boltzmann distribution.</p>
+<h1 id="model">Model <a href="#model" class="anchor" aria-hidden="true">&sect;</a></h1>
+<h2 id="rate-matrix-parameterization">Rate matrix parameterization <a href="#rate-matrix-parameterization" class="anchor" aria-hidden="true">&sect;</a></h2>
+<p>The setting is a random $N \times N$ transition rate matrix $\boldsymbol{W} = (W_{ij})_{i,j}$, which is always irreducible for sufficiently large $N$ under the assumptions. Following the physics convention, a generic off-diagonal entry $W_{ij}$ is the transition rate from $j$ to $i$. The diagonal entries of $\boldsymbol{W}$ are the negated exit rates $-W_{jj} = w_j = \sum_{i(\neq j)} W_{ij}$. When $\boldsymbol{W}$ is irreducible, it has a unique positive stationary distribution $\boldsymbol{\pi}$ (a column vector by this convention), defined by the matrix equation $\boldsymbol{W} \boldsymbol{\pi} = \boldsymbol{0}$.</p>
+<p>We redundantly parameterize the transition rates as $W_{ij} = e^{E_j} X_{ij}$, where $E_j$ is a real-valued vertex parameter, and $X_{ij}$ is a nonnegative edge weight. One reason for doing so is that, if $\boldsymbol{X}$ is symmetric, then the stationary distribution $\boldsymbol{\pi}$ of $\boldsymbol{W}$ is equal to $\boldsymbol{\pi}^{\mathrm{eq}}$ where  $\pi_i^{\mathrm{eq}} \propto e^{-E_i}$. In other words, the stationary distributions of such $\boldsymbol{W}$ have the form of the Boltzmann distribution, with the vertex parameters playing the role of dimensionless energies.</p>
+<p><strong>Arrhenius interpretation.</strong> An important special case of this model is when the edge weights are parameterized as $X_{ij} = e^{-B_{ij} + F_{ij}/2}$ in terms of  symmetric &ldquo;barriers&rdquo; $B_{ij} = B_{ji}$ and anti-symmetric &ldquo;forces&rdquo; $F_{ij} = -F_{ji}$, all real numbers. In this case, the transition rates have the form $W_{ij} = e^{E_j - B_{ij} + F_{ij}/2}$, which is a common model of stochastic thermodynamics. As <a href="https://journals.aps.org/prx/abstract/10.1103/PhysRevX.10.011066" target="_blank" rel="noopener">Owen et al. (PRX, 2020)</a> explain, these transition rates are reminiscent of the Arrhenius formula for reaction kinetics on an energy landscape with wells of depth $E_j$, separated by barriers of height $B_{ij}$, and driven by non-conservative forces $F_{ij}$. In accordance with this analogy, in the absence of forces, the $X_{ij}$ are symmetric and $\boldsymbol{\pi} = \boldsymbol{\pi}^{\mathrm{eq}}$.</p>
+<h2 id="model-assumptions">Model assumptions <a href="#model-assumptions" class="anchor" aria-hidden="true">&sect;</a></h2>
+<p>The starting point of this new paper is to model $\boldsymbol{X}$ as a random matrix. In order to cover the special case of Arrhenius-like transition rates, we must allow the pairs $(X_{ij},X_{ji})$ of off-diagonal entries to be dependent. We define a class of random transition rate matrices by taking the off-diagonal pairs $\{(X_{ij}, X_{ji}) \}_{i < j}$ to be independent copies of a representative pair $(X,X')$. We assume that this pair is exchangeable, i.e., $(X,X')$ has the same distribution as $(X',X)$, so that there is no favored orientation of each edge. We further assume that a representative entry $X$ has positive, finite variance. Heavier-tailed edge weights could effectively sparsen the underlying transition graph, in a sense.</p>
+<p><strong>Why dense?</strong> Under these assumptions, the state space has the connectivity of a dense random digraph. In the special case when $X$ and $X'$ are independent, it is an Erdős–Rényi random digraph on $N$ vertices with each edge independently present with probability $p = \mathbb{P}(X>0)>0$. Because $p$ depends only on the distribution of $X$ and not $N$, this graph is well within the dense regime.</p>
+<p><strong>Two extremes.</strong> An interesting aspect of this model is that it is flexible enough to accommodate two &ldquo;extremes.&rdquo; One extreme is local detailed balance, where $X_{ij} > 0$ only if $X_{ji} > 0$, as in the Arrhenius-like transition rates. Local detailed balance is a typical assumption of papers in this area of the physics literature, as it ensures the consistency of conclusions with stochastic thermodynamics.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> The other is total irreversibility, where $X_{ij} > 0$ only if $X_{ji} = 0$. This flexibility is especially desirable considering the recent suggestion by some experts to develop theory without the assumption of local detailed balance.<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></p>
+<h1 id="main-results">Main results <a href="#main-results" class="anchor" aria-hidden="true">&sect;</a></h1>
+<h2 id="boltzmann-like-occupation">Boltzmann-like occupation <a href="#boltzmann-like-occupation" class="anchor" aria-hidden="true">&sect;</a></h2>
+<p><strong>Statement.</strong> Fix an arbitrary sequence of vertex parameters $(E_i)_i$ and assume the edge weight matrix $\boldsymbol{X}$ arises from a pair $(X,X')$ satisfying the assumptions. Denote by  $\delta_i = \pi_i / \pi_i^{\mathrm{eq}} - 1$ the state-wise relative distance between $\boldsymbol{\pi}$ and $\boldsymbol{\pi}^{\mathrm{eq}}$. Our main result is that $\boldsymbol{\pi}$ almost surely satisfies $\|\boldsymbol{\delta}\|_\infty \to 0$ as $N \to \infty$.</p>
+<p>State-wise relative distance tending to zero is a particularly strong way for $\boldsymbol{\pi}$-probabilities to become like those of $\boldsymbol{\pi}^{\mathrm{eq}}$. For example, it implies that the total variation between these distributions tends to zero. This result is useful because $\boldsymbol{\pi}$ is generally a complicated function of all the transition rates.<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> It means that $\boldsymbol{\pi}^{\mathrm{eq}}$ can replace $\boldsymbol{\pi}$ in calculations, which has many interesting applications.</p>
+<p><strong>Application.</strong> One example in the paper is a nonequilibrium fluctuation–dissipation theorem (FDT). The setting is a steady state at inverse temperature $\beta$, an underlying energy landscape $\mathcal{E}_i$ that depends on a control parameter $\eta$, and a function or &ldquo;observable&rdquo; $O$ over the states. The standard (static) FDT says that</p>
+$$ \partial_\eta \langle O \rangle_{\mathrm{eq}} = \beta \mathrm{Cov}_{\mathrm{eq}}(O,V).$$<p>Here, $\langle O \rangle_{\mathrm{eq}}$ denotes the average of $O$ with respect to $\boldsymbol{\pi}^{\mathrm{eq}}$, $V_i = -\partial_\eta \mathcal{E}_i$ is the &ldquo;coordinate conjugate to&rdquo; $\mathcal{E}_i$, and $\mathrm{Cov}_{\mathrm{eq}}(O,V)$ is the covariance between $O$ and $V$ under $\boldsymbol{\pi}^{\mathrm{eq}}$. The first of our main results implies that the same holds when the average of $O$ is taken with respect to $\boldsymbol{\pi}$ instead, so long as we multiply the right-hand side by $1+o(1)$. Doing so predicts that verifying the static FDT in either form or value does not suffice to conclude that a steady state is in thermal equilibrium.</p>
+<h2 id="low-rattling-is-asymptotically-exact">&ldquo;Low rattling&rdquo; is asymptotically exact <a href="#low-rattling-is-asymptotically-exact" class="anchor" aria-hidden="true">&sect;</a></h2>
+<p>The proof of our first main result further shows that the analogous result holds when $\boldsymbol{\pi}^{\mathrm{eq}}$ is replaced by the distribution $\boldsymbol{\nu}$ that is proportional to the expected holding times in each state, i.e., $\nu_i \propto 1/w_i$. Equivalently, the &ldquo;energy&rdquo; $E_i$ in the Boltzmann-like distribution $\pi_i^{\mathrm{eq}}$ can be replaced by the quantity $\mathcal{R}_i = \log w_i$ called rattling.<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> In particular, it implies that the effective potential $-\log \pi_{\boldsymbol{u}}$ of a uniformly random state $\boldsymbol{u}$ has asymptotically perfect linear correlation with $\mathcal{R}_{\boldsymbol{u}}$. This is the precise formulation of the active-matter heuristic of &ldquo;low rattling.&rdquo;<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup> Our second main result verifies that the heuristic is asymptotically exact for NESS on dense networks.</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>See, e.g., <a href="https://scipost.org/SciPostPhysLectNotes.32/pdf" target="_blank" rel="noopener">this paper</a> by Christian Maes.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>See Section V of this new <a href="https://arxiv.org/pdf/2604.26601" target="_blank" rel="noopener">perspective</a> piece.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p>While $\boldsymbol{\pi}$ is an explicit function of the transition rates due to the <a href="https://en.wikipedia.org/wiki/Markov_chain_tree_theorem" target="_blank" rel="noopener">Markov chain tree theorem</a>, the function is so complicated that it is difficult to use.&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4">
+<p>This quantity was introduced by <a href="https://www.science.org/doi/10.1126/science.abc6182" target="_blank" rel="noopener">Chvykov et al. (Science, 2021)</a>, although Chvykov and England <a href="https://journals.aps.org/pre/abstract/10.1103/PhysRevE.97.032115" target="_blank" rel="noopener">used the term earlier </a>in a less formal way&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5">
+<p>A <a href="https://www.pnas.org/doi/abs/10.1073/pnas.2411731121" target="_blank" rel="noopener">paper</a> that Dana Randall and I published in 2024 explains the idea of rattling for Markov chains in detail.&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+    </div>
+
+    
+        <div class="tags">
+            
+                <a href="https://jscalvert.github.io/tags/statistical-physics">statistical physics</a>
+            
+                <a href="https://jscalvert.github.io/tags/probability">probability</a>
+            
+                <a href="https://jscalvert.github.io/tags/markov-chains">Markov chains</a>
+            
+                <a href="https://jscalvert.github.io/tags/random-matrix-theory">random matrix theory</a>
+            
+                <a href="https://jscalvert.github.io/tags/paper-highlights">paper highlights</a>
+            
+        </div>
+    
+
+    
+
+
+</section>
+
+
+    </main>
+    <footer id="footer">
+    
+
+    <div class="copyright">
+    
+        © Copyright 2026 Jacob Calvert
+    
+    </div>
+</footer>
+
+
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-M3NJZLRV9F"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-M3NJZLRV9F');
+        }
+      </script></body>
+</html>
