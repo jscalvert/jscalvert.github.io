@@ -120,5 +120,12 @@
       <guid>https://jscalvert.github.io/posts/quorum-transitions/</guid>
       <description>&lt;p&gt;This post discusses the intersection of some of my recent and forthcoming work in probability theory with studies of programmable matter and ant colonies.&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>Mathematical Techniques in Data Science</title>
+      <link>https://jscalvert.github.io/teaching/math637fall2026/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://jscalvert.github.io/teaching/math637fall2026/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>
