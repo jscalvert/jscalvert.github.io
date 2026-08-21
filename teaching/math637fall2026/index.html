@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/style.css?v=1787348514">
 
 
 
@@ -56,38 +56,44 @@
 
     <div class="course-header has-image">
 
-    
-    <figure class="course-image" style="width: 220px;">
-        <img src="/images/habit-de-jardinier.jpg" alt="Habit de Jardinier, an 18th-century engraving of a gardener dressed in garden tools">
-        <figcaption><em>Habit de Jardinier</em>, Nicolas de Larmessin II</figcaption>
-    </figure>
-    
-
     <div class="course-info">
         <table class="course-info-table">
             <tbody>
                 
-                <tr><th>Instructor</th><td>
-                    Jacob Calvert (<a href="mailto:calvert@udel.edu">calvert@udel.edu</a>)
-                </td></tr>
                 
+                <tr><th>Lectures</th><td>MWF from 1:50pm–2:45pm in Purnell Hall 236</td></tr>
                 
-                <tr><th>Lectures</th><td>MWF from 1:50pm–2:45pm</td></tr>
-                
-                
-                <tr><th>Location</th><td>Purnell Hall 236</td></tr>
                 
                 
                 <tr><th>Office hours</th><td>MW from 2:45pm–3:45pm in Ewing Hall 509</td></tr>
                 
                 
                 
+                <tr><th>Syllabus</th><td><a href="/teaching/math637fall2026/syllabus.pdf">Course syllabus (PDF)</a></td></tr>
+                
+                
+                <tr><th>Canvas</th><td>
+                    <a href="https://udel.instructure.com/courses/1937732">Canvas course site</a>
+                </td></tr>
+                
             </tbody>
         </table>
     </div>
 
+    
+    <figure class="course-image" style="width: 300px;">
+        <img src="/images/habit-de-jardinier.jpg" alt="Habit de Jardinier, an 18th-century engraving of a gardener dressed in garden tools">
+        <figcaption><em>Habit de Jardinier</em>, engraving by Nicolas de Larmessin (1640–1725)</figcaption>
+    </figure>
+    
+
     </div>
 
+    
+    <div class="content course-overview">
+        <p>This course will introduce fundamental techniques for data exploration, prediction, and inference. Our main objective will be to develop a mathematical understanding of data science techniques&mdash;their assumptions, properties, and limitations&mdash;alongside their practical implementation and use. Several of our meetings will be dedicated to problem-solving and programming sessions. Final projects will evaluate both an understanding of course material as well as the critical thinking skills at the core of effective data science.</p>
+
+    </div>
     
 
     
@@ -115,10 +121,36 @@
             
             <tr>
                 <td class="col-num">1</td>
-                <td class="col-date">Sep 1</td>
+                <td class="col-date">Aug 26</td>
                 <td>Course overview</td>
                 <td class="col-materials">
-                    <a href="/teaching/math637fall2026/lectures/lec01.pdf">Notes</a>
+                    
+                    <a href="/teaching/math637fall2026/lectures/lec01.pdf">Slides</a>
+                    
+                    
+                    
+                </td>
+            </tr>
+            
+            <tr>
+                <td class="col-num">2</td>
+                <td class="col-date">Aug 28</td>
+                <td>Python basics in Colab</td>
+                <td class="col-materials">
+                    
+                    
+                    <a href="/teaching/math637fall2026/lectures/lec02.pdf">Code</a>
+                    
+                    
+                </td>
+            </tr>
+            
+            <tr>
+                <td class="col-num">3</td>
+                <td class="col-date">Aug 31</td>
+                <td>Singular value decomposition</td>
+                <td class="col-materials">
+                    
                     
                     
                     
@@ -138,8 +170,38 @@
     <ul class="course-resources">
         
         <li>
+            <a href="https://www.statlearning.com/">An Introduction to Statistical Learning</a><span class="course-resource-author">, Gareth James, Daniela Witten, Trevor Hastie, Robert Tibshirani, and (Python edition) Jonathan Taylor</span>
+            <div class="course-resource-note">Free PDFs of both the R edition (2nd ed., corrected 2023) and the Python edition.</div>
+        </li>
+        
+        <li>
+            <a href="https://hastie.su.domains/ElemStatLearn/">The Elements of Statistical Learning: Data Mining, Inference, and Prediction</a><span class="course-resource-author">, Trevor Hastie, Robert Tibshirani, and Jerome Friedman</span>
+            <div class="course-resource-note">Free PDF of the 2nd edition (12th corrected printing, 2017).</div>
+        </li>
+        
+        <li>
             <a href="https://mml-book.github.io/">Mathematics for Machine Learning</a><span class="course-resource-author">, Deisenroth, Faisal, and Ong</span>
-            <div class="course-resource-note">Free online textbook.</div>
+            <div class="course-resource-note">Free online textbook (2020).</div>
+        </li>
+        
+        <li>
+            <a href="https://www.cs.cornell.edu/jeh/book.pdf">Foundations of Data Science</a><span class="course-resource-author">, Avrim Blum, John Hopcroft, and Ravindran Kannan</span>
+            <div class="course-resource-note">Free PDF of the pre-publication version of the Cambridge University Press book (2018).</div>
+        </li>
+        
+        <li>
+            <a href="https://www.bishopbook.com/">Deep Learning: Foundations and Concepts</a><span class="course-resource-author">, Christopher M. Bishop with Hugh Bishop</span>
+            <div class="course-resource-note">Free online version (2023), readable in the browser.</div>
+        </li>
+        
+        <li>
+            <a href="https://vdsbook.com/">Veridical Data Science: The Practice of Responsible Data Analysis and Decision Making</a><span class="course-resource-author">, Bin Yu and Rebecca L. Barter</span>
+            <div class="course-resource-note">Open-access web version of the MIT Press book (2024).</div>
+        </li>
+        
+        <li>
+            <a href="https://mmids-textbook.github.io/">Mathematical Methods in Data Science: Bridging Theory and Applications with Python</a><span class="course-resource-author">, Sebastien Roch</span>
+            <div class="course-resource-note">Free online version of the Cambridge University Press book (2025).</div>
         </li>
         
     </ul>

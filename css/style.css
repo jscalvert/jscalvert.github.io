@@ -735,18 +735,15 @@ nav.navigation .nav-links a.active {
   margin-bottom: 20px;
 }
 
-/* Course header: info table with optional themed image beside it */
-.course-header.has-image {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  gap: 24px;
-  margin-bottom: 24px;
+.course-overview {
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
 }
 
-.course-header.has-image .course-info {
-  flex: 1 1 200px;
-  min-width: 0;
+/* Course header: full-width info table with the themed image centered below */
+.course-header.has-image {
+  margin-bottom: 24px;
 }
 
 .course-header.has-image .course-info-table {
@@ -754,10 +751,9 @@ nav.navigation .nav-links a.active {
 }
 
 .course-image {
-  flex: 0 1 auto;
   width: 220px;
-  max-width: 45%;
-  margin: 0;
+  max-width: 100%;
+  margin: 24px auto 0;
   text-align: center;
 }
 
@@ -767,9 +763,6 @@ nav.navigation .nav-links a.active {
   max-width: 100%;
   height: auto;
   margin: 0 auto;
-  border: 2px inset var(--border-color);
-  background: var(--bg-elevated);
-  padding: 4px;
 }
 
 .course-image figcaption {
@@ -782,16 +775,7 @@ nav.navigation .nav-links a.active {
   text-align: center;
 }
 
-@media (max-width: 480px) {
-  .course-header.has-image {
-    flex-direction: column;
-  }
-  .course-image {
-    width: 200px !important;
-    max-width: 100%;
-    align-self: center;
-  }
-}
+
 
 /* Generic figure shortcode: {{< img src=... width=... align=... >}} */
 .fig {
