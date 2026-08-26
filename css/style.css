@@ -307,6 +307,12 @@ nav.navigation .nav-links a.active {
   margin-top: 8px;
 }
 
+#homepage .homepage-content > p:first-of-type {
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+
 .home-avatar-float {
   float: left;
   width: 128px;
