@@ -6,8 +6,15 @@
     <description>Recent content in Paper Highlights on Jacob Calvert</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 13 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://jscalvert.github.io/tags/paper-highlights/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A McLennan formula for equiaccessible steady states</title>
+      <link>https://jscalvert.github.io/posts/mclennan-formula/</link>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://jscalvert.github.io/posts/mclennan-formula/</guid>
+      <description>&lt;p&gt;My latest &lt;a href=&#34;https://arxiv.org/abs/2610.26755&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;preprint&lt;/a&gt; develops a parallel between equilibrium and &lt;em&gt;equiaccessible&lt;/em&gt; steady states, culminating in a McLennan formula for the latter.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Nonequilibrium steady states on dense networks</title>
       <link>https://jscalvert.github.io/posts/ness-on-dense-networks/</link>
